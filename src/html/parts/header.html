@@ -1,0 +1,79 @@
+<header class="header">
+  <div class="header__wrapper wrapper">
+    <!-- блок с логотипом  -->
+    <div class="header__logo">
+      <img src="img/logo/logo-main.svg" alt="">
+    </div>
+    <!-- блок с дополнительными меню  -->
+    <div class="header__top">
+      <div class="header__menu-group">
+        <div class="header__submenu-left">
+          <ul class="menu-list">
+            <li><a href="#">Результаты анализов</a></li>
+            <li><a href="#">Версия для слабовидящих</a></li>
+          </ul>
+        </div>
+        <div class="header__submenu-right">
+          <ul class="menu-list">
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Заказать звонок</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- блок с основной навигацией, контактами и кнопками  -->
+    <div class="header__bottom">
+      <nav class="header__main-menu">
+        @@include('main-nav.html')
+      </nav>
+      <div class="header__contacts">
+        <div class="header__tel">
+          <a href="tel:88633090506" class="tel-link">8 (863) 309-05-06</a>
+        </div>
+        <div class="header__callback">
+          <a href="#" class="button-transparent">Записаться на прием</a>
+        </div>
+      </div>
+      <div class="header__buttons">
+        <!-- кнопка меню  -->
+        <button class="button-menu" type="button">
+          <span class="button-menu__toggle"></span>
+        </button>
+        <!-- кнопка поиска  -->
+        <button class="button-search" type="button">
+          <span class="button-search__toggle"></span>
+        </button>
+      </div>
+    </div><!-- .header__bottom -->
+
+  </div><!--  .wrapper -->
+
+  <!-- блок с формой поиска по сайту  -->
+  <div class="header__search-form search-form">
+    <div class="wrapper">
+      <form action="URL" method="">
+        <label class="search-form__title title" for="">Поиск по сайту</label>
+        <div class="search-form__wrapper">
+          <input type="search" placeholder="Гинеколог, педиатр, анализы, КТ, УЗИ..." id="">
+          <button class="search-form__button button" type="submit">
+            <svg class="search-form__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7" r="6" stroke-width="2"></circle>
+              <path d="m15 15-3-3" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            Найти</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- блок с мобильным меню  -->
+  <div class="mobile-main-nav">
+    <div class="wrapper">
+      @@include('main-nav-mobile.html')
+    </div>
+  </div>
+
+  </div> <!-- .wrapper -->
+</header>

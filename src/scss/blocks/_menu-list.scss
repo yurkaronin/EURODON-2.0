@@ -1,0 +1,27 @@
+
+.menu-list {
+  @include custList;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+
+  font-family: 'Open Sans',
+    sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-content;
+
+  a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    transition: .15s linear;
+
+    &:hover {
+      color: $brand-1;
+    }
+  }
+
+}

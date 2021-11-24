@@ -1,0 +1,155 @@
+.header {
+  overflow-x: clip;
+  position: sticky;
+  top: 0;
+  background-color: $base-bg;
+  color: $base-content;
+  z-index: 99;
+  justify-content: space-between;
+
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 224px auto;
+  gap: 0;
+  align-items: flex-start;
+  border-bottom: 1px solid $border;
+  position: relative;
+  background: #fff;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid $border;
+    z-index: 0;
+    top: 1px;
+    left: 100%;
+    background: #fff;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid $border;
+    z-index: 0;
+    top: 1px;
+    right: 100%;
+    background: #fff;
+  }
+}
+
+.header__logo {
+  width: 100%;
+  margin: auto;
+  margin-left: 0;
+  grid-row: 1/10;
+
+  img {
+    display: block;
+  }
+}
+
+.header__top {
+  padding: 10px 0 10px 30px;
+  border-bottom: 1px solid $border;
+  border-left: 1px solid $border;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid $border;
+    z-index: 2;
+    top: 1px;
+    left: 100%;
+  }
+}
+
+.header__menu-group {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.header__submenu-right {
+  .menu-list {
+    justify-content: flex-end;
+  }
+
+}
+
+.header__bottom {
+  padding: 0 0 0 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 400px 40px;
+  grid-column: 2/-1;
+  border-left: 1px solid $border;
+  align-items: center;
+
+}
+
+.header__contacts {
+  display: grid;
+  grid-template-columns: 185px 165px;
+  gap: 32px;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+}
+
+// прилипающее меню
+.header.sticky {
+  position: fixed;
+  width: 100%;
+  border: none;
+  box-shadow: 0 0 10px -3px;
+
+  .wrapper {
+    grid-template-columns: 127px auto;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__bottom {
+    border: none;
+  }
+}
+
+.header__search-form {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: $base-bg;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.header__search-form.active {
+  display: block;
+  box-shadow: 0 0 10px -3px;
+}
+
+.mobile-main-nav,
+.button-menu {
+  display: none;
+}

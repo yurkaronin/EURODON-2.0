@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,81 @@
 
   <title>Главная</title>
 </head>
-<body>
 
+<body>
+  @@include('parts/header.html')
+  <main>
+    <!-- верхний слайдер  -->
+    <div class="top-slider">
+      <div class="wrapper"></div>
+    </div>
+    <!-- главный поиск по сайту  -->
+    <div class="main-search">
+      <div class="wrapper"></div>
+    </div>
+    <!-- анонсы сервисов  -->
+    <section class="services-anonce">
+      <div class="wrapper">
+
+        <div class="top-block">
+          <h2 class="title">Врачи</h2>
+          <a class="button-plus" href="#">
+            <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0h2v16H7z" />
+              <path d="M16 7v2H0V7z" />
+            </svg>
+            Смотреть всеx</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- слайдер направлений услуг  -->
+    <section class="destination-slider">
+      <div class="wrapper">
+
+        <div class="top-block">
+          <h2 class="title">Врачи</h2>
+          <a class="button-plus" href="#">
+            <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0h2v16H7z" />
+              <path d="M16 7v2H0V7z" />
+            </svg>
+            Смотреть всеx</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- слайдер докторов  -->
+    <section class="doctors-slider">
+      <div class="wrapper">
+
+        <div class="top-block">
+          <h2 class="title">Врачи</h2>
+          <a class="button-plus" href="#">
+            <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 0h2v16H7z" />
+              <path d="M16 7v2H0V7z" />
+            </svg>
+            Смотреть всеx</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- анонсы филиалов клиники  -->
+    <section class="filials-anonce">
+      <div class="wrapper"></div>
+    </section>
+    <!-- рейтинги  -->
+    <section class="ratings">
+      <div class="wrapper"></div>
+    </section>
+    <!-- о компании  -->
+    <section class="about-company">
+      <div class="wrapper"></div>
+    </section>
+
+  </main>
+  @@include('parts/footer.html')
 </body>
+
 </html>

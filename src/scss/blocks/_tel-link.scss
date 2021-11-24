@@ -1,0 +1,15 @@
+.tel-link {
+   font-family: 'Montserrat',
+   sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: $base-content;
+  text-decoration: none;
+  display: flex;
+  transition: .15s linear;
+
+  &:hover {
+    color: $brand-1;
+  }
+}
