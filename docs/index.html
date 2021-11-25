@@ -22,7 +22,7 @@
     <div class="header__top">
       <div class="header__menu-group">
         <div class="header__submenu-left">
-          <ul class="menu-list">
+          <ul class="menu-list menu-list--mod">
             <li><a href="#">Результаты анализов</a></li>
             <li><a href="#">Версия для слабовидящих</a></li>
           </ul>
@@ -153,41 +153,20 @@
       </div>
     </div><!-- .header__bottom -->
 
-  </div><!--  .wrapper -->
-
-  <!-- блок с формой поиска по сайту  -->
-  <div class="header__search-form search-form">
-    <div class="wrapper">
-      <form action="URL" method="">
-        <label class="search-form__title title" for="">Поиск по сайту</label>
-        <div class="search-form__wrapper">
-          <input type="search" placeholder="Гинеколог, педиатр, анализы, КТ, УЗИ..." id="">
-          <button class="search-form__button button" type="submit">
-            <svg class="search-form__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="7" cy="7" r="6" stroke-width="2"></circle>
-              <path d="m15 15-3-3" stroke-width="2" stroke-linecap="round"></path>
-            </svg>
-            Найти</button>
-        </div>
-
-      </form>
-    </div>
-  </div>
-
-  <!-- блок с мобильным меню  -->
+    <!-- блок с мобильным меню  -->
   <div class="mobile-main-nav">
     <div class="wrapper">
-      <div class="main-nav-modile">
-  <ul class="main-nav-modile__list">
-    <li class="main-nav-modile__item">
-      <a class="main-nav-modile__link" href="#">Covid-19</a>
-      <button class="main-nav-modile__toggle-btn">
-        <svg class="main-nav-modile__toggle-icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="main-nav-mobile">
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a class="main-nav-mobile__link" href="#">Covid-19</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
 
-      <ul class="main-nav-modile__sublist sublist-nav">
+      <ul class="main-nav-mobile__sublist sublist-nav">
         <li class="sublist-nav__item">
           <a class="sublist-nav__link" href="#">Экспресс-тест STANDARD Q COVID-19 AG</a>
         </li>
@@ -212,15 +191,15 @@
     </li>
   </ul>
 
-  <ul class="main-nav-modile__list">
-    <li class="main-nav-modile__item">
-      <a class="main-nav-modile__link" href="#">Услуги</a>
-      <button class="main-nav-modile__toggle-btn">
-        <svg class="main-nav-modile__toggle-icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a class="main-nav-mobile__link" href="#">Услуги</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
-      <ul class="main-nav-modile__sublist sublist-nav">
+      <ul class="main-nav-mobile__sublist sublist-nav">
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы</a></li>
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Программы Check-up</a></li>
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы на дому</a></li>
@@ -245,15 +224,15 @@
     </li>
   </ul>
 
-  <ul class="main-nav-modile__list">
-    <li class="main-nav-modile__item">
-      <a href="#" class="main-nav-modile__link">Врачи</a>
-      <button class="main-nav-modile__toggle-btn">
-        <svg class="main-nav-modile__toggle-icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a href="#" class="main-nav-mobile__link">Врачи</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
-      <ul class="main-nav-modile__sublist sublist-nav">
+      <ul class="main-nav-mobile__sublist sublist-nav">
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Аллергология-иммунология</a></li>
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гастроэнтерология</a></li>
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гематология</a></li>
@@ -277,31 +256,66 @@
     </li>
   </ul>
 
-  <ul class="main-nav-modile__list main-nav-modile__list--long">
-    <li class="main-nav-modile__item">
-      <a href="#" class="main-nav-modile__link">Клиника</a>
-      <button class="main-nav-modile__toggle-btn">
-        <svg class="main-nav-modile__toggle-icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ul class="main-nav-mobile__list main-nav-mobile__list--long">
+    <li class="main-nav-mobile__item">
+      <a href="#" class="main-nav-mobile__link">Клиника</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
-      <ul class="main-nav-modile__sublist sublist-nav">
+      <ul class="main-nav-mobile__sublist sublist-nav">
         <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">О клинике</a></li>
         <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Отзывы</a></li>
         <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Лицензии и сертификаты</a></li>
         <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Врачам</a></li>
       </ul>
     </li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link">Пациентам</a></li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link">Расписание</a></li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link">Цены</a></li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link main-nav-modile__link--active">Акции</a></li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link">Филиалы</a></li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Пациентам</a></li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Расписание</a></li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Цены</a></li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link main-nav-mobile__link--active">Акции</a>
+    </li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Филиалы</a></li>
   </ul>
+
 </div>
 
     </div>
+    <div class="main-nav-mobile__footer">
+      <span class="title">Связаться с нами</span>
+      <div class="header__contacts--mobile">
+        <div class="header__tel">
+          <a href="tel:88633090506" class="tel-link">8 (863) 309-05-06</a>
+        </div>
+        <div class="header__callback">
+          <a href="#" class="button-transparent">Записаться на прием</a>
+        </div>
+      </div>
+    </div>
   </div>
+
+  </div><!--  .wrapper -->
+
+  <!-- блок с формой поиска по сайту  -->
+  <div class="header__search-form search-form">
+    <div class="wrapper">
+      <form action="URL" method="">
+        <label class="search-form__title title" for="">Поиск по сайту</label>
+        <div class="search-form__wrapper">
+          <input type="search" placeholder="Гинеколог, педиатр, анализы, КТ, УЗИ..." id="">
+          <button class="search-form__button button" type="submit">
+            <svg class="search-form__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7" r="6" stroke-width="2"></circle>
+              <path d="m15 15-3-3" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            Найти</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
 
   </div> <!-- .wrapper -->
 </header>
@@ -392,17 +406,17 @@
   </div>
   <div class="footer__main-menu">
     <div class="wrapper">
-      <div class="main-nav-modile">
-  <ul class="main-nav-modile__list">
-    <li class="main-nav-modile__item">
-      <a class="main-nav-modile__link" href="#">Covid-19</a>
-      <button class="main-nav-modile__toggle-btn">
-        <svg class="main-nav-modile__toggle-icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="main-nav-mobile">
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a class="main-nav-mobile__link" href="#">Covid-19</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
 
-      <ul class="main-nav-modile__sublist sublist-nav">
+      <ul class="main-nav-mobile__sublist sublist-nav">
         <li class="sublist-nav__item">
           <a class="sublist-nav__link" href="#">Экспресс-тест STANDARD Q COVID-19 AG</a>
         </li>
@@ -427,15 +441,15 @@
     </li>
   </ul>
 
-  <ul class="main-nav-modile__list">
-    <li class="main-nav-modile__item">
-      <a class="main-nav-modile__link" href="#">Услуги</a>
-      <button class="main-nav-modile__toggle-btn">
-        <svg class="main-nav-modile__toggle-icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a class="main-nav-mobile__link" href="#">Услуги</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
-      <ul class="main-nav-modile__sublist sublist-nav">
+      <ul class="main-nav-mobile__sublist sublist-nav">
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы</a></li>
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Программы Check-up</a></li>
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы на дому</a></li>
@@ -460,15 +474,15 @@
     </li>
   </ul>
 
-  <ul class="main-nav-modile__list">
-    <li class="main-nav-modile__item">
-      <a href="#" class="main-nav-modile__link">Врачи</a>
-      <button class="main-nav-modile__toggle-btn">
-        <svg class="main-nav-modile__toggle-icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a href="#" class="main-nav-mobile__link">Врачи</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
-      <ul class="main-nav-modile__sublist sublist-nav">
+      <ul class="main-nav-mobile__sublist sublist-nav">
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Аллергология-иммунология</a></li>
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гастроэнтерология</a></li>
         <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гематология</a></li>
@@ -492,27 +506,29 @@
     </li>
   </ul>
 
-  <ul class="main-nav-modile__list main-nav-modile__list--long">
-    <li class="main-nav-modile__item">
-      <a href="#" class="main-nav-modile__link">Клиника</a>
-      <button class="main-nav-modile__toggle-btn">
-        <svg class="main-nav-modile__toggle-icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ul class="main-nav-mobile__list main-nav-mobile__list--long">
+    <li class="main-nav-mobile__item">
+      <a href="#" class="main-nav-mobile__link">Клиника</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
         </svg>
       </button>
-      <ul class="main-nav-modile__sublist sublist-nav">
+      <ul class="main-nav-mobile__sublist sublist-nav">
         <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">О клинике</a></li>
         <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Отзывы</a></li>
         <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Лицензии и сертификаты</a></li>
         <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Врачам</a></li>
       </ul>
     </li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link">Пациентам</a></li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link">Расписание</a></li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link">Цены</a></li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link main-nav-modile__link--active">Акции</a></li>
-    <li class="main-nav-modile__item"><a href="#" class="main-nav-modile__link">Филиалы</a></li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Пациентам</a></li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Расписание</a></li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Цены</a></li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link main-nav-mobile__link--active">Акции</a>
+    </li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Филиалы</a></li>
   </ul>
+
 </div>
 
     </div>

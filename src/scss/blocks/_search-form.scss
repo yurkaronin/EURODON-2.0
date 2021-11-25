@@ -16,7 +16,7 @@
   }
 
   input {
-    background: #ffffff;
+    background: $base-bg;
     border: 1px solid $border;
     box-sizing: border-box;
     border-radius: 4px;
@@ -25,7 +25,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    color: #7895a6;
+    color: $bg-4;
     flex-grow: 2;
     padding: 15px 24px;
     max-width: 100%;
@@ -70,7 +70,7 @@
 
   @media (max-width: 850px) {
     display: block;
-    stroke: #ffffff;
+    stroke: $base-bg;
   }
 
 }

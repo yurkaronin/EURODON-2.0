@@ -1,7 +1,8 @@
 "use strict";
 // прилипающее меню в шапке
+
 window.onscroll = function showHeader() {
-  let header = document.querySelector('.header');
+  var header = document.querySelector('.header');
 
   if (window.pageYOffset > header.offsetHeight) {
     header.classList.add('sticky');
@@ -11,25 +12,36 @@ window.onscroll = function showHeader() {
 }
 
 // кнопка меню
-const menuButton = document.querySelector('.menu-button');
+var menuButton = document.querySelector('.button-menu');
 if (menuButton) {
-  const mainMenu = document.querySelector('.main-nav');
+  let mainMenu = document.querySelector('.mobile-main-nav');
   menuButton.addEventListener('click', function (r) {
     document.body.classList.toggle('custom-lock');
     menuButton.classList.toggle('active');
-    mainMenu.classList.toggle('show');
+    mainMenu.classList.toggle('active');
   });
 }
 
 // кнопка поиска в шапке
-const searchButton = document.querySelector('.button-search');
+let searchButton = document.querySelector('.button-search');
 if (searchButton) {
-  const headerSearch = document.querySelector('.header__search-form');
+  let headerSearch = document.querySelector('.header__search-form');
   searchButton.addEventListener('click', function (r) {
     searchButton.classList.toggle('active');
     headerSearch.classList.toggle('active');
   });
 }
+
+// кнопка аккордеона в меню
+let mobMenu = document.querySelectorAll(".main-nav-mobile");
+let subList = document.querySelectorAll(".sublist-nav");
+let subMenuButton = document.querySelectorAll('.toggle-btn').forEach((item) =>
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+    subList.classList.toggle('active');
+    mobMenu.classList.toggle('active');
+  })
+);
 
 /* var currentLocation = window.location;
 console.log(currentLocation); */
