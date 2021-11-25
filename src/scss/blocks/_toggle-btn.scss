@@ -1,0 +1,28 @@
+.toggle-btn {
+  background-color: transparent;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: flex;
+  }
+
+}
+
+.toggle-btn__icon {
+  width: 18px;
+  height: 11px;
+  stroke: $brand-3;
+  transition: transform 0.3s ease,
+    opacity 0.18s ease;
+
+}
+
+.toggle-btn.active {
+
+  .toggle-btn__icon {
+    transform: rotate(180deg);
+  }
+}

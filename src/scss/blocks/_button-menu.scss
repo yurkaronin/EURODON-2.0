@@ -1,0 +1,65 @@
+.button-menu {
+  background-color: transparent;
+  position: relative;
+  padding: 28px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-left: 1px solid $border;
+  margin-left: auto;
+  cursor: pointer;
+
+  @media (max-width: 850px) {
+    padding: 35px 40px;
+  }
+
+  span,
+  span::before,
+  span::after {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $brand-1;
+  }
+
+  span::before,
+  span::after {
+    content: "";
+    display: block;
+    transition: 0.2s;
+  }
+
+  span::before {
+    transform: translateY(-8px);
+  }
+
+  span::after {
+    transform: translateY(8px);
+  }
+}
+
+.button-menu.active {
+  &::after {
+    content: "";
+    display: block;
+    background-color: $base-bg;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+
+  span {
+    height: 0;
+  }
+
+  span:before {
+    transform: rotate(-45deg);
+  }
+
+  span:after {
+    transform: rotate(45deg);
+  }
+}

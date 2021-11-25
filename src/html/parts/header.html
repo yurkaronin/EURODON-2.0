@@ -8,7 +8,7 @@
     <div class="header__top">
       <div class="header__menu-group">
         <div class="header__submenu-left">
-          <ul class="menu-list">
+          <ul class="menu-list menu-list--mod">
             <li><a href="#">Результаты анализов</a></li>
             <li><a href="#">Версия для слабовидящих</a></li>
           </ul>
@@ -47,6 +47,24 @@
       </div>
     </div><!-- .header__bottom -->
 
+    <!-- блок с мобильным меню  -->
+  <div class="mobile-main-nav">
+    <div class="wrapper">
+      @@include('main-nav-mobile.html')
+    </div>
+    <div class="main-nav-mobile__footer">
+      <span class="title">Связаться с нами</span>
+      <div class="header__contacts--mobile">
+        <div class="header__tel">
+          <a href="tel:88633090506" class="tel-link">8 (863) 309-05-06</a>
+        </div>
+        <div class="header__callback">
+          <a href="#" class="button-transparent">Записаться на прием</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </div><!--  .wrapper -->
 
   <!-- блок с формой поиска по сайту  -->
@@ -68,12 +86,6 @@
     </div>
   </div>
 
-  <!-- блок с мобильным меню  -->
-  <div class="mobile-main-nav">
-    <div class="wrapper">
-      @@include('main-nav-mobile.html')
-    </div>
-  </div>
 
   </div> <!-- .wrapper -->
 </header>
