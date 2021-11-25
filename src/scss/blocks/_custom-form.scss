@@ -1,0 +1,124 @@
+.custom-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 650px;
+
+  @media (max-width: 770px) {
+    width: 100%;
+  }
+}
+
+.custom-form__item-wrapper {
+  position: relative;
+  background-color: #ffffff;
+  width: calc((100% / 2) - 32px);
+  margin: 0;
+  padding: 22px 15px 6px;
+  min-height: 56px;
+
+  @media (max-width: 770px) {
+    border: 1px solid #ccd9de;
+    width: 100%;
+  }
+}
+
+.custom-form__label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #8b8c8d;
+  top: 4px;
+  left: 16px;
+}
+
+.custom-form__input {
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #5d5f5f;
+  max-width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 16px 0;
+  border: none;
+  border-top: 4px solid transparent;
+  transition: 0.3s;
+}
+
+/* .custom-form__input:active,
+.custom-form__input:hover {
+  border-top-color: #ffb734;
+}
+
+.custom-form__input:focus {
+  border-top-color: #00435b;
+} */
+
+.custom-form__item-wrapper .custom-form__input,
+.custom-form__item-wrapper .custom-form__label {
+  position: absolute;
+}
+
+.custom-form__button {
+  border: none;
+  padding: 21px 51px;
+  font-size: 14px;
+}
+
+.custom-form__politic {
+  margin: 0;
+  position: relative;
+  padding-left: 40px;
+
+  /* a {
+    color: #00435B;
+
+    &:active,
+    &:hover,
+    &:focus {
+      color: #FFB734;
+    }
+  } */
+}
+
+.custom-form__label--accept input[type="checkbox"]+.custom-form__politic::before {
+  content: "";
+  background-image: url(../img/icons/checkbox-off.svg);
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.custom-form__label--accept input[type="checkbox"]:checked+.custom-form__politic::before {
+  background-image: url(../img/icons/checkbox-on.svg);
+}
+
+/* .custom-form .js-field-error .custom-form__input {
+  border-top-color: red;
+} */
+
+.custom-form__button {
+  @media (max-width: 770px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.custom-form__footer {
+  display: flex;
+  align-items: center;
+}
