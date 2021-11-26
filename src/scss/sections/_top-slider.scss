@@ -1,0 +1,9 @@
+.top-slider {
+  padding: 31px 0 32px;
+
+  .wrapper {
+    @media (max-width: 550px) {
+      padding: 0;
+    }
+  }
+}
