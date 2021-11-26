@@ -1,0 +1,42 @@
+.button-plus {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px 11px;
+  padding-left: 42px;
+  transition: 0.2s linear;
+  position: relative;
+  background: transparent;
+  border: 1px solid $brand-1;
+  border-radius: 4px;
+  color: $brand-1;
+  text-decoration: none;
+  max-width: max-content;
+  align-items: center;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 15px;
+    fill: $brand-1;
+  }
+
+}
+
+
+
+.button-plus:hover {
+  background: $brand-1;
+  color: $base-bg;
+
+  svg {
+    fill: $base-bg;
+  }
+
+
+}

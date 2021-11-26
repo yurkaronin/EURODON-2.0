@@ -10,6 +10,10 @@
   position: initial;
   margin: 0;
 
+  @media (max-width: 1450px) {
+    padding: 23px;
+  }
+
   &::after {
     display: none !important;
   }

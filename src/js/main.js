@@ -121,7 +121,9 @@ modalOverlay.addEventListener('click', (e) => {
 Inputmask("+7 (999) 999-99-99").mask('[type="tel"]');
 
 // слайдер первый экран
-var swiper = new Swiper(".top-slider__swiper", {
+const topSwiper = document.querySelector('.top-slider__swiper');
+if (topSwiper) {
+let swiper1 = new Swiper(".top-slider__swiper", {
   slidesPerView: 1,
   loop: true,
   navigation: {
@@ -133,3 +135,40 @@ var swiper = new Swiper(".top-slider__swiper", {
     clickable: true,
   },
 });
+}
+
+// слайдер по направлениям услуг с иконками
+const directionsSwiper = document.querySelector('.services-group-slider__swiper');
+if (directionsSwiper) {
+  let swiper2 = new Swiper(".services-group-slider__swiper", {
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1150: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+      1400: {
+        slidesPerView: 5,
+        spaceBetween: 32,
+      }
+    },
+    slidesPerGroup: 1,
+    loopFillGroupWithBlank: true,
+    loop: true,
+    navigation: {
+      nextEl: ".services-group-slider__button-next",
+      prevEl: ".services-group-slider__button-prev"
+    },
+    pagination: {
+      el: ".services-group-slider__pagination",
+      clickable: true,
+    },
+  });
+}

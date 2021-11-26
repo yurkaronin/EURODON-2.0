@@ -6,4 +6,9 @@
   line-height: 40px;
   color: $base-content;
   margin-top: 0;
+
+  @media (max-width: 650px) {
+    font-size: 24px;
+    line-height: 120%;
+  }
 }

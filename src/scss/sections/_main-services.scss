@@ -1,0 +1,131 @@
+.main-services {
+  @media (max-width: 1000px) {
+    padding: 50px 0;
+  }
+
+}
+
+.main-services__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 32px;
+
+  @media (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.main-services__link {
+  border-top: 1px solid #e5eaee;
+  border-bottom: 1px solid #e5eaee;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 27px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+
+  @media (max-width: 650px) {
+    padding-left: 0;
+    padding-right: 45px;
+  }
+}
+
+.main-services__name {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: #334257;
+  z-index: 5;
+  margin: 0;
+}
+
+.main-services__icon {
+  width: 14px;
+  height: 24px;
+  z-index: 5;
+  stroke: #303f82;
+  stroke-width: 2;
+
+  @media (max-width: 650px) {
+    position: absolute;
+    right: 15px;
+  }
+}
+
+.main-services__image {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.55s;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(48, 63, 130, 0.55), rgba(48, 63, 130, 0.55));
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+
+
+
+.main-services__link:hover,
+.main-services__link:active,
+.main-services__link:focus {
+  border-color: transparent;
+
+  .main-services__image {
+    opacity: 1;
+    transform: scale(1.018);
+    z-index: 2;
+  }
+
+  .main-services__name {
+    color: #ffffff;
+
+    @media (max-width: 650px) {
+      color: #0098D0;
+    }
+  }
+
+  .main-services__icon {
+    stroke: #ffffff;
+
+    @media (max-width: 650px) {
+      stroke: #0098D0;
+    }
+  }
+}

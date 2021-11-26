@@ -46,7 +46,7 @@
 }
 
 .search-form__title {
-  @media (max-width: 850px) {
+  @media (max-width: 650px) {
     display: none;
   }
 }
@@ -57,7 +57,7 @@
   font-weight: 700;
   font-size: 16px;
 
-  @media (max-width: 850px) {
+  @media (max-width: 650px) {
     max-width: 55px;
     font-size: 0;
     line-height: 0;
@@ -68,7 +68,7 @@
 .search-form__icon {
   display: none;
 
-  @media (max-width: 850px) {
+  @media (max-width: 650px) {
     display: block;
     stroke: $base-bg;
   }
