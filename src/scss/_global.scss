@@ -23,6 +23,12 @@ input {
   font-family: inherit;
 }
 
+a {
+  color: $brand-1;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;

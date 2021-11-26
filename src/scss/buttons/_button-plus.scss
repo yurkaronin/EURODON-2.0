@@ -14,7 +14,7 @@
   align-items: center;
   font-size: 12px;
   line-height: 100%;
-  text-transform: uppercase;
+  text-transform: none;
   cursor: pointer;
   font-weight: 600;
 
@@ -31,7 +31,8 @@
 
 
 .button-plus:hover {
-  background: $brand-1;
+  background: $brand-3;
+  border-color: $brand-3;
   color: $base-bg;
 
   svg {

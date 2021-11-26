@@ -81,15 +81,6 @@
   position: relative;
   padding-left: 40px;
 
-  /* a {
-    color: #00435B;
-
-    &:active,
-    &:hover,
-    &:focus {
-      color: #FFB734;
-    }
-  } */
 }
 
 .custom-form__label--accept input[type="checkbox"]+.custom-form__politic::before {
@@ -107,10 +98,6 @@
   background-image: url(../img/icons/checkbox-on.svg);
 }
 
-/* .custom-form .js-field-error .custom-form__input {
-  border-top-color: red;
-} */
-
 .custom-form__button {
   @media (max-width: 770px) {
     max-width: 100%;
@@ -122,3 +109,4 @@
   display: flex;
   align-items: center;
 }
+

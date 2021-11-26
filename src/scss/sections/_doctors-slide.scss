@@ -1,6 +1,5 @@
 .doctors-slider {
-  margin-bottom: 50px;
-  padding: 48px 0 32px;
+  padding: 48px 0 0;
 
   .slider-buttons-wrapper {
     width: 100%;
@@ -18,16 +17,14 @@
     display: flex;
     min-width: 1px;
     align-items: center;
+    gap: 30px;
   }
 
   &__slider {
     flex-grow: 1;
     min-width: 1px;
+    max-width: 1250px;
 
-  }
-
-  .button-slider {
-    min-width: 96px;
   }
 
   .swiper-slide {
@@ -37,6 +34,8 @@
 
 .doctors-slider__wrapper {
   align-items: center;
+  position: relative;
+  padding-bottom: 45px;
 }
 
 .doctors-slider__item {
@@ -47,7 +46,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   transition: all 0.3s ease-in-out;
-  transform: translateX(0) scale(0.7);
+  transform: translateX(0) scale(0.6);
 }
 
 .doctors-slider__photo {
@@ -122,7 +121,7 @@
 }
 
 .swiper-slide-prev .doctors-slider__item {
-  transform: translateX(115px) scale(0.7);
+  transform: translateX(115px) scale(0.6);
 
   .doctors-slider__photo {
     transform: translateX(100%);
@@ -134,7 +133,7 @@
 }
 
 .swiper-slide-next .doctors-slider__item {
-  transform: translateX(-115px) scale(0.7);
+  transform: translateX(-115px) scale(0.6);
 
   .doctors-slider__photo {
     transform: translateX(0);

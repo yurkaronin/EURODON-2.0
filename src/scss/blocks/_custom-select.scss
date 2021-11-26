@@ -1,0 +1,51 @@
+.custom-select {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: baseline;
+}
+
+.custom-select__label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $base-content;
+}
+
+.choices__inner {
+  padding: 0;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  padding-right: 24px;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0098d0;
+  font-weight: 700;
+}
+
+.choices[data-type*="select-one"]::after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 7px;
+  border: 0;
+  right: 10px;
+  background-image: url(../img/icons/arr-down-min.svg);
+  background-repeat: no-repeat;
+  top: 13px;
+  background-position: center;
+  transition: all 0.1s ease;
+}
+
+.choices[data-type*="select-one"].is-open::after {
+  transform: rotate(180deg);
+}
+
+.choices__inner {
+  min-height: initial;
+}

@@ -193,3 +193,23 @@ var swiper = new Swiper(".doctors-slider__swiper", {
     },
 });
 }
+
+// Кастомный select
+const elements = document.querySelectorAll('.custom-select__list');
+
+if (elements) {
+  let nameSelect;
+  for (let i = 0, customName = 1; i < elements.length; i++) {
+    elements[i].setAttribute('data-name', `select${customName}`);
+    nameSelect = elements[i].getAttribute('data-name');
+
+
+    const example = new Choices(`[data-name='${nameSelect}']`, {
+      itemSelectText: '',
+      searchEnabled: false,
+      placeholder: false,
+    });
+
+    customName++;
+  }
+};
