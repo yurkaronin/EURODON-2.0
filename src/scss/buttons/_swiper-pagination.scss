@@ -1,0 +1,11 @@
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    background-color: $bg-5;
+    margin: 0 8px !important;
+    display: inline-block;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $brand-4;
+  }
+}
+

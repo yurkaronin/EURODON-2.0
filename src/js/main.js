@@ -1,6 +1,5 @@
 "use strict";
 // прилипающее меню в шапке
-
 window.onscroll = function showHeader() {
   var header = document.querySelector('.header');
 
@@ -121,20 +120,16 @@ modalOverlay.addEventListener('click', (e) => {
 // маска для поля с телефоном
 Inputmask("+7 (999) 999-99-99").mask('[type="tel"]');
 
-// Слайдер в первом экране страниц
-const firstSwiper = document.querySelector('.first-slider');
-if (firstSwiper) {
-  var swiper1 = new Swiper(".first-slider", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".first-slider__pagination",
-      clickable: true,
-    },
-  });
-}
-
-/* var currentLocation = window.location;
-console.log(currentLocation); */
+// слайдер первый экран
+var swiper = new Swiper(".top-slider__swiper", {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: ".top-slider__button-next",
+    prevEl: ".top-slider__button-prev",
+  },
+  pagination: {
+    el: ".top-slider__pagination",
+    clickable: true,
+  },
+});

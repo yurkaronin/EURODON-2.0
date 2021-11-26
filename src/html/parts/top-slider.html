@@ -1,55 +1,68 @@
 <section class="top-slider">
   <div class="wrapper">
-    <!-- слайдер  -->
-    <div class="first-slider swiper">
-      <div class="swiper-wrapper">
+    <div class="top-slider__wrapper">
 
-        <div class="swiper-slide">
-          <div class="first-slider__photo">
-            <img src="img/first-slider/1.jpg" alt="фото слайдера" width="752" height="488" loading="lazy">
-          </div>
-          <div class="first-slider__details">
-            <h3 class="first-slider__name">Выезд специалиста на дом</h3>
-            <p class="first-slider__text">Цените свое время</p>
-            <a href="#" class="button">Заказать выезд на дом</a>
-          </div>
-        </div> <!-- .swiper-slide -->
+      <!-- Swiper -->
+      <div class="swiper top-slider__swiper">
 
-        <div class="swiper-slide">
-          <div class="first-slider__photo">
-            <img src="img/first-slider/1.jpg" alt="фото слайдера" width="752" height="488" loading="lazy">
-          </div>
-          <div class="first-slider__details">
-            <h3 class="first-slider__name">Выезд специалиста на дом</h3>
-            <p class="first-slider__text">Цените свое время</p>
-            <a href="#" class="button">Заказать выезд на дом</a>
-          </div>
-        </div> <!-- .swiper-slide -->
+        <div class="swiper-wrapper">
+          <!-- slider item  -->
+          <div class="swiper-slide top-slider__item">
+            <div class="top-slider__image">
+              <img src="./img/top-slider/1.jpg" alt="фото" width="752" height="448">
 
-        <div class="swiper-slide">
-          <div class="first-slider__photo">
-            <img src="img/first-slider/1.jpg" alt="фото слайдера" width="752" height="488" loading="lazy">
+            </div>
+            <div class="top-slider__item-details">
+              <h3 class="top-slider__title">Выезд специалиста на дом</h3>
+              <p class="top-slider__subtitle">Цените свое время</p>
+              <a href="" class="top-slider__button button">Заказать выезд на дом</a>
+            </div>
           </div>
-          <div class="first-slider__details">
-            <h3 class="first-slider__name">Выезд специалиста на дом</h3>
-            <p class="first-slider__text">Цените свое время</p>
-            <a href="#" class="button">Заказать выезд на дом</a>
+
+          <!-- slider item  -->
+          <div class="swiper-slide top-slider__item">
+            <div class="top-slider__image">
+              <img src="/img/top-slider/1.jpg" alt="фото" width="752" height="448">
+            </div>
+            <div class="top-slider__item-details">
+              <h3 class="top-slider__title">Выезд специалиста на дом</h3>
+              <p class="top-slider__subtitle">Цените свое время</p>
+              <a href="" class="top-slider__button button">Заказать выезд на дом</a>
+            </div>
           </div>
-        </div> <!-- .swiper-slide -->
 
-      </div>
+          <!-- slider item  -->
+          <div class="swiper-slide top-slider__item">
+            <div class="top-slider__image">
+              <img src="/img/top-slider/1.jpg" alt="фото" width="752" height="448">
+            </div>
+            <div class="top-slider__item-details">
+              <h3 class="top-slider__title">Выезд специалиста на дом</h3>
+              <p class="top-slider__subtitle">Цените свое время</p>
+              <a href="" class="top-slider__button button">Заказать выезд на дом</a>
+            </div>
+          </div>
 
-      <div class="first-slider__navigation">
-        <!-- пагинация  -->
-        <div class="first-slider__pagination swiper-pagination"></div>
-        <!-- кнопки слайдера  -->
-        <div class="first-slider__buttons-wrapper">
-          <button class="slider-button swiper-button-prev" type="button"></button>
-          <button class="slider-button slider-button--next swiper-button-next" type="button"></button>
         </div>
+
+      </div> <!-- .topSwiper  -->
+      <div class="top-slider__navigation">
+        <div class="swiper-pagination top-slider__pagination"></div>
+
+        <div class="slider-buttons-wrapper">
+          <button class="swiper-button-prev top-slider__button-prev button-slider" type="button">
+            <svg class="button-slider__icon" width="14" height="24"  xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 1 2 12l11 11" stroke-linecap="round" /></svg>
+          </button>
+          <button class="swiper-button-next top-slider__button-next button-slider" type="button">
+            <svg class="button-slider__icon" width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m1 1 11 11L1 23" stroke-linecap="round" /></svg>
+          </button>
+        </div>
+
       </div>
 
-    </div><!-- .first-slider -->
+    </div> <!-- .top-slider__wrapper -->
 
   </div><!-- .wrapper -->
 </section>

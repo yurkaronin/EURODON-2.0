@@ -1,0 +1,28 @@
+.button-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px;
+  background-color: $base-bg;
+  border: 1px solid $border-2;
+  border-radius: 4px;
+  cursor: pointer;
+  position: initial;
+  margin: 0;
+
+  &::after {
+    display: none !important;
+  }
+
+}
+
+.button-slider__icon {
+  width: 15px;
+  height: 25px;
+  pointer-events: none;
+  position: absolute;
+  stroke: $brand-3;
+  stroke-width: 2;
+  fill: none;
+
+}
