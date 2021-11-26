@@ -172,3 +172,24 @@ if (directionsSwiper) {
     },
   });
 }
+
+// слайдер специалистов
+const doctorsSwiper = document.querySelector('.doctors-slider__swiper');
+if (directionsSwiper) {
+var swiper = new Swiper(".doctors-slider__swiper", {
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  spaceBetween: 34,
+  loop: true,
+  loopedSlides: 2,
+  loopAdditionalSlides: 2,
+  navigation: {
+      nextEl: ".doctors-slider__button-next",
+      prevEl: ".doctors-slider__button-prev"
+    },
+    pagination: {
+      el: ".doctors-slider__pagination",
+      clickable: true,
+    },
+});
+}

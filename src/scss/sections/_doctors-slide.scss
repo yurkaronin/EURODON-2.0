@@ -1,0 +1,164 @@
+.doctors-slider {
+  margin-bottom: 50px;
+  padding: 48px 0 32px;
+
+  .slider-buttons-wrapper {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    min-width: 1px;
+    align-items: center;
+  }
+
+  &__slider {
+    flex-grow: 1;
+    min-width: 1px;
+
+  }
+
+  .button-slider {
+    min-width: 96px;
+  }
+
+  .swiper-slide {
+    max-width: 736px;
+  }
+}
+
+.doctors-slider__wrapper {
+  align-items: center;
+}
+
+.doctors-slider__item {
+  color: #334257;
+  max-width: 736px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0) scale(0.7);
+}
+
+.doctors-slider__photo {
+  height: auto;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 2;
+  transform: translateX(50%);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.doctors-slider__info {
+  padding: 47px 48px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+
+.doctors-slider__name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #334257;
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.doctors-slider__specialty {
+  font-size: 16px;
+  line-height: 24px;
+  color: #788aa6;
+  display: block;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.doctors-slider__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #334257;
+  display: block;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.doctors-slider__button-sign-up {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 11px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 16px;
+  max-width: max-content;
+}
+
+.doctors-slider__button-working-hours {
+  margin: 0;
+}
+
+.swiper-slide-prev .doctors-slider__item {
+  transform: translateX(115px) scale(0.7);
+
+  .doctors-slider__photo {
+    transform: translateX(100%);
+  }
+
+  .doctors-slider__info {
+    transform: translateX(0);
+  }
+}
+
+.swiper-slide-next .doctors-slider__item {
+  transform: translateX(-115px) scale(0.7);
+
+  .doctors-slider__photo {
+    transform: translateX(0);
+  }
+
+  .doctors-slider__info {
+    transform: translateX(-100%);
+  }
+}
+
+.swiper-slide-active {
+  .doctors-slider__item {
+    transform: translateX(0) scale(1);
+  }
+
+  .doctors-slider__photo,
+  .doctors-slider__info {
+    transition-delay: 0.2s;
+    transform: translateX(0);
+  }
+
+  .doctors-slider__photo {
+    img {
+      border-radius: 0;
+    }
+  }
+}
