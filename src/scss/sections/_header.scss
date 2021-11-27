@@ -79,6 +79,7 @@
 
   @media (max-width: 850px) {
     grid-template-columns: auto auto;
+    padding: 0 !important;
   }
 
   &::after {
@@ -130,7 +131,8 @@
   }
 
   @media (max-width: 850px) {
-    margin-left: 15px;
+    margin-left: 0;
+    padding-left: 15px;
   }
 
   img {
@@ -155,6 +157,8 @@
   @media (max-width: 850px) {
     padding-left: 15px;
     padding-right: 15px;
+    max-width: 100%;
+    width: 100%;
   }
 
   &::after {
