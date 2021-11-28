@@ -1,0 +1,29 @@
+.input-search {
+  max-width: 705px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.input-search__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.input-search__area {
+  flex-grow: 1;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  margin-right: -2px;
+}
+
+.input-search__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  text-align: center;
+  padding: 17px 45px;
+}

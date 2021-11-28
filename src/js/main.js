@@ -175,7 +175,7 @@ if (directionsSwiper) {
 
 // слайдер специалистов
 const doctorsSwiper = document.querySelector('.doctors-slider__swiper');
-if (directionsSwiper) {
+if (doctorsSwiper) {
 var swiper = new Swiper(".doctors-slider__swiper", {
   breakpoints: {
     230: {

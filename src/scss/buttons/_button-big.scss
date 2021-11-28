@@ -1,0 +1,28 @@
+.button-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px 11px;
+  background: $brand-1;
+  border: 1px solid $brand-1;
+  font-family: 'Open Sans',
+  sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-bg;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: .15s linear;
+  cursor: pointer;
+
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 25px;
+
+  &:hover {
+    background: $brand-3;
+    border-color: $brand-3;
+  }
+}
