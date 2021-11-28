@@ -177,9 +177,22 @@ if (directionsSwiper) {
 const doctorsSwiper = document.querySelector('.doctors-slider__swiper');
 if (directionsSwiper) {
 var swiper = new Swiper(".doctors-slider__swiper", {
-  slidesPerView: 'auto',
+  breakpoints: {
+    230: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+    },
+    950: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+      centeredSlides: false,
+    },
+    1250: {
+      slidesPerView: 'auto',
+      spaceBetween: 34,
+    }
+  },
   centeredSlides: true,
-  spaceBetween: 34,
   loop: true,
   loopedSlides: 2,
   loopAdditionalSlides: 2,
