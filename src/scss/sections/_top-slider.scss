@@ -32,7 +32,13 @@
   align-items: stretch;
 
   @media (max-width: 1450px) {
-    grid-template-columns: auto 450px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 950px) {
+    align-items: stretch;
   }
 
   @media (max-width: 850px) {
@@ -121,7 +127,9 @@
   right: 0;
 
   @media (max-width: 1450px) {
-    max-width: 450px;
+    // width: calc((100% / 2) - 32px);
+    max-width: calc(50% - 16px);
+    width: 100%;
   }
   @media (max-width: 850px) {
     max-width: initial;
@@ -148,10 +156,13 @@
   margin-bottom: 155px;
 
   @media (max-width: 1450px) {
-    margin-bottom: 130px;
+    margin-bottom: 20%;
+  }
+  @media (max-width: 950px) {
+    margin-bottom: 30%;
   }
   @media (max-width: 850px) {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
   }
   @media (max-width: 450px) {
     max-width: 100%;
