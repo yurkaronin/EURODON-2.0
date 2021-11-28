@@ -27,7 +27,7 @@
 .top-slider__item {
   display: grid;
   gap: 32px;
-  grid-template-columns: auto 610px;
+  grid-template-columns: auto 600px;
   justify-content: space-between;
   align-items: stretch;
 
@@ -59,7 +59,7 @@
 }
 
 .top-slider__item-details {
-  margin-top: 95px;
+  margin-top: 75px;
 
   @media (max-width: 1450px) {
     margin-top: 0;
