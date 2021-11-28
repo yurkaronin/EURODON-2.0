@@ -1,6 +1,10 @@
 .services-group-slider {
   padding: 0 0 70px;
 
+  @media (max-width: 650px) {
+    padding-bottom: 30px;
+  }
+
   .slider-buttons-wrapper {
     width: 100%;
     max-width: 100%;
@@ -25,7 +29,10 @@
 
   @media (max-width: 920px) {
     padding: 0;
-    // padding-bottom: 50px;
+  }
+
+  @media (max-width: 650px) {
+    padding-bottom: 50px;
   }
 
 }
