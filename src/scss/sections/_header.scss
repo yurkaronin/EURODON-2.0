@@ -33,11 +33,13 @@
   .mobile-main-nav.active {
     display: block;
     grid-column: 1/-1;
+    height: 100vh;
+    overflow: auto;
 
-    .main-nav-mobile {
+    /* .main-nav-mobile {
       height: 100vh;
       overflow: auto;
-    }
+    } */
 
     .wrapper {
       padding: 0;
