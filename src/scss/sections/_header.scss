@@ -124,6 +124,7 @@
   margin: auto;
   margin-left: 0;
   grid-row: 1/10;
+  transition: all 0.3s;
 
   @media (max-width: 1024px) {
     grid-row: 2;
@@ -147,6 +148,8 @@
   border-bottom: 1px solid $border;
   border-left: 1px solid $border;
   position: relative;
+  transition: all 0.3s;
+  opacity: 1;
 
   @media (max-width: 1024px) {
     grid-column: 1/-1;
@@ -276,7 +279,11 @@
   }
 
   .header__top {
-    display: none;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
   }
 
   .header__bottom {
