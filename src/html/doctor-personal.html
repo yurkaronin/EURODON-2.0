@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./libs/choices.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>Светлана Александровна Фролова</title>
+
+</head>
+
+<body class="body">
+  @@include('sections/header.html')
+  <main>
+    <section class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="">Врачи</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Светлана Александровна Фролова</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="person-card">
+      <div class="wrapper">
+
+        <div class="person-card__top">
+          <img class="person-card__photo" src="img/person-card/1.jpg" alt="фото">
+          <div class="person-card__details">
+            <h4 class="person-card__name">Светлана Александровна Фролова</h4>
+            <p class="person-card__profile">Аллерголог-иммунолог</p>
+            <p class="person-card__experience">Стаж: 19 лет</p>
+            <p class="person-card__text">Кандидат медицинских наук, врач высшей квалификационной категории</p>
+            <table class="person-card__price">
+              <tr class="person-card__price-name">
+                <td>Первичная консультация:</td>
+                <td>Повторная консультация:</td>
+              </tr>
+              <tr class="person-card__sum">
+                <td>1 500 ₽</td>
+                <td>1 000 ₽</td>
+
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="person-card__timetable">
+          <h2 class="person-card__title">Расписание</h2>
+          <p class="person-card__adress">г. Ростов-на-Дону, ул. Социалистическая, 208</p>
+          <ul class="person-card__date-list">
+            <li>ПН. 16.30-20.00</li>
+            <li>ПТ. 8.00-14.00</li>
+          </ul>
+        </div>
+
+        <div class="person-card__timetable">
+          <p class="person-card__adress">г. Ростов-на-Дону, ул. Вавилова, 57</p>
+          <ul class="person-card__date-list">
+            <li>ПН. 16.30-20.00</li>
+            <li>ВТ. 8.00-14.00</li>
+            <li>СР. 16.30-20.00</li>
+            <li>ЧТ. 8.00-14.00</li>
+            <li>ПТ. 8.00-14.00</li>
+          </ul>
+        </div>
+
+        <a href="" class="button-big">Записаться на прием</a>
+
+      </div>
+    </div> <!-- .person-card -->
+
+
+    <div class="decorate">
+      <div class="person-card__detailed">
+        <div class="wrapper">
+          <h4 class="person-card__title">Образование</h4>
+          <ul>
+            <li>Кубанский медицинский институт им. Красной Армии, 1989 г., Квалификация Врач педиатр по специальности
+              "Педиатрия"</li>
+            <li>Интернатура по специальности Офтальмология, 1990 г.</li>
+          </ul>
+
+          <h4 class="person-card__title">Дополнительное образование</h4>
+          <p class="person-card__text">ФГБОУ ВО КубГМУ Минздава России, повышение квалификации по программе
+            Офтальмология, 144 ч., 2016 г.
+            Повышение квалификации в ООО Современный Инновационный Университет по программе Экспертиза временной
+            нетрудоспособности, 72 час., 2021 г.</p>
+
+          <h4 class="person-card__title">Направления работы</h4>
+          <ul>
+            <li>Исследование современных методик и медикаментов.</li>
+            <li>Врожденная и рефракционная патология.</li>
+          </ul>
+        </div>
+      </div>
+
+      @@include('sections/main-reviews.html')
+
+    </div> <!-- .decorate -->
+
+  </main>
+  @@include('sections/footer.html')
+
+</body>
+
+</html>

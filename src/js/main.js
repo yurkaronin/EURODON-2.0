@@ -207,6 +207,28 @@ var swiper = new Swiper(".doctors-slider__swiper", {
 });
 }
 
+// Слайдер с текстовыми отзывами
+const reviewsSwiper = document.querySelector('.reviews-swiper');
+if (reviewsSwiper) {
+  var swiper3 = new Swiper(".reviews-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoHeight: true,
+    loop: true,
+    navigation: {
+      nextEl: ".reviews-slider__button-next",
+      prevEl: ".reviews-slider__button-prev",
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".reviews-slider__pagination",
+      clickable: true,
+    },
+  });
+}
+
 // Кастомный select
 const elements = document.querySelectorAll('.custom-select__list');
 

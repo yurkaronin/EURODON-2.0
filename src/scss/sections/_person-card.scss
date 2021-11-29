@@ -1,0 +1,215 @@
+.person-card {
+  padding-bottom: 80px;
+  .wrapper {
+    max-width: 992px;
+  }
+
+  .button-big {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+}
+
+
+
+.person-card__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+   grid-template-columns: 1fr;
+   max-width: 500px;
+   margin: 0 auto;
+  }
+
+}
+
+.person-card__photo {
+  max-width: 480px;
+  display: block;
+
+  @media (max-width: 1024px) {
+    max-width: 100%;
+
+  }
+}
+
+.person-card__name {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  color: #334257;
+  margin-bottom: 15px;
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+  }
+}
+
+.person-card__profile {
+  font-family: 'Montserrat',
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #788AA6;
+  display: block;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.person-card__experience {
+  font-family: 'Montserrat',
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #788AA6;
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.person-card__text {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #334257;
+  margin-bottom: 30px;
+}
+
+
+.person-card__price-name  td {
+  font-family: 'Open Sans',
+    sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7895A6;
+
+  &:first-child {
+    padding-right: 30px;
+  }
+
+}
+
+.person-card__sum  td {
+  font-family: 'Montserrat',
+    sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #334257;
+
+  &:first-child {
+    padding-right: 30px;
+  }
+}
+
+.person-card__timetable {
+  border-bottom: 1px solid #E8EAED;
+  padding: 32px 0;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.person-card__title {
+  font-family: 'Montserrat',
+    sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #334257;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.person-card__adress {
+  font-family: 'Montserrat',
+    sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #334257;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.person-card__date-list {
+  display: flex;
+  gap: 16px;
+  @include custList;
+  flex-wrap: wrap;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 11px;
+    color: #0098D0;
+    border: 1px solid rgba(0, 87, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    font-family: 'Open Sans',
+      sans-serif;
+      max-width: 122px;
+      width: 100%;
+  }
+
+}
+
+.person-card__detailed {
+  padding: 65px 0 70px;
+  .wrapper {
+    max-width: 992px;
+  }
+
+  ul {
+    @include custList;
+    margin-bottom: 50px;
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 2px;
+      background-color: #0098D0;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+
+
+.person-card__title {}
+
+.person-card__text {}
