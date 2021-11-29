@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./libs/choices.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <title>Филиал клиники на Петренко</title>
+
+
+</head>
+
+<body class="body">
+  @@include('sections/header.html')
+  <main>
+    <section class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="page-home.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="page-all-filials.html">Филиалы клиники</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Клиника на Петренко</a>
+          </li>
+        </ul>
+        <div class="title-wrapper">
+          <h1 class="page-title title">Клиника на Петренко</h1>
+          <a href="#" class="button">Записаться на прием</a>
+        </div>
+
+      </div>
+    </section>
+    <section class="map-location">
+      <div class="wrapper">
+
+        <ul class="map-location__list">
+
+          <li class="map-location__item">
+            <span class="map-location__name">Клиника на Петренко</span>
+            <div class="map-location__buttons buttons-wrapper">
+              <a class="buttons-wrapper__item button" href="">Записаться на прием</a>
+              <a class="buttons-wrapper__item button-plus" href="">
+                <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 0h2v16H7z" />
+                  <path d="M16 7v2H0V7z" />
+                </svg>
+                Подробнее</a>
+            </div>
+          </li>
+
+          <li class="map-location__item ">
+            <img class="map-location__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32" height="32">
+
+            <div class="map-location__text">
+              <p>Ростов-на-Дону, ул. Петренко, 16</p>
+              <ul>
+                <li><a href="tel:89286221025">8 928 622-10-25</a></li>
+                <li><a href="tel:89286221025">8 928 622-10-25</a></li>
+              </ul>
+              <a href="mailto:eldrostov@mail.ru">eldrostov@mail.ru</a>
+            </div>
+          </li>
+
+          <li class="map-location__item">
+            <img class="map-location__icon" src="img/icons/icon-clock.svg" alt="иконка геометки" width="32" height="32">
+
+            <div class="map-location__text">
+              <ul>
+                <li>Понедельник — Пятница 08:00 — 20:00</li>
+                <li>Суббота 08:00 — 12:00</li>
+                <li>Воскресенье Выходной</li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="map-location__area">
+          <img src="img/map/1.jpg" alt="карта" width="1504" height="360">
+        </div>
+
+      </div>
+    </section>
+
+
+    <div class="decorate">
+      @@include('sections/doctors-slider.html')
+      @@include('sections/main-tour.html')
+    </div>
+<div class="decorate">
+  @@include('sections/main-information.html')
+</div>
+
+  </main>
+  @@include('sections/footer.html')
+
+</body>
+
+</html>
