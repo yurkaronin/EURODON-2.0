@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./libs/choices.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Врачам</title>
+
+</head>
+
+<body class="body">
+  @@include('sections/header.html')
+  <main>
+    <section class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="page-home.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Врачам</a>
+          </li>
+        </ul>
+
+        <h1 class="page-title title">Врачам</h1>
+       <div class="special-card-list">
+         <ul class="all-services__list all-services__list--mod">
+
+           <li class="all-services__item">
+             <a href="#" class="all-services__link">
+               <img src="img/for-doctors/1.svg" alt="иконка услуги" class="all-services__icon" width="80" height="80">
+               <h3 class="all-services__item-name">Анкета соискателя</h3>
+             </a>
+           </li>
+           <li class="all-services__item">
+             <a href="#" class="all-services__link">
+               <img src="img/for-doctors/2.svg" alt="иконка услуги" class="all-services__icon" width="80" height="80">
+               <h3 class="all-services__item-name">Форма отправки исследований</h3>
+             </a>
+           </li>
+
+
+         </ul>
+       </div>
+
+      </div>
+    </section>
+
+    <div class="decorate">
+      <section class="download">
+        <div class="wrapper">
+          <h2 class="download__title">Документы для скачивания</h2>
+
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link" href="">
+              <img class="download__icon" src="img/download/1.svg" alt="PDF">
+              <span>Бланки направлений на лабораторные исследования
+                <small>1,2 мб, pdf</small></span>
+              </a></li>
+              <li class="download__item">
+                <a class="download__link" href="">
+                  <img class="download__icon" src="img/download/1.svg" alt="PDF">
+                  <span>Бланки Бланки направлений на МРТ, СКТ
+                    <small>1,2 мб, pdf</small></span>
+                </a></li>
+
+          </ul>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  @@include('sections/footer.html')
+
+</body>
+
+</html>

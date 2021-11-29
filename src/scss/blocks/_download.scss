@@ -1,0 +1,59 @@
+.download {
+  padding: 55px 0 45px;
+  .wrapper {
+    max-width: 992px;
+  }
+}
+
+
+
+.download__title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #334257;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.download__list {
+  @include custList;
+}
+
+.download__item {
+  margin-bottom: 25px;
+
+}
+
+.download__link {
+  display: flex;
+  align-items: center;
+}
+
+.download__link  span {
+  font-family: 'Montserrat',
+  sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #0098D0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+
+  small {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #334257;
+    display: block;
+  }
+}
+
+.download__icon {
+  margin-right: 35px;
+}

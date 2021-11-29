@@ -79,3 +79,20 @@
   line-height: 120%;
   color: inherit;
 }
+
+.all-services__list--mod {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: max-content;
+  margin-bottom: 65px;
+  gap: 32px;
+
+  .all-services__item {
+    border: 1px solid #E8EAED;
+    border-radius: 8px;
+    padding: 32px;
+    flex-grow: 1;
+  }
+}
