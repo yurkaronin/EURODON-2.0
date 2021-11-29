@@ -1,0 +1,116 @@
+.filial-card {
+  max-width: 480px;
+  width: 100%;
+  padding: 30px 40px 40px;
+  background: #ffffff;
+  border: 1px solid #e8eaed;
+  border-radius: 8px;
+  position: relative;
+  transition: max-height 0.9s;
+
+  @media (max-width: 1100px) {
+    max-width: 330px;
+    width: 100%;
+    padding: 20px 25px 30px;
+  }
+
+  @media (max-width: 732px) {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 25px 30px;
+    max-height: 70px;
+    overflow: hidden;
+  }
+}
+.filial-card__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #334257;
+  margin: 0;
+  margin-bottom: 23px;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 13px;
+  }
+
+  @media (max-width: 732px) {
+    padding-bottom: 20px;
+  }
+}
+.filial-card__details-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 25px;
+  }
+}
+.filial-card__details-item {
+  margin-bottom: 25px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 15px;
+  }
+}
+.filial-card__details-item svg {
+  position: absolute;
+  left: 0;
+  fill: #C3167C;
+}
+.filial-card__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #788aa6;
+  font-weight: 400;
+}
+.filial-card__telephone {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #334257;
+}
+
+.filial-card__open-button {
+  display: none;
+
+  @media (max-width: 732px) {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    padding: 7px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::after {
+      content: url(../img/icons/plus.svg);
+      width: 16px;
+      height: 16px;
+      display: block;
+    }
+  }
+}
+
+.filial-card.active {
+  max-height: max-content;
+
+  .filial-card__open-button::after {
+    content: url(../img/icons/minus.svg);
+  }
+
+  .filial-card__name {
+    padding-bottom: 0;
+  }
+}

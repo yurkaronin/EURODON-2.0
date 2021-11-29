@@ -1,0 +1,13 @@
+.main-filials {
+}
+
+.main-filials__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
