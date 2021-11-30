@@ -1,7 +1,7 @@
 .send-question {
   padding: 35px 0 37px;
-  background-color: #eef4f7;
-  color: #334257;
+  background-color: $bg-1;
+  color: $base;
   .wrapper {
     display: flex;
     align-items: center;
@@ -33,11 +33,11 @@
   }
 
   .title {
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-1;
     font-weight: 500;
     font-size: 24px;
     line-height: 120%;
-    color: #334257;
+    color: $base;
     margin: 0;
     max-width: 470px;
 
@@ -46,11 +46,11 @@
     }
 
     @media (max-width: 550px) {
-      color: #7895a6;
+      color: $bg-4;
       font-weight: 600;
       font-size: 12px !important;
       line-height: 16px;
-      font-family: "Open Sans", sans-serif;
+      font-family: $font-2;
     }
   }
 

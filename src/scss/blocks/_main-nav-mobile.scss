@@ -2,7 +2,7 @@
   padding: 40px 0;
 
   background-color: $base-bg;
-  color: $base-content;
+  color: $base;
   max-width: 100%;
   border-top: 1px solid $bg-2;
   align-items: flex-start;
@@ -19,7 +19,7 @@
 
 .main-nav-mobile__list {
   @include custList;
-  color: $base-content;
+  color: $base;
 }
 
 .main-nav-mobile__item {
@@ -46,7 +46,7 @@
 .main-nav-mobile__link {
   display: block;
   position: relative;
-  transition: 0.2s linear;
+  transition: $nfs linear;
   font-family: "Montserrat",
     sans-serif;
   font-weight: 700;
@@ -66,12 +66,12 @@
 
 .main-nav-mobile__sublist {
   @include custList;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: $base-content;
+  color: $base;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -83,7 +83,7 @@
     overflow: hidden;
     will-change: opacity,
       max-height;
-    transition: all 0.2s linear;
+    transition: all $nfs linear;
     margin: 0;
     gap: 25px;
   }
@@ -92,7 +92,7 @@
 .toggle-btn.active+.sublist-nav {
   opacity: 1;
   max-height: 100vh;
-  transition: all .2s linear;
+  transition: all $nfs linear;
   will-change: opacity, max-height;
   padding: 17px 0 30px;
   margin-right: 52px;

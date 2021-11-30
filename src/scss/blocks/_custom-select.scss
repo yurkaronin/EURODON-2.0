@@ -11,20 +11,20 @@
   line-height: 100%;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: $base-content;
+  color: $base;
 }
 
 .choices__inner {
   padding: 0;
   border: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-2;
   padding-right: 24px;
   background-color: transparent;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #0098d0;
+  color: $brand-1;
   font-weight: 700;
 }
 
@@ -39,7 +39,7 @@
   background-repeat: no-repeat;
   top: 13px;
   background-position: center;
-  transition: all 0.1s ease;
+  transition: all $nfs ease;
 }
 
 .choices[data-type*="select-one"].is-open::after {

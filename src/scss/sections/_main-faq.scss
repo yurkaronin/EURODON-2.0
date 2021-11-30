@@ -16,7 +16,7 @@
 
 .main-faq__item,
 .main-faq__subitem {
-  border-top: 1px solid #e5eaee;
+  border-top: 1px solid $border-2;
   padding: 30px 24px;
 
   @media (max-width: 920px) {
@@ -28,7 +28,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
-  color: #334257;
+  color: $base;
   margin: 0;
   position: relative;
   width: 100%;
@@ -51,7 +51,7 @@
 
 .main-faq__issue.active,
 .main-faq__issue.active {
-  color: #0098D0;
+  color: $brand-1;
   margin-bottom: 30px;
 
   &::after {
@@ -63,7 +63,7 @@
 .main-faq__answer {
   font-size: 16px;
   line-height: 24px;
-  color: #334257;
+  color: $base;
   height: 0;
   overflow: hidden;
   margin: 0 auto;

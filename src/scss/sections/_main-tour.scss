@@ -16,8 +16,8 @@
 }
 
 .main-tour__left {
-  background: #ffffff;
-  border: 1px solid #e8eaed;
+  background: $base-bg;
+  border: 1px solid $border-2;
   box-sizing: border-box;
   border-radius: 8px 8px 0px 0px;
   overflow: hidden;
@@ -27,8 +27,8 @@
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #7895a6;
-  font-family: "Montserrat", sans-serif;
+  color: $bg-4;
+  font-family: $font-1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,11 +40,6 @@
 }
 
 .main-tour__sidebar {
-  img {
-    /* width: 100%;
-    height: 100%;
-    object-fit: cover; */
-  }
 
   @media (max-width: 780px) {
     max-height: 390px;

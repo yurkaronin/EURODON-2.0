@@ -6,15 +6,14 @@
   background: transparent;
   border: 1px solid $brand-1;
   color: $brand-1;
-  font-family: 'Open Sans',
-    sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   border-radius: 4px;
   text-decoration: none;
-  transition: .15s linear;
+  transition: $nfs linear;
   cursor: pointer;
 
   width: 100%;
@@ -24,6 +23,6 @@
   &:hover {
     background: $brand-3;
     border-color: $brand-3;
-    color: #ffffff;
+    color: $base-bg;
   }
 }

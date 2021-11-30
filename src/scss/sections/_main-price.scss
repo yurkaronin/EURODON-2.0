@@ -19,7 +19,7 @@
 }
 
 .main-price__item {
-  border-top: 1px #ebedef solid;
+  border-top: 1px $border solid;
   padding: 23px 0 15px;
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -38,7 +38,7 @@
   line-height: 100%;
   display: flex;
   align-items: center;
-  color: #334257;
+  color: $base;
   margin: 0;
 }
 
@@ -50,19 +50,19 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #0098D0;
+  color: $brand-1;
   text-decoration: none;
 }
 
 .main-price__cost {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 100%;
   display: flex;
   align-items: center;
-  color: #334257;
+  color: $base;
   text-align: right;
   margin-left: auto;
 

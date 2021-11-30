@@ -26,7 +26,7 @@
     height: 8px;
     right: 7px;
     background-image: url(../img/icons/icon-breadcrumbs-arrow.svg);
-}
+  }
 }
 
 .breadcrumbs__link {
@@ -36,13 +36,13 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 100%;
-  color: #334257;
+  color: $base;
   margin-right: 32px;
 
   &:active,
   &:hover,
   &:focus {
-    color: #0098d0;
+    color: $brand-1;
   }
 }
 
@@ -53,7 +53,7 @@
   &:active,
   &:hover,
   &:focus {
-    color: #334257;
+    color: $base;
   }
 }
 
@@ -66,7 +66,7 @@
   padding-top: 0;
   font-size: 18px;
   line-height: 24px;
-  color: #788aa6;
+  color: $brand-5;
 }
 
 .breadcrumbs__item:last-child::after {

@@ -1,10 +1,10 @@
 .title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  color: $base-content;
+  color: $base;
   margin-top: 0;
 
   @media (max-width: 650px) {

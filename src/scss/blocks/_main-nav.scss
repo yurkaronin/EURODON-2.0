@@ -3,13 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  font-family: 'Open Sans',
-    sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 24px;
-  color: $base-content;
+  color: $base;
 }
 
 .main-nav__item {
@@ -29,11 +28,11 @@
     background-color: $brand-1;
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform 0.2s ease;
+    transition: transform $nfs ease;
   }
 
   &:not([href]) {
-    color: $base-content !important;
+    color: $base !important;
 
     &::before {
       background-color: $brand-4;
@@ -52,7 +51,7 @@
   font-size: inherit;
   line-height: inherit;
   padding: 15px 0;
-  transition: 0.2s linear;
+  transition: $nfs linear;
 
   &:hover {
     color: $brand-1;
@@ -80,7 +79,7 @@
   padding-top: 1rem;
   z-index: 1;
   opacity: 0;
-  transition: transform 0.3s ease,
+  transition: transform $nfs ease,
     opacity 0.18s ease;
   pointer-events: none;
 }
@@ -89,7 +88,7 @@
   color: inherit;
   font-family: inherit;
   text-decoration: none;
-  transition: .15s linear;
+  transition: $nfs linear;
 
   &:hover {
     color: $brand-1;

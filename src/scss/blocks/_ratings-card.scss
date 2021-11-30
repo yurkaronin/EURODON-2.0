@@ -1,9 +1,9 @@
 .ratings-card {
   display: block;
   padding: 21px 32px;
-  color: #334257;
-  background: #f8fafc;
-  border: 1px solid #e8eaed;
+  color: $base;
+  background: $brand-6;
+  border: 1px solid $border-2;
   border-radius: 8px;
   text-decoration: none;
 
@@ -37,7 +37,7 @@
   font-size: 40px;
   line-height: 54px;
   letter-spacing: -0.02em;
-  color: #334257;
+  color: $base;
   display: block;
 
   @media (max-width: 1380px) {

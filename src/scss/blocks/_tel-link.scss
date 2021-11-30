@@ -1,13 +1,12 @@
 .tel-link {
-   font-family: 'Montserrat',
-   sans-serif;
+   font-family: $font-1;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: $base-content;
+  color: $base;
   text-decoration: none;
   display: flex;
-  transition: .15s linear;
+  transition: $nfs linear;
 
   &:hover {
     color: $brand-1;

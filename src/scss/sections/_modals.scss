@@ -9,7 +9,7 @@
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s ease-in-out;
+  transition: all $nfs ease-in-out;
   z-index: 999;
   overflow-y: auto;
   text-align: center;
@@ -63,7 +63,7 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  color: $base-content;
+  color: $base;
   margin-top: 0;
 } */
 
@@ -96,7 +96,7 @@
 .modal-overlay--visible {
   opacity: 1;
   visibility: visible;
-  transition: all 0.3s ease-in-out;
+  transition: all $nfs ease-in-out;
 }
 
 .modal--visible {
@@ -139,10 +139,6 @@
   pointer-events: none;
 }
 
-.modal .custom-form__item-wrapper {
-  border: 1px solid #ccd9de;
-}
-
 .modal__subtitle {
-  color: $base-content;
+  color: $base;
 }

@@ -46,32 +46,19 @@
 }
 
 .doctors-slider__item {
-  color: #334257;
+  color: $base;
   max-width: 736px;
   border-radius: 8px;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  transition: all 0.3s ease-in-out;
+  transition: all $nfs ease-in-out;
   transform: translateX(0) scale(0.6);
-
-  @media (max-width: 1250px) {
-    transform: none;
-    // grid-template-columns: auto;
-  }
-
-  @media (max-width: 850px) {
-    // grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 690px) {
-    // grid-template-columns: auto;
-  }
 }
 
 .doctors-slider__photo {
   height: auto;
-  transition: all 0.3s ease-in-out;
+  transition: all $nfs ease-in-out;
   position: relative;
   z-index: 2;
   transform: translateX(50%);
@@ -86,7 +73,7 @@
     object-fit: cover;
     display: block;
     border-radius: 8px;
-    transition: all 0.3s ease-in-out;
+    transition: all $nfs ease-in-out;
 
     @media (max-width: 1250px) {
       border-radius: 0;
@@ -96,10 +83,10 @@
 
 .doctors-slider__info {
   padding: 47px 48px;
-  transition: all 0.3s ease-in-out;
+  transition: all $nfs ease-in-out;
   position: relative;
   z-index: 1;
-  background-color: #fff;
+  background-color: $base-bg;
   transform: translateX(-50%);
 
   @media (max-width: 1250px) {
@@ -111,27 +98,27 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 133%;
-  color: #334257;
+  color: $base;
   margin: 0;
   margin-bottom: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-1;
 }
 
 .doctors-slider__specialty {
   font-size: 16px;
   line-height: 24px;
-  color: #788aa6;
+  color: $brand-5;
   display: block;
   margin: 0;
   margin-bottom: 12px;
 }
 
 .doctors-slider__description {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-2;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #334257;
+  color: $base;
   display: block;
   margin: 0;
   margin-bottom: 29px;
@@ -143,7 +130,7 @@
   line-height: 16px;
   margin-bottom: 11px;
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-2;
   padding: 10px 16px;
   max-width: max-content;
 }

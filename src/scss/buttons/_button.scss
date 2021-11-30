@@ -5,7 +5,7 @@
   padding: 10px 16px 11px;
   background: $brand-1;
   border: 1px solid $brand-1;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -14,7 +14,7 @@
   border-radius: 4px;
   max-width: max-content;
   text-decoration: none;
-  transition: .15s linear;
+  transition: $nfs linear;
   cursor: pointer;
 
   &:hover {
@@ -29,8 +29,7 @@
   align-items: center;
   padding: 10px 16px 11px;
   background: transparent;
-  font-family: 'Open Sans',
-    sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -40,7 +39,7 @@
   max-width: max-content;
   text-decoration: none;
   border: 1px solid $brand-2;
-  transition: .15s linear;
+  transition: $nfs linear;
   cursor: pointer;
 
   &:hover {

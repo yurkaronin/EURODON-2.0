@@ -28,7 +28,7 @@
 }
 
 .all-services__item {
-  border-top: 1px solid #e5eaee;
+  border-top: 1px solid $border-2;
   padding-top: 31px;
   padding-bottom: 32px;
 
@@ -36,17 +36,16 @@
 
 .all-services__link {
   text-decoration: none;
-  color: inherit;
   font-family: inherit;
   display: flex;
   align-items: center;
   gap: 32px;
-  color: #334257;
+  color: $base;
 
   &:active,
   &:hover,
   &:focus {
-    color: #0098d0 !important;
+    color: $brand-1 !important;
   }
 }
 
@@ -90,7 +89,7 @@
   gap: 32px;
 
   .all-services__item {
-    border: 1px solid #E8EAED;
+    border: 1px solid $border-2;
     border-radius: 8px;
     padding: 32px;
     flex-grow: 1;

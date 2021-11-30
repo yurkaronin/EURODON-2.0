@@ -2,8 +2,8 @@
   max-width: 480px;
   width: 100%;
   padding: 30px 40px 40px;
-  background: #ffffff;
-  border: 1px solid #e8eaed;
+  background: $base-bg;
+  border: 1px solid $border-2;
   border-radius: 8px;
   position: relative;
   transition: max-height 0.9s;
@@ -23,11 +23,11 @@
   }
 }
 .filial-card__name {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-1;
   font-weight: 500;
   font-size: 24px;
   line-height: 133%;
-  color: #334257;
+  color: $base;
   margin: 0;
   margin-bottom: 23px;
 
@@ -63,20 +63,20 @@
 .filial-card__details-item svg {
   position: absolute;
   left: 0;
-  fill: #C3167C;
+  fill: $brand-4;
 }
 .filial-card__text {
   margin: 0;
   font-size: 16px;
   line-height: 24px;
-  color: #788aa6;
+  color: $brand-5;
   font-weight: 400;
 }
 .filial-card__telephone {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #334257;
+  color: $base;
 }
 
 .filial-card__open-button {

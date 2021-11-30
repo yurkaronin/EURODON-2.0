@@ -1,50 +1,42 @@
 .button-arrow {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 10px 16px 11px;
   background: $brand-1;
   border: 1px solid $brand-1;
-  font-family: 'Open Sans',
-    sans-serif;
-  color: $base-bg;
-  border-radius: 4px;
-  max-width: max-content;
+  font-family: $font-2;
   text-decoration: none;
-  transition: .15s linear;
+  transition: $nfs linear;
   cursor: pointer;
   background: transparent;
-  color: #0098d0;
+  color: $brand-1;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 152, 208, 0.5);
+  background-color: $base-bg;
   border-radius: 4px;
   padding: 10px 16px 11px 42px;
   max-width: max-content;
   width: initial;
   justify-content: space-between;
   position: relative;
-  transition: 0.2s linear;
 
 
   svg {
     position: absolute;
     left: 10px;
-    stroke: #0098D0;
+    stroke: $brand-1;
 
   }
 
   &:hover {
     background: $brand-3;
     border-color: $brand-3;
-    color: #ffffff;
+    color: $base-bg;
 
     svg {
       position: absolute;
       left: 10px;
-      stroke: #ffffff;
+      stroke: $base-bg;
     }
   }
 }

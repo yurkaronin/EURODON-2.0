@@ -4,19 +4,18 @@
   gap: 24px;
   flex-wrap: wrap;
 
-  font-family: 'Open Sans',
-    sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: $base-content;
+  color: $base;
 
   a {
     color: inherit;
     font-family: inherit;
     text-decoration: none;
-    transition: .15s linear;
+    transition: $nfs linear;
 
     &:hover {
       color: $brand-1;

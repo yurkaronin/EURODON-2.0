@@ -11,7 +11,7 @@
 
 .custom-form__item-wrapper {
   position: relative;
-  background-color: #ffffff;
+  background-color: $base-bg;
   width: calc((100% / 2) - 32px);
   margin: 0;
   padding: 22px 15px 6px;
@@ -24,7 +24,7 @@
 }
 
 .custom-form__label {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -36,12 +36,12 @@
 
 .custom-form__input {
   background-color: transparent;
-  font-family: "Roboto", sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  color: #5d5f5f;
+  color: $base;
   max-width: 100%;
   margin: 0;
   top: 0;
@@ -53,17 +53,8 @@
   padding: 10px 16px 0;
   border: none;
   border-top: 4px solid transparent;
-  transition: 0.3s;
+  transition: $nfs;
 }
-
-/* .custom-form__input:active,
-.custom-form__input:hover {
-  border-top-color: #ffb734;
-}
-
-.custom-form__input:focus {
-  border-top-color: #00435b;
-} */
 
 .custom-form__item-wrapper .custom-form__input,
 .custom-form__item-wrapper .custom-form__label {
@@ -109,4 +100,3 @@
   display: flex;
   align-items: center;
 }
-

@@ -16,11 +16,11 @@
   }
 
   h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: $font-1;
     font-weight: 500;
     font-size: 24px;
     line-height: 133%;
-    color: #334257;
+    color: $base;
   }
 }
 
@@ -31,12 +31,12 @@
 }
 
 .lead {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
-  color: #7895a6;
+  color: $bg-4;
   margin-top: 0;
 }
 
@@ -45,11 +45,11 @@
 }
 
 .page-content h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-1;
   font-weight: 500;
   font-size: 24px;
   line-height: 133%;
-  color: #334257;
+  color: $base;
 }
 
 .page-content ul {
@@ -69,7 +69,7 @@
   li:before {
     width: 16px;
     height: 2px;
-    background: #0098d0;
+    background: $brand-1;
     content: "";
     display: block;
     position: absolute;

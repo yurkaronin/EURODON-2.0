@@ -1,20 +1,10 @@
-.footer {}
+.footer {
 
-.send-question {}
+  .main-nav-mobile__link:hover {
+    color: $brand-1;
+  }
+}
 
-.wrapper {}
-
-.send-question__left {}
-
-.title {}
-
-.tel-link {}
-
-.buttons-list {}
-
-.button {}
-
-.button-transparent {}
 
 .footer__main-menu {
 
@@ -120,7 +110,7 @@
 
   p {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $font-2;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;

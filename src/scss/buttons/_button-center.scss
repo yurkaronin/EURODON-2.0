@@ -1,20 +1,14 @@
 .button-center {
-  display: flex;
-  justify-content: center;
+
   align-items: center;
-  padding: 10px 16px 11px;
   background: $brand-1;
   border: 1px solid $brand-1;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
   color: $base-bg;
   border-radius: 4px;
-  max-width: max-content;
   text-decoration: none;
-  transition: .15s linear;
   cursor: pointer;
   margin: 0 auto;
   max-width: 480px;
@@ -26,7 +20,7 @@
   display: flex;
   justify-content: center;
   margin-top: 43px;
-  transition: 0.2s linear;
+  transition: $nfs linear;
 
   &:hover {
     background: $brand-3;

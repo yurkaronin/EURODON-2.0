@@ -95,13 +95,12 @@
 }
 
 .top-slider__title {
-  font-family: 'Montserrat',
-    sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 120%;
-  color: $base-content;
+  color: $base;
   max-width: 480px;
   margin: 0;
   margin-bottom: 35px;
@@ -122,7 +121,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
-  color: #788AA6;
+  color: $brand-5;
   display: block;
   margin: 0;
   margin-bottom: 45px;

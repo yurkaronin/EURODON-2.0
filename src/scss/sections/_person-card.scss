@@ -40,12 +40,12 @@
 
 .person-card__name {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
   line-height: 120%;
-  color: #334257;
+  color: $base;
   margin-bottom: 15px;
 
   @media (max-width: 1024px) {
@@ -54,26 +54,24 @@
 }
 
 .person-card__profile {
-  font-family: 'Montserrat',
-    sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
-  color: #788AA6;
+  color: $brand-5;
   display: block;
   margin: 0;
   margin-bottom: 5px;
 }
 
 .person-card__experience {
-  font-family: 'Montserrat',
-    sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
-  color: #788AA6;
+  color: $brand-5;
   display: block;
   margin: 0;
   margin-bottom: 20px;
@@ -81,24 +79,23 @@
 
 .person-card__text {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #334257;
+  color: $base;
   margin-bottom: 30px;
 }
 
 
 .person-card__price-name  td {
-  font-family: 'Open Sans',
-    sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
-  color: #7895A6;
+  color: $bg-4;
 
   &:first-child {
     padding-right: 30px;
@@ -107,13 +104,12 @@
 }
 
 .person-card__sum  td {
-  font-family: 'Montserrat',
-    sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 39px;
-  color: #334257;
+  color: $base;
 
   &:first-child {
     padding-right: 30px;
@@ -121,7 +117,7 @@
 }
 
 .person-card__timetable {
-  border-bottom: 1px solid #E8EAED;
+  border-bottom: 1px solid $border-2;
   padding: 32px 0;
 
   &:last-child {
@@ -130,23 +126,21 @@
 }
 
 .person-card__title {
-  font-family: 'Montserrat',
-    sans-serif;
+  font-family: $font-1;
   font-weight: 500;
   font-size: 32px;
   line-height: 40px;
-  color: #334257;
+  color: $base;
   margin: 0;
   margin-bottom: 16px;
 }
 
 .person-card__adress {
-  font-family: 'Montserrat',
-    sans-serif;
+  font-family: $font-1;
   font-weight: 500;
   font-size: 20px;
   line-height: 32px;
-  color: #334257;
+  color: $base;
   margin: 0;
   margin-bottom: 16px;
 }
@@ -162,7 +156,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px 10px 11px;
-    color: #0098D0;
+    color: $brand-1;
     border: 1px solid rgba(0, 87, 255, 0.3);
     box-sizing: border-box;
     border-radius: 4px;
@@ -201,7 +195,7 @@
       display: block;
       width: 16px;
       height: 2px;
-      background-color: #0098D0;
+      background-color: $brand-1;
       position: absolute;
       left: 0;
     }

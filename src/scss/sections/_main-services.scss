@@ -20,8 +20,8 @@
 }
 
 .main-services__link {
-  border-top: 1px solid #e5eaee;
-  border-bottom: 1px solid #e5eaee;
+  border-top: 1px solid $border-2;
+  border-bottom: 1px solid $border-2;
   position: relative;
   z-index: 2;
   width: 100%;
@@ -38,12 +38,12 @@
 }
 
 .main-services__name {
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-2;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 100%;
-  color: #334257;
+  color: $base;
   z-index: 5;
   margin: 0;
 }
@@ -52,7 +52,7 @@
   width: 14px;
   height: 24px;
   z-index: 5;
-  stroke: #303f82;
+  stroke: $brand-3;
   stroke-width: 2;
 
   @media (max-width: 650px) {
@@ -74,7 +74,7 @@
   opacity: 0;
   border-radius: 8px;
   overflow: hidden;
-  transition: all 0.55s;
+  transition: all $nfs;
 
   @media (max-width: 650px) {
     display: none;
@@ -114,18 +114,18 @@
   }
 
   .main-services__name {
-    color: #ffffff;
+    color: $base-bg;
 
     @media (max-width: 650px) {
-      color: #0098D0;
+      color: $brand-1;
     }
   }
 
   .main-services__icon {
-    stroke: #ffffff;
+    stroke: $base-bg;
 
     @media (max-width: 650px) {
-      stroke: #0098D0;
+      stroke: $brand-1;
     }
   }
 }

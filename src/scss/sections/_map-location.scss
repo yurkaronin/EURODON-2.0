@@ -119,7 +119,7 @@
     top: 50px;
     left: 32px;
     fill: $brand-4;
-    transition: 0.2s linear;
+    transition: $nfs linear;
 
     &:hover {
       fill: $brand-1;
@@ -143,12 +143,12 @@
 }
 
 .map-location__name {
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-1;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 133%;
-  color: #334257;
+  color: $base;
   margin: 0;
   margin-bottom: 25px;
   display: block;
@@ -173,7 +173,7 @@
   li {
     font-size: 16px;
     line-height: 24px;
-    color: #788aa6;
+    color: $brand-5;
     margin: 0;
     margin-bottom: 15px;
   }
@@ -192,9 +192,9 @@
   li a {
     font-size: 16px;
     line-height: 24px;
-    color: $base-content;
+    color: $base;
     text-decoration: none;
-    transition: 0.2s linear;
+    transition: $nfs linear;
 
     &:hover {
       color: $brand-4;

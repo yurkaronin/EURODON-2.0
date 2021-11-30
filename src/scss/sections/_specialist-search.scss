@@ -2,11 +2,11 @@
   margin: 30px 0 50px;
 
   .choices__inner {
-    background: #ffffff;
-    border: 1px solid #7895a6;
+    background: $base-bg;
+    border: 1px solid $bg-4;
     box-sizing: border-box;
     border-radius: 4px;
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-2;
     padding: 15px !important;
     padding-right: 47px !important;
   }
@@ -27,15 +27,15 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
-    color: #7895A6;
+    color: $bg-4;
     text-transform: none;
   }
 
   .input-search__area {
-    border: 1px solid #7895A6;
+    border: 1px solid $bg-4;
     font-size: 16px;
     line-height: 100%;
-    color: #7895A6;
+    color: $bg-4;
     padding: 15px 20px;
   }
 
