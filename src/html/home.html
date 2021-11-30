@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  @@include('parts/head-include.html')
+  <title>Главная</title>
+  <meta name="description" content="Главная страница сайта">
+
+</head>
+
+<body>
+  @@include('sections/header.html')
+  <main>
+    @@include('sections/top-slider.html')
+    <div class="decorate">
+      @@include('sections/main-search.html')
+      @@include('sections/main-services.html')
+      @@include('sections/services-group-slider.html')
+    </div>
+    <div class="decorate">
+      @@include('sections/doctors-slider.html')
+      @@include('sections/map-location.html')
+      @@include('sections/main-ratings.html')
+    </div>
+    <div class="decorate">
+      @@include('sections/main-information.html')
+    </div>
+  </main>
+  @@include('sections/footer.html')
+  @@include('parts/footer-include.html')
+</body>
+
+</html>
