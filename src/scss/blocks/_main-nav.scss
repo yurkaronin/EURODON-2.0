@@ -9,6 +9,10 @@
   font-size: 15px;
   line-height: 24px;
   color: $base;
+
+  @media (max-width: 1440px) {
+    gap: 0 13px;
+  }
 }
 
 .main-nav__item {

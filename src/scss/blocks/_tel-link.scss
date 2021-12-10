@@ -8,6 +8,10 @@
   display: flex;
   transition: $nfs linear;
 
+  @media (max-width: 1440px) {
+    font-size: 18px;
+  }
+
   &:hover {
     color: $brand-1;
   }

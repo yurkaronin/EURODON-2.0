@@ -18,21 +18,8 @@
 .hint__item {
   padding: 0 20px;
   position: relative;
-
-  &:focus,
-  &:hover {
-    &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      height: 1px;
-      width: 100%;
-      bottom: -1px;
-      left: 0;
-      background-color: #DCE3E7;
-
-    }
-  }
+  border-bottom: 1px solid transparent;
+  transition: 0.2s linear;
 }
 
 .hint__content {
@@ -45,38 +32,46 @@
   display: block;
   position: relative;
   border-top: 1px solid transparent;
+  transition: 0.2s linear;
 }
 
 .hint__item:hover,
 .hint__item:focus {
   background-color: #EEF4F7;
+  transition: 0.2s linear;
 
 }
 
-.hint__item:not(:first-child) {
+.hint__item {
+  border-top: 1px solid transparent;
+  transition: 0.2s linear;
   .hint__content {
     border-top: 1px solid #DCE3E7;
+
   }
 
 
   &:focus,
   &:hover {
-    border-top: 1px solid #DCE3E7;
+    border-color: #DCE3E7;
 
+    .hint__content {
+      border-color: #EEF4F7;
 
+    }
+
+  }
+}
+
+.hint__item:first-child {
+  border-top: 1px solid transparent;
+  .hint__content {
+    border-top: 1px solid transparent;
   }
 }
 
 .hint__item:last-child {
   border-radius: 0 0 4px 4px;
-
-  &:focus,
-  &:hover {
-    &::after {
-      display: none;
-
-    }
-  }
 
 
 }
@@ -93,4 +88,8 @@ input:focus {
     opacity: 1;
     pointer-events: inherit;
   }
+}
+
+.hint__item:hover+.hint__item .hint__content {
+  border-color: transparent;
 }
