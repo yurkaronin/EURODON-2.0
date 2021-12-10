@@ -305,3 +305,12 @@
   display: block;
   box-shadow: 0 0 10px -3px;
 }
+
+.header {
+  .button-transparent {
+    &:hover {
+      background: #0098d0;
+      border-color: #0098d0;
+    }
+  }
+}

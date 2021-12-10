@@ -28,5 +28,24 @@
   stroke: $brand-3;
   stroke-width: 2;
   fill: none;
+  transition: 0.3s linear;
 
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  transition: 0.3s linear;
+
+  &:hover,
+  &:focus {
+    background-color: #0098d0;
+    opacity: 1;
+  }
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #c3167c;
+  }
 }

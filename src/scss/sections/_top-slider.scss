@@ -181,3 +181,20 @@
   border: none;
 
 }
+
+.top-slider {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+
+    &:hover,
+    &:active,
+    &:focus {
+      .button-slider__icon {
+        stroke: #c3167c;
+      }
+    }
+
+  }
+
+}
