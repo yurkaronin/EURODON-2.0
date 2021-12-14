@@ -102,9 +102,13 @@
   position: relative;
   border-right: 1px solid $border;
 
-  @media (max-width: 1350px) {
-    padding: 30px 21px 35px 31px;
+  @media (max-width: 1440px) {
+    padding: 45px 40px;
   }
+
+  /* @media (max-width: 1350px) {
+    padding: 30px 21px 35px 31px;
+  } */
 
   @media (max-width: 920px) {
     width: 100%;

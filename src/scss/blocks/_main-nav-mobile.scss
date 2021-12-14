@@ -104,3 +104,18 @@
   line-height: inherit;
   font-family: inherit;
 }
+
+.main-nav-mobile__list--long {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .main-nav-mobile__sublist {
+    margin-bottom: 0;
+  }
+
+  .main-nav-mobile__item:not(:first-child) .main-nav-mobile__link {
+    margin-bottom: 0;
+  }
+
+}

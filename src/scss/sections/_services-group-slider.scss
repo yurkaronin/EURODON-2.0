@@ -12,6 +12,10 @@
     top: 25%;
     left: 0;
 
+    @media (max-width: 1440px) {
+      top: 22%;
+    }
+
     @media (max-width: 650px) {
       display: none;
     }

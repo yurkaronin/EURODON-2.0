@@ -7,6 +7,10 @@
   border-radius: 8px;
   text-decoration: none;
 
+  @media (max-width: 1440px) {
+    padding: 25px 32px 30px;
+  }
+
   @media (max-width: 450px) {
     padding: 15px;
   }
