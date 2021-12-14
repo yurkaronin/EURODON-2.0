@@ -1,5 +1,5 @@
 .main-information {
-  padding: 65px 0 40px;
+  padding: 70px 0 60px;
 
   p {
     margin: 0;
@@ -43,7 +43,7 @@
 
 .main-information__photo {
   display: block;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   width: 100%;
 
   @media (max-width: 1024px) {
@@ -73,7 +73,7 @@
 }
 
 .main-information__item {
-  padding: 23px 0;
+  padding: 16px 0;
   position: relative;
   font-weight: 600;
   font-size: 18px;
@@ -85,6 +85,7 @@
   flex-grow: 1;
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
+  padding-left: 25px;
 
   @media (max-width: 650px) {
     flex-direction: column;

@@ -1,5 +1,5 @@
 .main-nav-mobile {
-  padding: 40px 0;
+  padding: 40px 0 16px;
 
   background-color: $base-bg;
   color: $base;
@@ -54,7 +54,7 @@
   line-height: 120%;
   text-transform: uppercase;
   color: inherit;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   text-decoration: none;
   padding: 14px 0;
 
@@ -74,7 +74,7 @@
   color: $base;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 16px;
   margin-bottom: 35px;
 
   @media (max-width: 1024px) {

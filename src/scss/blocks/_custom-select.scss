@@ -26,6 +26,7 @@
   text-transform: uppercase;
   color: $brand-1;
   font-weight: 700;
+  transition: 0.3s linear;
 }
 
 .choices[data-type*="select-one"]::after {
@@ -48,4 +49,8 @@
 
 .choices__inner {
   min-height: initial;
+}
+
+.choices__item {
+  transition: 0.3s linear;
 }

@@ -1,5 +1,5 @@
 .send-question {
-  padding: 35px 0 37px;
+  padding: 37px 0;
   background-color: $bg-1;
   color: $base;
   .wrapper {
@@ -20,11 +20,12 @@
 }
 
 .send-question__left {
-  max-width: 900px;
+  max-width: 910px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 33px;
+  width: 100%;
 
   @media (max-width: 1300px) {
     flex-direction: column;
