@@ -42,7 +42,7 @@
 .doctors-slider__wrapper {
   align-items: center;
   position: relative;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 
 .doctors-slider__item {
@@ -140,7 +140,7 @@
 }
 
 .swiper-slide-prev .doctors-slider__item {
-  transform: translateX(115px) scale(0.6);
+  transform: translateX(145px) scale(0.6);
 
   @media (max-width: 1250px) {
     transform: none;
@@ -164,7 +164,7 @@
 }
 
 .swiper-slide-next .doctors-slider__item {
-  transform: translateX(-115px) scale(0.6);
+  transform: translateX(-145px) scale(0.6);
 
   @media (max-width: 1250px) {
     transform: none;

@@ -9,6 +9,7 @@
   cursor: pointer;
   position: initial;
   margin: 0;
+  transition: 0.3s linear;
 
   @media (max-width: 1440px) {
     padding: 40px;
@@ -20,6 +21,16 @@
 
   &::after {
     display: none !important;
+  }
+
+}
+
+.button-slider:hover,
+.button-slider:focus
+{
+  background-color: #303F82;
+  .button-slider__icon {
+    stroke: #ffffff;
   }
 
 }

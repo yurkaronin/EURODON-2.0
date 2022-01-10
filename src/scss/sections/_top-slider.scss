@@ -22,6 +22,12 @@
     border-radius: 0;
     padding: 35px 55px;
 
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+    }
+
   }
 
 }
