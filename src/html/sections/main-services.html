@@ -1,111 +1,43 @@
 <section class="main-services">
   <div class="wrapper">
-
-    <div class="part-head">
-      <h2 class="part-head__title title">Наши услуги</h2>
-      <a class="part-head__button button-plus" href="#">
-        @@include('../../img/icons/icon-plus.svg')
-        Все услуги
-      </a>
-    </div>
+    @@include('../parts/part-head.html', {
+    "title": "Наши услуги",
+    "text": "Все услуги"
+    })
 
     <ul class="main-services__list">
-      <li class="main-services__item">
-        <a class="main-services__link" href="#">
-          <h3 class="main-services__name">Анализы</h3>
-          <svg class="main-services__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 11 11L1 23" />
-          </svg>
-          <div class="main-services__image">
-            <img src="img/services/1.jpg" alt="фото услуг" width="752" height="80" loading="lazy">
-          </div>
-        </a>
-      </li>
-
-      <li class="main-services__item">
-        <a class="main-services__link" href="#">
-          <h3 class="main-services__name">Аппаратная диагностика</h3>
-          <svg class="main-services__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 11 11L1 23" />
-          </svg>
-          <div class="main-services__image">
-            <img src="img/services/2.jpg" alt="фото услуг" width="752" height="80" loading="lazy">
-          </div>
-        </a>
-      </li>
-
-      <li class="main-services__item">
-        <a class="main-services__link" href="#">
-          <h3 class="main-services__name">Диагностика Covid-19</h3>
-          <svg class="main-services__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 11 11L1 23" />
-          </svg>
-          <div class="main-services__image">
-            <img src="img/services/3.jpg" alt="фото услуг" width="752" height="80" loading="lazy">
-          </div>
-        </a>
-      </li>
-
-      <li class="main-services__item">
-        <a class="main-services__link" href="#">
-          <h3 class="main-services__name">Консультации врачей</h3>
-          <svg class="main-services__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 11 11L1 23" />
-          </svg>
-          <div class="main-services__image">
-            <img src="img/services/4.jpg" alt="фото услуг" width="752" height="80" loading="lazy">
-          </div>
-        </a>
-      </li>
-
-      <li class="main-services__item">
-        <a class="main-services__link" href="#">
-          <h3 class="main-services__name">Вызов врача на дом</h3>
-          <svg class="main-services__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 11 11L1 23" />
-          </svg>
-          <div class="main-services__image">
-            <img src="img/services/5.jpg" alt="фото услуг" width="752" height="80" loading="lazy">
-          </div>
-        </a>
-      </li>
-
-      <li class="main-services__item">
-        <a class="main-services__link" href="#">
-          <h3 class="main-services__name">Комплексные обследования</h3>
-          <svg class="main-services__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 11 11L1 23" />
-          </svg>
-          <div class="main-services__image">
-            <img src="img/services/6.jpg" alt="фото услуг" width="752" height="80" loading="lazy">
-          </div>
-        </a>
-      </li>
-
-      <li class="main-services__item">
-        <a class="main-services__link" href="#">
-          <h3 class="main-services__name">Телемедицина</h3>
-          <svg class="main-services__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 11 11L1 23" />
-          </svg>
-          <div class="main-services__image">
-            <img src="img/services/7.jpg" alt="фото услуг" width="752" height="80" loading="lazy">
-          </div>
-        </a>
-      </li>
-
-      <li class="main-services__item">
-        <a class="main-services__link" href="#">
-          <h3 class="main-services__name">УЗИ</h3>
-          <svg class="main-services__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="m1 1 11 11L1 23" />
-          </svg>
-          <div class="main-services__image">
-            <img src="img/services/8.jpg" alt="фото услуг" width="752" height="80" loading="lazy">
-          </div>
-        </a>
-      </li>
-
-    </ul><!-- .main-services__list -->
-  </div><!-- .wrapper -->
+      @@include('../parts/services-item.html', {
+      "name": "Анализы",
+      "image-url": "../img/services/1.jpg"
+      })
+      @@include('../parts/services-item.html', {
+      "name": "Вызов врача на дом",
+      "image-url": "img/services/2.jpg"
+      })
+      @@include('../parts/services-item.html', {
+      "name": "Аппаратная диагностика",
+      "image-url": "img/services/3.jpg"
+      })
+      @@include('../parts/services-item.html', {
+      "name": "Комплексные обследования",
+      "image-url": "img/services/4.jpg"
+      })
+      @@include('../parts/services-item.html', {
+      "name": "Диагностика Covid-19",
+      "image-url": "img/services/5.jpg"
+      })
+      @@include('../parts/services-item.html', {
+      "name": "Телемедицина",
+      "image-url": "img/services/6.jpg"
+      })
+      @@include('../parts/services-item.html', {
+      "name": "Консультации врачей",
+      "image-url": "img/services/7.jpg"
+      })
+      @@include('../parts/services-item.html', {
+      "name": "УЗИ",
+      "image-url": "img/services/8.jpg"
+      })
+    </ul>
+  </div>
 </section>

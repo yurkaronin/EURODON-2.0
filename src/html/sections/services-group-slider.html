@@ -1,13 +1,9 @@
 <section class="services-group-slider">
   <div class="wrapper">
-
-    <div class="part-head">
-      <h2 class="part-head__title title">Направления</h2>
-      <a class="part-head__button button-plus" href="#">
-        @@include('../../img/icons/icon-plus.svg')
-        Смотреть все
-      </a>
-    </div>
+    @@include('../parts/part-head.html', {
+    "title": "Направления",
+    "text": "Смотреть все"
+    })
 
     <div class="services-group-slider__wrapper">
       <!-- содержит идентификатор слайдера для JS  -->

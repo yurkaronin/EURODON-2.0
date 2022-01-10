@@ -1,7 +1,7 @@
 .button-plus {
   display: flex;
   justify-content: space-between;
-  padding: 10px 16px 11px;
+  padding: 13px 16px 11px 32px;
   padding-left: 42px;
   transition: $nfs linear;
   position: relative;
@@ -14,9 +14,10 @@
   align-items: center;
   font-size: 12px;
   line-height: 100%;
-  text-transform: none;
+  //text-transform: none;
   cursor: pointer;
   font-weight: 600;
+  text-transform: uppercase;
 
   svg {
     width: 16px;

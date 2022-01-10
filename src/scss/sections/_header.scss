@@ -67,7 +67,7 @@
 
 .header__wrapper {
   display: grid;
-  grid-template-columns: 208px auto;
+  grid-template-columns: 223px auto;
   gap: 0;
   align-items: flex-start;
   border-bottom: 1px solid $border;
@@ -144,7 +144,7 @@
 }
 
 .header__top {
-  padding: 10px 0 10px 30px;
+  padding: 10px 0 13px 30px;
   border-bottom: 1px solid $border;
   border-left: 1px solid $border;
   position: relative;
@@ -204,7 +204,7 @@
 .header__bottom {
   padding: 0 0 0 30px;
   display: grid;
-  gap: 10px;
+  gap: 5px;
   grid-template-columns: auto 400px 40px;
   grid-column: 2/-1;
   border-left: 1px solid $border;
@@ -235,7 +235,7 @@
 .header__contacts {
   display: grid;
   grid-template-columns: 185px 165px;
-  gap: 32px;
+  gap: 13px;
   align-items: center;
   margin-left: auto;
 

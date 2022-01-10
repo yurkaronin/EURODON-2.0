@@ -46,9 +46,14 @@
 }
 
 .main-information__photo {
-  display: block;
+  border-radius: 8px;
   margin-bottom: 50px;
   width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+  }
 
   @media (max-width: 1024px) {
     margin-bottom: 34px;
