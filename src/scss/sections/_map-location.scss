@@ -75,7 +75,7 @@
   display: flex;
   justify-content: space-between;
   border: 1px solid $border;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0 0 8px 8px;
 
   @media (max-width: 920px) {
     flex-direction: column;
@@ -108,6 +108,10 @@
 
   @media (max-width: 1440px) {
     padding: 45px 40px;
+  }
+
+  @media (max-width: 1024px) {
+    padding: 26px 15px 26px 31px;
   }
 
   /* @media (max-width: 1350px) {

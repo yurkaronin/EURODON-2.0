@@ -1,5 +1,9 @@
 .main-ratings {
   padding: 25px 0 80px;
+
+  @media (max-width: 1024px) {
+    padding-top: 30px;
+  }
 }
 
 .main-ratings__title {
@@ -39,6 +43,10 @@
     padding: 25px 32px 30px;
   }
 
+  @media (max-width: 1024px) {
+    padding: 25px 22px 35px;
+  }
+
   @media (max-width: 920px) {
     flex-basis: 328px;
   }
@@ -64,6 +72,10 @@
     margin-bottom: 40px;
   }
 
+  @media (max-width: 1024px) {
+    margin-bottom: 33px;
+  }
+
   @media (max-width: 450px) {
     margin-bottom: 30px;
   }
@@ -79,6 +91,10 @@
   @media (max-width: 1380px) {
     font-size: 32px;
     line-height: 120%;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 40px;
   }
 }
 

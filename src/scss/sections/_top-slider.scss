@@ -253,3 +253,11 @@
   }
 
 }
+
+@media (max-width: 1024px) {
+  .top-slider .swiper-pagination .swiper-pagination-bullet {
+    &:first-child {
+      margin-left: 0 !important;
+    }
+  }
+}

@@ -43,6 +43,10 @@
   align-items: center;
   position: relative;
   padding-bottom: 50px;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 30px;
+  }
 }
 
 .doctors-slider__item {
@@ -166,24 +170,24 @@
 .swiper-slide-next .doctors-slider__item {
   transform: translateX(-145px) scale(0.6);
 
-  @media (max-width: 1250px) {
-    transform: none;
-  }
+  //@media (max-width: 1250px) {
+  //  transform: none;
+  //}
 
   .doctors-slider__photo {
     transform: translateX(0);
 
-    @media (max-width: 1250px) {
-      transform: none;
-    }
+    //@media (max-width: 1250px) {
+    //  transform: none;
+    //}
   }
 
   .doctors-slider__info {
     transform: translateX(-100%);
 
-    @media (max-width: 1250px) {
-      transform: none;
-    }
+    //@media (max-width: 1250px) {
+    //  transform: none;
+    //}
   }
 }
 

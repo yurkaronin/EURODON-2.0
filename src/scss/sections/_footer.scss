@@ -56,6 +56,8 @@
 
   }
 
+
+
   .main-nav-mobile__list--long {
     .main-nav-mobile__item {
       position: relative;
@@ -84,7 +86,7 @@
 .footer__submenu {
   .menu-list {
     border-top: 1px solid $border;
-    border-bottom: 1px solid $border;
+    //border-bottom: 1px solid $border;
     padding: 33px 0;
     font-size: 14px;
     line-height: 20px;

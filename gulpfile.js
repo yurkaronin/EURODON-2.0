@@ -72,7 +72,7 @@ task('styles:docs', () => {
 task('scripts:build', () => {
   return src(['./src/js/*.js'])
     .pipe(sourcemaps.init())
-    .pipe(concat('main.js', { newLine: ';' }))
+    // .pipe(concat('main.js', { newLine: ';' }))
     .pipe(sourcemaps.write())
     .pipe(dest('./build/js/'))
     .pipe(browserSync.reload({ stream: true }));

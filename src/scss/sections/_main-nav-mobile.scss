@@ -1,6 +1,5 @@
 .main-nav-mobile {
   padding: 40px 0 16px;
-
   background-color: $base-bg;
   color: $base;
   max-width: 100%;
@@ -13,7 +12,13 @@
   display: grid;
 
   @media (max-width: 1024px) {
+    border-top: none;
+    padding-top: 23px;
+  }
+
+  @media (max-width: 768px) {
     display: block;
+    border-top: none  ;
   }
 }
 
@@ -25,13 +30,13 @@
 .main-nav-mobile__item {
   position: relative;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     padding-right: 15px;
   }
 
 
   &:after {
-    @media (max-width: 1024px) {
+    @media (max-width: 768px) {
       content: '';
       display: block;
       width: 100%;
@@ -59,6 +64,10 @@
   padding: 14px 0;
 
   @media (max-width: 1024px) {
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: 768px) {
     margin-bottom: 0;
   }
 
@@ -77,7 +86,7 @@
   gap: 16px;
   margin-bottom: 35px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     opacity: 0;
     max-height: 0;
     overflow: hidden;

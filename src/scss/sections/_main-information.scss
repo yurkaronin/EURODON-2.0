@@ -33,6 +33,12 @@
     max-width: 780px;
     margin: 0 auto;
   }
+
+  @media (max-width: 1024px) {
+    max-width: 768px;
+  }
+
+
 }
 
 .main-information__left {
@@ -50,13 +56,14 @@
   margin-bottom: 50px;
   width: 100%;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 34px;
+    max-height: 430px;
+  }
+
   img {
     display: block;
     width: 100%;
-  }
-
-  @media (max-width: 1024px) {
-    margin-bottom: 34px;
   }
 }
 

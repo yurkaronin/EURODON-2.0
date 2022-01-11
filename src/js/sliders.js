@@ -28,7 +28,7 @@ if (directionsSwiper) {
         slidesPerView: 3,
         spaceBetween: 16,
       },
-      1150: {
+      1024: {
         slidesPerView: 4,
         spaceBetween: 24,
       },
@@ -60,12 +60,12 @@ if (doctorsSwiper) {
         slidesPerView: 1,
         spaceBetween: 24,
       },
-      950: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-        centeredSlides: false,
-      },
-      1250: {
+      // 1024: {
+      //   slidesPerView: 1,
+      //   spaceBetween: 24,
+      //   centeredSlides: false,
+      // },
+      1024: {
         slidesPerView: 'auto',
         spaceBetween: 34,
       }
