@@ -92,10 +92,16 @@
       gap: 25px;
     }
 
+    @media (max-width: 768px) {
+      gap: 15px;
+    }
+
     @media (max-width: 550px) {
       flex-direction: column;
       gap: 10px;
     }
+
+
   }
 }
 
@@ -123,6 +129,10 @@
     padding: 35px;
     position: relative;
     border: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 19px 30px 27px;
   }
 
   @media (max-width: 550px) {
@@ -163,6 +173,12 @@
       position: initial;
       margin-bottom: 14px;
     }
+
+    @media (max-width: 768px) {
+      position: absolute;
+      margin-bottom: initial;
+      top: 37px;
+    }
   }
 }
 
@@ -201,6 +217,10 @@
 
   @media (max-width: 1350px) {
     margin-left: 0;
+  }
+
+  @media (max-width: 768px) {
+    margin-left: 65px;
   }
 
   p,

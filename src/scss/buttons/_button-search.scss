@@ -20,9 +20,9 @@
     border-right: 1px solid $border;
   }
 
-  @media (max-width: 850px) {
-    padding: 35px 40px;
-    border-right: none;
+  @media (max-width: 768px) {
+    padding: 29px 38px;
+    margin-right: 12px;
   }
 
 }

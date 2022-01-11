@@ -47,6 +47,10 @@
   @media (max-width: 1024px) {
     padding-bottom: 30px;
   }
+
+  @media (max-width: 768px) {
+    padding-bottom: 45px;
+  }
 }
 
 .doctors-slider__item {
@@ -96,6 +100,10 @@
   @media (max-width: 1250px) {
     transform: none;
   }
+
+  @media (max-width: 768px) {
+    padding: 42px 24px 48px;
+  }
 }
 
 .doctors-slider__name {
@@ -141,6 +149,7 @@
 
 .doctors-slider__button-working-hours {
   margin: 0;
+  text-transform: none;
 }
 
 .swiper-slide-prev .doctors-slider__item {

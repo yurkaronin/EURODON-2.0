@@ -18,7 +18,7 @@
 
   @media (max-width: 768px) {
     display: block;
-    border-top: none  ;
+    border-top: none;
   }
 }
 
@@ -46,6 +46,13 @@
 
   }
 
+  &:last-child:after {
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+  }
+
 }
 
 .main-nav-mobile__link {
@@ -53,7 +60,7 @@
   position: relative;
   transition: $nfs linear;
   font-family: "Montserrat",
-    sans-serif;
+  sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 120%;
@@ -91,14 +98,14 @@
     max-height: 0;
     overflow: hidden;
     will-change: opacity,
-      max-height;
+    max-height;
     transition: all $nfs linear;
     margin: 0;
     gap: 25px;
   }
 }
 
-.toggle-btn.active+.sublist-nav {
+.toggle-btn.active + .sublist-nav {
   opacity: 1;
   max-height: 100vh;
   transition: all $nfs linear;

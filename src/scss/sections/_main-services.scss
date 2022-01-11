@@ -3,6 +3,11 @@
     padding: 50px 0;
   }
 
+  @media (max-width: 768px) {
+    padding-top: 27px;
+    padding-bottom: 0;
+  }
+
 }
 
 .main-services__list {

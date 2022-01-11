@@ -29,6 +29,7 @@ searchButton.addEventListener('click', function (r) {
   headerSearch.classList.toggle('active');
   menuButton.classList.remove('active');
   mainMenu.classList.remove('active');
+  document.body.classList.remove('custom-lock');
 });
 
 
