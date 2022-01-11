@@ -13,6 +13,10 @@
     padding-bottom: 30px;
   }
 
+  @media (max-width: 375px) {
+    padding-bottom: 17px;
+  }
+
   .slider-buttons-wrapper {
     width: 100%;
     max-width: 100%;
@@ -45,6 +49,11 @@
 
   @media (max-width: 768px) {
     padding: 0 50px;
+  }
+
+  @media (max-width: 375px) {
+    padding: 0;
+    padding-bottom: 40px;
   }
 
 }

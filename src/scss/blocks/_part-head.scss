@@ -6,6 +6,10 @@
   margin-bottom: 24px;
   gap: 20px;
 
+  @media (max-width: 375px) {
+    gap: 10px;
+  }
+
   .title {
     margin: 0;
   }

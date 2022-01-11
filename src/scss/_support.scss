@@ -13,8 +13,8 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
-.hidden-850 {
-  @media (max-width: 550px) {
+.hidden-375 {
+  @media (max-width: 375px) {
     display: none;
   }
 }

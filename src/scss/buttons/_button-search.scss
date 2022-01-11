@@ -25,6 +25,13 @@
     margin-right: 12px;
   }
 
+  @media (max-width: 375px) {
+    margin-right: 0;
+    border: none;
+    padding: 35px 44px;
+    border-left: 1px solid #ebedef;
+  }
+
 }
 
 .button-search__toggle {

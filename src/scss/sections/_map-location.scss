@@ -1,6 +1,10 @@
 .map-location {
   padding: 35px 0;
 
+  @media (max-width: 375px) {
+    padding: 19px 0;
+  }
+
   .choices__item:hover {
     color: $brand-4;
   }
@@ -23,6 +27,10 @@
 
   .part-head__form {
     margin-top: 12px;
+
+    @media (max-width: 375px) {
+      margin-top: 0;
+    }
   }
 
   .choices__list--single,
@@ -46,6 +54,13 @@
   .button-plus {
     text-transform: initial;
   }
+
+  .custom-select__label {
+    @media (max-width: 375px) {
+      display: none;
+    }
+  }
+
 }
 
 .map-location--mod {
@@ -179,6 +194,11 @@
       margin-bottom: initial;
       top: 37px;
     }
+
+    @media (max-width: 375px) {
+      position: initial;
+      margin-bottom: 14px;
+    }
   }
 }
 
@@ -223,6 +243,10 @@
     margin-left: 65px;
   }
 
+  @media (max-width: 375px) {
+    margin-left: 0;
+  }
+
   p,
   li {
     font-size: 16px;
@@ -264,5 +288,12 @@
   @media (max-width: 550px) {
     width: 100%;
     max-width: 100%;
+  }
+}
+
+.map-location__buttons .button {
+  @media (max-width: 375px) {
+    max-width: 100%;
+    width: 100%;
   }
 }

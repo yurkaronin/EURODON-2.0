@@ -20,6 +20,11 @@
     display: block;
     border-top: none;
   }
+
+  @media (max-width: 375px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .main-nav-mobile__list {
@@ -76,6 +81,10 @@
 
   @media (max-width: 768px) {
     margin-bottom: 0;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 16px;
   }
 
 }

@@ -13,6 +13,10 @@
     padding-bottom: 20px;
   }
 
+  @media (max-width: 375px) {
+    padding-top: 30px;
+  }
+
   .title {
     margin-bottom: 0;
   }
@@ -22,11 +26,20 @@
     @media (max-width: 1024px) {
       padding: 19px 76px;
     }
+
+    @media (max-width: 375px) {
+      padding: 10px 19px;
+    }
   }
 
   .wrapper {
     @media (max-width: 768px) {
       padding: 0;
+    }
+
+    @media (max-width: 375px) {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
@@ -35,6 +48,12 @@
       flex-basis: 100%;
     }
 
+  }
+
+  .search-form__title {
+    @media (max-width: 375px) {
+      display: block;
+    }
   }
 
 }

@@ -8,6 +8,10 @@
     padding-bottom: 0;
   }
 
+  @media (max-width: 375px) {
+    padding-top: 8px;
+  }
+
 }
 
 .main-services__list {
@@ -40,6 +44,11 @@
     padding-left: 0;
     padding-right: 45px;
   }
+
+  @media (max-width: 375px) {
+    padding: 20px 0;
+    padding-right: 32px;
+  }
 }
 
 .main-services__name {
@@ -51,6 +60,11 @@
   color: $base;
   z-index: 5;
   margin: 0;
+
+  @media (max-width: 375px) {
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
 
 .main-services__icon {
@@ -64,6 +78,13 @@
     position: absolute;
     right: 15px;
   }
+
+  @media (max-width: 375px) {
+    transform: scale(0.6);
+    right: 0;
+  }
+
+
 }
 
 .main-services__image {
