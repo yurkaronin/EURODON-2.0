@@ -10,26 +10,37 @@ window.onscroll = function showHeader() {
   }
 }
 
-// кнопка меню
-var menuButton = document.querySelector('.button-menu');
-if (menuButton) {
-  let mainMenu = document.querySelector('.mobile-main-nav');
-  menuButton.addEventListener('click', function (r) {
-    document.body.classList.toggle('custom-lock');
-    menuButton.classList.toggle('active');
-    mainMenu.classList.toggle('active');
-  });
+// кнопка меню и кнопка поиска в шапке
+let menuButton = document.querySelector('.button-menu');
+let searchButton = document.querySelector('.button-search');
+let mainMenu = document.querySelector('.mobile-main-nav');
+let headerSearch = document.querySelector('.header__search-form');
+
+menuButton.addEventListener('click', function (r) {
+  document.body.classList.toggle('custom-lock');
+  menuButton.classList.toggle('active');
+  mainMenu.classList.toggle('active');
+  searchButton.classList.remove('active');
+  headerSearch.classList.remove('active');
+});
+
+searchButton.addEventListener('click', function (r) {
+  searchButton.classList.toggle('active');
+  headerSearch.classList.toggle('active');
+  menuButton.classList.remove('active');
+  mainMenu.classList.remove('active');
+});
+
+
+// взаимное отключение кнопок меню и поиск
+if (menuButton.classList.contains('active')) {
+  searchButton.classList.remove('active');
 }
 
-// кнопка поиска в шапке
-let searchButton = document.querySelector('.button-search');
-if (searchButton) {
-  let headerSearch = document.querySelector('.header__search-form');
-  searchButton.addEventListener('click', function (r) {
-    searchButton.classList.toggle('active');
-    headerSearch.classList.toggle('active');
-  });
+if (searchButton.classList.contains('active')) {
+  menuButton.classList.remove('active');
 }
+
 
 // кнопка аккордеона в меню
 let mobMenu = document.querySelectorAll(".main-nav-mobile");
@@ -138,35 +149,36 @@ if (elements) {
 
     customName++;
   }
-};
+}
+;
 
- SmoothScroll({
-   // Время скролла 400 = 0.4 секунды
-   animationTime: 800,
-   // Размер шага в пикселях
-   stepSize: 75,
+SmoothScroll({
+  // Время скролла 400 = 0.4 секунды
+  animationTime: 800,
+  // Размер шага в пикселях
+  stepSize: 75,
 
-   // Дополнительные настройки:
+  // Дополнительные настройки:
 
-   // Ускорение
-   accelerationDelta: 30,
-   // Максимальное ускорение
-   accelerationMax: 2,
+  // Ускорение
+  accelerationDelta: 30,
+  // Максимальное ускорение
+  accelerationMax: 2,
 
-   // Поддержка клавиатуры
-   keyboardSupport: true,
-   // Шаг скролла стрелками на клавиатуре в пикселях
-   arrowScroll: 50,
+  // Поддержка клавиатуры
+  keyboardSupport: true,
+  // Шаг скролла стрелками на клавиатуре в пикселях
+  arrowScroll: 50,
 
-   // Pulse (less tweakable)
-   // ratio of "tail" to "acceleration"
-   pulseAlgorithm: true,
-   pulseScale: 4,
-   pulseNormalize: 1,
+  // Pulse (less tweakable)
+  // ratio of "tail" to "acceleration"
+  pulseAlgorithm: true,
+  pulseScale: 4,
+  pulseNormalize: 1,
 
-   // Поддержка тачпада
-   touchpadSupport: true,
- })
+  // Поддержка тачпада
+  touchpadSupport: true,
+})
 ;// слайдер первый экран
 const topSwiper = document.querySelector('.top-slider__swiper');
 if (topSwiper) {
@@ -197,7 +209,7 @@ if (directionsSwiper) {
         slidesPerView: 3,
         spaceBetween: 16,
       },
-      1150: {
+      1024: {
         slidesPerView: 4,
         spaceBetween: 24,
       },
@@ -229,12 +241,12 @@ if (doctorsSwiper) {
         slidesPerView: 1,
         spaceBetween: 24,
       },
-      950: {
-        slidesPerView: 2,
-        spaceBetween: 24,
-        centeredSlides: false,
-      },
-      1250: {
+      // 1024: {
+      //   slidesPerView: 1,
+      //   spaceBetween: 24,
+      //   centeredSlides: false,
+      // },
+      1024: {
         slidesPerView: 'auto',
         spaceBetween: 34,
       }
