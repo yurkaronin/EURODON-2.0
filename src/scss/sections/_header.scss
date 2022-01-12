@@ -278,7 +278,7 @@
   @media (max-width: 375px) {
     justify-content: flex-end;
     padding: 0;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     max-width: max-content;
     margin-left: auto;
   }
@@ -320,7 +320,7 @@
   }
 
   @media (max-width: 375px) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -339,6 +339,12 @@
 
   @media (max-width: 850px) {
     padding-right: 0;
+  }
+
+  @media (max-width: 375px) {
+    width: 100%;
+    max-width: 100%;
+    justify-content: flex-end;
   }
 
 
@@ -420,3 +426,88 @@
 }
 
 
+//Новые правки
+.header .button-transparent {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 20px 17px;
+  border-radius: 0;
+  margin: 0;
+  background-color: #0098d0;
+  color: #fff;
+
+  @media (max-width: 1024px) {
+    padding: 20px 22px;
+  }
+}
+
+.header__contacts {
+  grid-template-columns: 185px 227px;
+}
+
+.header__bottom {
+  grid-template-columns: auto 440px 56px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 440px 120px;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 405px auto;
+    gap: 0;
+    justify-content: flex-end;
+    margin-right: 26px;
+    padding: 0;
+  }
+
+  @media (max-width: 375px) {
+    grid-template-columns: 1fr;
+    margin-right: 0;
+
+  }
+}
+
+.header .button-search {
+  border-right: 1px solid #ebedef;
+  border-radius: 0;
+  width: initial;
+  height: initial;
+  padding: 29px 29px;
+  background-color: #ffffff;
+}
+
+.header__contacts {
+  grid-template-columns: auto auto;
+  gap: 18px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    max-width: 406px;
+    justify-content: space-between;
+    gap: 15px;
+  }
+}
+
+.header__tel {
+  max-width: 185px;
+}
+
+.header .header__callback {
+  max-width: 227px;
+}
+
+.header__wrapper {
+  grid-template-columns: 222px auto;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 208px auto;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 196px auto;
+  }
+
+  @media (max-width: 735px) {
+    grid-template-columns: auto auto;
+  }
+}

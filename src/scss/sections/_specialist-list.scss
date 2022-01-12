@@ -1,5 +1,9 @@
 .specialist-list {
   padding: 45px 0 0;
+
+  .button-plus {
+    text-transform: initial;
+  }
 }
 
 .specialist-list__wrapper {
@@ -59,11 +63,12 @@
   margin: 0;
   margin-bottom: 5px;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 133%;
+  font-size: 20px;
+  line-height: 160%;
   color: $base;
   font-family: "Montserrat",
   sans-serif;
+  max-width: 200px;
 }
 
 .specialist-list__profile,
@@ -73,7 +78,7 @@
   color: $brand-5;
   margin: 0;
   display: block;
-  margin-bottom: 5px;
+  //margin-bottom: 5px;
 }
 
 .specialist-list__work-experience {

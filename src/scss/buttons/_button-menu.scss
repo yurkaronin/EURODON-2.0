@@ -10,8 +10,12 @@
   margin-left: auto;
   cursor: pointer;
 
+  @media (max-width: 1024px) {
+    padding: 29px 29px;
+  }
+
   @media (max-width: 768px) {
-    padding: 29px 42px;
+    padding: 28px 26px;
   }
 
   @media (max-width: 375px) {
