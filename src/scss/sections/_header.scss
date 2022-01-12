@@ -436,6 +436,11 @@
   background-color: #0098d0;
   color: #fff;
 
+  &:hover {
+    background: #303f82;
+    border-color: #303f82;
+  }
+
   @media (max-width: 1024px) {
     padding: 20px 22px;
   }
@@ -474,6 +479,11 @@
   height: initial;
   padding: 29px 29px;
   background-color: #ffffff;
+
+  &:hover {
+    background: #303f82;
+    border-color: #303f82;
+  }
 }
 
 .header__contacts {

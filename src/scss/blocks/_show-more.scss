@@ -1,0 +1,41 @@
+.show-more {
+  margin-top: 22px;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 66px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    background-color: #ffffff;
+    border: 1px solid #0098D0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    max-width: max-content;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 16px 20px;
+    color: #0098D0;
+    min-width: 230px;
+
+    @media (max-width: 375px) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &:hover {
+      background-color: #0098D0;
+      color: #ffffff;
+    }
+
+
+
+  }
+}

@@ -81,7 +81,7 @@
 
   .button-search__toggle {
     &::before {
-      //border: 2px solid $base-bg;
+      border: 2px solid $base-bg;
 
       @media (max-width: 1500px) {
         border-color: $brand-1;
@@ -89,7 +89,7 @@
     }
 
     &::after {
-      //background: $base-bg;
+      background: $base-bg;
 
       @media (max-width: 1500px) {
         background: $brand-1;

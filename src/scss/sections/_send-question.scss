@@ -23,16 +23,31 @@
     justify-content: space-between;
     gap: 32px;
 
-    @media (max-width: 930px) {
-      gap: 23px;
-    }
-
-    @media (max-width: 370px) {
-      gap: 14px;
+    @media (max-width: 768px) {
+      gap: 13px;
     }
 
     @media (max-width: 375px) {
       gap: 0;
+    }
+  }
+
+  .buttons-wrapper .button,
+  .buttons-wrapper .button-transparent {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+    padding: 17px 22px;
+
+    @media (max-width: 1024px) {
+      padding: 17px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 17px 22px;
     }
   }
 }
@@ -52,7 +67,7 @@
   }
 
   @media (max-width: 1024px) {
-    max-width: 510px;
+    max-width: 480px;
   }
 
   @media (max-width: 375px) {

@@ -3,6 +3,7 @@
 
   .button-plus {
     text-transform: initial;
+    margin: 0 auto;
   }
 }
 
@@ -13,12 +14,12 @@
   flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  @media (max-width: 1450px) {
-  grid-template-columns: 1fr 1fr 1fr;
+  @media (max-width: 1024px) {
+  //grid-template-columns: 1fr 1fr 1fr;
   }
 
-  @media (max-width: 950px) {
-    grid-template-columns: 1fr 1fr;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   @media (max-width: 650px) {
@@ -30,7 +31,12 @@
 .specialist-list__item {
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid $border-2;
+  //border: 1px solid $border-2;
+  padding: 0 60px;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
 
   @media (max-width: 650px) {
     max-width: 352px;
@@ -38,7 +44,7 @@
   }
 
   .button-big {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 }
 
@@ -51,38 +57,45 @@
 
 .specialist-list__photo {
   display: block;
+
+  @media (max-width: 375px) {
+    max-width: 155px;
+    margin: 0 auto;
+  }
 }
 
 .specialist-list__details {
-  background-color: $base-bg;
+  //background-color: $base-bg;
   color: $base;
-  padding: 20px 25px 30px;
+  padding: 20px 0 30px;
 }
 
 .specialist-list__name {
   margin: 0;
   margin-bottom: 5px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 160%;
   color: $base;
   font-family: "Montserrat",
   sans-serif;
-  max-width: 200px;
+  text-align: center;
 }
 
 .specialist-list__profile,
-.specialist-list__work-experience {
+.specialist-list__work-experience,
+.specialist-list__achievements {
   font-size: 16px;
   line-height: 24px;
   color: $brand-5;
   margin: 0;
   display: block;
   //margin-bottom: 5px;
+  text-align: center;
 }
 
 .specialist-list__work-experience {
-  margin-bottom: 15px;
+  margin-bottom: 26px;
 }
 
 .specialist-list__description {
@@ -93,3 +106,5 @@
   margin: 0;
   margin-bottom: 20px;
 }
+
+
