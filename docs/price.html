@@ -39,15 +39,15 @@
       <div class="header__menu-group">
         <div class="header__submenu-left">
           <ul class="menu-list menu-list--mod">
-            <li><a href="#">Результаты анализов</a></li>
-            <li class="hidden-850"><a href="#">Версия для слабовидящих</a></li>
+            <li class="hidden-375"><a href="#">Результаты анализов</a></li>
+            <li><a href="#">Версия для слабовидящих</a></li>
           </ul>
         </div>
         <div class="header__submenu-right">
           <ul class="menu-list">
             <li><a href="#">WhatsApp</a></li>
             <li><a href="#">Instagram</a></li>
-            <li class="hidden-850"><a href="#" data-path="dialog-window-callback" class="btn">Заказать звонок</a></li>
+            <li class="hidden-375"><a href="#" data-path="dialog-window-callback" class="btn">Заказать звонок</a></li>
           </ul>
         </div>
       </div>
@@ -775,32 +775,100 @@
     <!-- callback  -->
     <section class="modal decorate-border" data-target="dialog-window-callback">
 
-      <h3 class="modal__title title">Заказать звонок</h3>
-      <p class="modal__subtitle subtitle">Оставьте Ваши контактные данные и мы перезвоним Вам в ближайшее время</p>
+      <h3 class="modal__title title">Записаться на прием</h3>
+      <p class="modal-subtitle">Заполните простую форму и мы свяжемся с Вами в ближайшее время</p>
 
       <form class="modals__form custom-form" action="" method="post">
 
-        <p class="">
-          <label for="CUST-FORM-NAME" class="custom-form__label">Ваше имя:</label>
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label for="CUST-FORM-NAME" class="custom-form__label warn">Ваше имя:</label>
+          </span>
+
           <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
-            id="CUST-FORM-NAME" data-required required>
+                 id="CUST-FORM-NAME" data-required required>
         </p>
 
-        <p class="">
-          <label for="CUST-FORM-TEL" class="custom-form__label">Телефон:</label>
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+          <label for="CUST-FORM-TEL" class="custom-form__label warn">Телефон:</label>
+          </span>>
           <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
-            id="CUST-FORM-TEL" data-required required>
+                 id="CUST-FORM-TEL" data-required required>
         </p>
 
-        <div class="">
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label class="custom-select__label warn" for="form-select-adress-2">Выберите филиал:</label>
+          </span>
+
+
+          <select class="custom-select__list" name="address-selection" id="form-select-adress-2" required>
+            <option value="" selected>Выберите филиал</option>
+            <option value="Ростов-на-Дону, ул. Петренко, 16">Ростов-на-Дону, ул. Петренко, 16</option>
+            <option value="г.Ростов-на-Дону, ул. Металлургическая, 107">г.Ростов-на-Дону, ул. Металлургическая, 107
+            </option>
+            <option value="г.Ростов-на-Дону, ул.Зорге, 2">г.Ростов-на-Дону, ул.Зорге, 2</option>
+            <option value="Ростов-на-Дону, ул.Вавилова, 57">Ростов-на-Дону, ул.Вавилова, 57</option>
+            <option value="г.Ростов-на-Дону, ул.Социалистическая, 208">г.Ростов-на-Дону, ул.Социалистическая, 208</option>
+            <option value="г.Ростов-на-Дону,ул.М.Горького, 181">г.Ростов-на-Дону,ул.М.Горького, 181</option>
+            <option value="с. Чалтырь, ул. Восточная, 2в">с. Чалтырь, ул. Восточная, 2в</option>
+            <option value="с. Самарское, ул. Ленина, д 97">с. Самарское, ул. Ленина, д 97</option>
+            <option value="г. Таганрог, ул. Чехова, 159">г. Таганрог, ул. Чехова, 159</option>
+          </select>
+        </p>
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label class="custom-select__label warn" for="form-select-directions">Направление:</label>
+          </span>
+
+
+          <select class="custom-select__list" name="address-selection" id="form-select-directions" required>
+            <option value="" selected>Выберите филиал</option>
+            <option value="Ростов-на-Дону, ул. Петренко, 16">Ростов-на-Дону, ул. Петренко, 16</option>
+            <option value="г.Ростов-на-Дону, ул. Металлургическая, 107">г.Ростов-на-Дону, ул. Металлургическая, 107
+            </option>
+            <option value="г.Ростов-на-Дону, ул.Зорге, 2">г.Ростов-на-Дону, ул.Зорге, 2</option>
+            <option value="Ростов-на-Дону, ул.Вавилова, 57">Ростов-на-Дону, ул.Вавилова, 57</option>
+            <option value="г.Ростов-на-Дону, ул.Социалистическая, 208">г.Ростов-на-Дону, ул.Социалистическая, 208</option>
+            <option value="г.Ростов-на-Дону,ул.М.Горького, 181">г.Ростов-на-Дону,ул.М.Горького, 181</option>
+            <option value="с. Чалтырь, ул. Восточная, 2в">с. Чалтырь, ул. Восточная, 2в</option>
+            <option value="с. Самарское, ул. Ленина, д 97">с. Самарское, ул. Ленина, д 97</option>
+            <option value="г. Таганрог, ул. Чехова, 159">г. Таганрог, ул. Чехова, 159</option>
+          </select>
+        </p>
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label class="custom-select__label" for="form-select-doctors-name">Врач:</label>
+          </span>
+
+
+          <select class="custom-select__list" name="address-selection" id="form-select-doctors-name" required>
+            <option value="" selected>Выберите филиал</option>
+            <option value="Ростов-на-Дону, ул. Петренко, 16">Ростов-на-Дону, ул. Петренко, 16</option>
+            <option value="г.Ростов-на-Дону, ул. Металлургическая, 107">г.Ростов-на-Дону, ул. Металлургическая, 107
+            </option>
+            <option value="г.Ростов-на-Дону, ул.Зорге, 2">г.Ростов-на-Дону, ул.Зорге, 2</option>
+            <option value="Ростов-на-Дону, ул.Вавилова, 57">Ростов-на-Дону, ул.Вавилова, 57</option>
+            <option value="г.Ростов-на-Дону, ул.Социалистическая, 208">г.Ростов-на-Дону, ул.Социалистическая, 208</option>
+            <option value="г.Ростов-на-Дону,ул.М.Горького, 181">г.Ростов-на-Дону,ул.М.Горького, 181</option>
+            <option value="с. Чалтырь, ул. Восточная, 2в">с. Чалтырь, ул. Восточная, 2в</option>
+            <option value="с. Самарское, ул. Ленина, д 97">с. Самарское, ул. Ленина, д 97</option>
+            <option value="г. Таганрог, ул. Чехова, 159">г. Таганрог, ул. Чехова, 159</option>
+          </select>
+        </p>
+
+        <div class="custom-form__wrapper">
           <label class="custom-form__label custom-form__label--accept">
             <input class="visually-hidden" type="checkbox" name="accept" checked>
-            <span class="custom-form__politic">Согласен на <a href="#" target="_blank">обработку персональных данных</a>
+            <span class="custom-form__politic">Я согласен на <a href="#" target="_blank"> обработку персональных данных</a>
             </span>
           </label>
         </div>
 
-        <button class="custom-form__button button button--border js-validate" type="submit">Заказать звонок</button>
+        <button class="custom-form__button button button--border js-validate" type="submit">Отправить</button>
       </form>
       <button class="modal-close button button--border" type="button">
         <span></span>

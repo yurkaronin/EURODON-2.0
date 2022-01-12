@@ -52,9 +52,9 @@
   }
 
   &:last-child:after {
-    @media (max-width: 768px) {
-      display: none;
-    }
+    //@media (max-width: 768px) {
+    //  display: none;
+    //}
 
   }
 
@@ -116,7 +116,7 @@
 
 .toggle-btn.active + .sublist-nav {
   opacity: 1;
-  max-height: 100vh;
+  max-height: max-content;
   transition: all $nfs linear;
   will-change: opacity, max-height;
   padding: 17px 0 30px;

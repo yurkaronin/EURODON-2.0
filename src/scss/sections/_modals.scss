@@ -27,7 +27,7 @@
   }
 }
 
-.modal-overlay>.modal {
+.modal-overlay > .modal {
   font-size: 0;
   line-height: 0;
   vertical-align: middle;
@@ -37,11 +37,16 @@
   background-color: $base-bg;
   align-items: center;
   justify-content: center;
-  max-width: 752px;
-  padding: 54px 56px 56px;
+  //max-width: 752px;
+  //padding: 54px 56px 56px;
   position: relative;
   display: none;
   z-index: 1000;
+
+  padding: 33px 48px 48px;
+  border-radius: 8px;
+  max-width: 832px;
+  width: 100%;
 
   /* * {
     white-space: initial;
@@ -107,21 +112,29 @@
   border: none;
   position: absolute;
   padding: 20px;
-  top: -28px;
-  right: 56px;
+  //top: -28px;
+  //right: 56px;
   z-index: 99;
   cursor: pointer;
 
-  @media (max-width: 450px) {
-    right: 30px;
+  top: 16px;
+  right: 16px;
+  background-color: #ffffff;
+  border: 1px solid #0098d0;
+
+  @media (max-width: 425px) {
+    right: 15px;
+    top: -20px;
   }
+
 }
 
 .modal-close span {
   position: absolute;
   width: 22px;
   height: 2px;
-  background-color: $base-bg;
+  //background-color: $base-bg;
+  background-color: #0098d0;
   z-index: 2;
   transform: rotate(-45deg);
   pointer-events: none;
@@ -132,7 +145,8 @@
   position: absolute;
   width: 22px;
   height: 2px;
-  background-color: $base-bg;
+  //background-color: $base-bg;
+  background-color: #0098d0;
   z-index: 2;
   transform: rotate(90deg);
   display: block;
@@ -141,4 +155,177 @@
 
 .modal__subtitle {
   color: $base;
+}
+
+.modal-close:hover {
+  background-color: #0098d0;
+  border-color: #0098d0;
+
+  span {
+    background-color: #ffffff;
+
+    &:after {
+      background-color: #ffffff;
+    }
+  }
+
+}
+
+.modal__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 12px;
+  white-space: initial;
+
+  @media (max-width: 425px) {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+
+.modal-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  color: #788AA6;
+  margin: 0;
+  margin-bottom: 27px;
+  text-align: left;
+  white-space: initial;
+
+
+  @media (max-width: 425px) {
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
+
+
+.modal .custom-form__label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  left: initial;
+  top: initial;
+  color: #334257;
+}
+
+.custom-form__label.warn,
+.custom-select__label.warn {
+  position: relative;
+
+  &:after {
+    display: block;
+    content: "*";
+    color: #C3167C;
+    position: absolute;
+    top: -3px;
+    right: -9px;
+  }
+}
+
+.modals__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.modals .custom-form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media (max-width: 425px) {
+    max-width: 100%;
+  }
+}
+
+.modals .custom-form__label {
+  text-align: left;
+}
+
+.custom-form__label-wrapper {
+  max-width: 224px;
+  width: 100%;
+  text-align: left;
+}
+
+.modals .custom-form__input {
+  background: #FFFFFF;
+  border: 1px solid #7895A6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #334257;
+  padding: 13px 64px 13px 24px;
+  @media (max-width: 425px) {
+    font-size: 16px;
+  }
+
+}
+
+.modals .custom-select__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #334257;
+  text-transform: initial;
+}
+
+.modal .choices__list--single {
+  background: #FFFFFF;
+  border: 1px solid #7895A6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #334257;
+  padding: 13px 64px 13px 24px;
+  font-weight: 400;
+  text-transform: initial;
+}
+
+.modals .choices__inner {
+  font-size: 18px;
+  padding: 0;
+
+}
+
+.modals .choices[data-type*=select-one]::after {
+  right: 16px !important;
+  top: 22px !important;
+}
+
+.modals .choices {
+  max-width: 100%;
+  width: 100%;
+}
+
+.modals .choices__list .choices__item {
+  text-align: left;
+  font-size: 18px;
+  color: #334257;
+  opacity: 1;
+}
+
+
+.modals .custom-form__label--accept input[type=checkbox] + .custom-form__politic::before {
+  width: 32px;
+  height: 32px;
+}
+
+.modals .custom-form__politic {
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  flex-wrap: wrap;
+
+}
+
+.modals .custom-form__button {
+  width: 100%;
+  max-width: 100%;
 }
