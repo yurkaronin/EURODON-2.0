@@ -297,3 +297,60 @@
     width: 100%;
   }
 }
+
+.map-location--mod {
+  .map-location__item,
+  .map-location__list {
+    border: none;
+  }
+
+  .map-location__item {
+    padding: 30px 31px;
+  }
+
+  .map-location__item--text svg {
+    top: 24px;
+    left: 0px;
+  }
+
+  .map-location__tel-group {
+    margin: 0;
+  }
+}
+
+.map-location__tel-group {
+  font-weight: 700;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 56px;
+  /* or 311% */
+
+
+  /* dark */
+
+  color: #334257;
+}
+
+
+.map-location__item--mod {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.map-location__cust-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 56px;
+
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.map-location__cust-text li {
+  color: #334257 !important;
+}
+
+

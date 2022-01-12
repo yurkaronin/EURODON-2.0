@@ -1,6 +1,11 @@
 .main-reviews {
   padding-bottom: 66px;
 
+  .swiper-free-mode > .swiper-wrapper {
+    min-height: 200px;
+    height: max-content;
+  }
+
 }
 
 .main-reviews__item {
@@ -83,4 +88,12 @@
 .reviews-slider__pagination {
   position: absolute;
   bottom: 0;
+}
+
+.reviews-swiper__top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  margin-bottom: 14px;
 }
