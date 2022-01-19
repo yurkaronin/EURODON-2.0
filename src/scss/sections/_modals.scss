@@ -285,7 +285,7 @@
   border-radius: 4px;
   font-size: 18px;
   color: #334257;
-  padding: 13px 64px 13px 24px;
+  padding: 10px 49px  10px 24px;
   font-weight: 400;
   text-transform: initial;
 }
@@ -296,9 +296,20 @@
 
 }
 
+.modals .choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 0;
+}
+
+.modal .custom-form__label--accept {
+  margin-top: 10px;
+}
+
 .modals .choices[data-type*=select-one]::after {
   right: 16px !important;
-  top: 22px !important;
+  top: 23px !important;
+  background-image: url(../img/icons/arrow-select-down.svg);
+  width: 19px;
+  height: 18px;
 }
 
 .modals .choices {
@@ -310,8 +321,10 @@
 .modals .choices__list .choices__item {
   text-align: left;
   font-size: 18px;
-  color: #334257;
+  color: #717B8A;
   opacity: 1;
+  border-right: 1px solid #7895a6;
+  line-height: 178%;
 }
 
 
