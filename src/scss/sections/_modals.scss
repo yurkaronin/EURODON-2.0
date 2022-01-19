@@ -4,7 +4,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #00435b8c;
+  background-color: #0098d042;
   height: 100vh;
   width: 100%;
   opacity: 0;
@@ -15,6 +15,7 @@
   text-align: center;
   white-space: nowrap;
   padding: 40px 15px;
+  padding-top: 190px;
 
   &::before {
     content: "";
@@ -27,7 +28,7 @@
   }
 }
 
-.modal-overlay > .modal {
+.modal-overlay>.modal {
   font-size: 0;
   line-height: 0;
   vertical-align: middle;
@@ -37,8 +38,6 @@
   background-color: $base-bg;
   align-items: center;
   justify-content: center;
-  //max-width: 752px;
-  //padding: 54px 56px 56px;
   position: relative;
   display: none;
   z-index: 1000;
@@ -228,16 +227,17 @@
 
 .modals__form {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   max-width: 100%;
 }
 
 .modals .custom-form__wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
+  width: 100%;
 
   @media (max-width: 425px) {
     max-width: 100%;
@@ -261,7 +261,9 @@
   border-radius: 4px;
   font-size: 18px;
   color: #334257;
-  padding: 13px 64px 13px 24px;
+  padding: 13px 64px 17px 24px;
+  max-width: 480px;
+
   @media (max-width: 425px) {
     font-size: 16px;
   }
@@ -300,7 +302,8 @@
 }
 
 .modals .choices {
-  max-width: 100%;
+
+  max-width: 480px;
   width: 100%;
 }
 
@@ -312,7 +315,7 @@
 }
 
 
-.modals .custom-form__label--accept input[type=checkbox] + .custom-form__politic::before {
+.modals .custom-form__label--accept input[type=checkbox]+.custom-form__politic::before {
   width: 32px;
   height: 32px;
 }
