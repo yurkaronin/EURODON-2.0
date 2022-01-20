@@ -150,8 +150,7 @@ if (elements) {
 
     customName++;
   }
-}
-;
+};
 
 SmoothScroll({
   // Время скролла 400 = 0.4 секунды
@@ -180,3 +179,15 @@ SmoothScroll({
   // Поддержка тачпада
   touchpadSupport: true,
 })
+
+
+// табы faq
+var faqItems = document.querySelectorAll('.main-faq__item');
+
+for (let faqItem of faqItems) {
+  faqItem.onclick = function () {
+    faqItem.classList.toggle('active');
+  };
+}
+
+

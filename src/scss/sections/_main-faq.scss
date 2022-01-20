@@ -46,13 +46,14 @@
     display: block;
     position: absolute;
     right: 24px;
+    transition: 0.3s;
   }
 }
 
-.main-faq__issue.active,
-.main-faq__issue.active {
+.main-faq__item.active .main-faq__issue {
   color: $brand-1;
   margin-bottom: 30px;
+  transition: 0.3s;
 
   &::after {
     content: url(../img/icons/icon-arrow-faq-active.svg);
@@ -68,12 +69,13 @@
   overflow: hidden;
   margin: 0 auto;
   max-width: 992px;
+  transition: 0.3s;
 
-  &.show {
-    height: auto;
+}
+
+.main-faq__item.active .main-faq__answer {
+  height: auto;
     max-width: 1250px;
-  }
-
 }
 
 .main-faq__answer--mod {
