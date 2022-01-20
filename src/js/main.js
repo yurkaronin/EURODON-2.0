@@ -185,9 +185,18 @@ SmoothScroll({
 var faqItems = document.querySelectorAll('.main-faq__item');
 
 for (let faqItem of faqItems) {
-  faqItem.onclick = function () {
+  let itemTitle = faqItem.querySelector('.main-faq__issue');
+  itemTitle.onclick = function () {
     faqItem.classList.toggle('active');
   };
 }
 
+// табы второй уровень
+var faqItems2 = document.querySelectorAll('.main-faq__subitem');
+for (let faqItem2 of faqItems2) {
+  let itemTitle2 = faqItem2.querySelector('.main-faq__issue');
+  itemTitle2.onclick = function () {
+    faqItem2.classList.toggle('active');
+  };
+}
 
