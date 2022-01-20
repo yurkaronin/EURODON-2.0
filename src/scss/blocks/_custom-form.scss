@@ -54,6 +54,8 @@
   border: none;
   border-top: 4px solid transparent;
   transition: $nfs;
+  -webkit-appearance: none;
+     border-radius: 4px;
 
   &:hover {
     color: #334257;
@@ -65,6 +67,14 @@
     border: 2px solid #334257 !important;
     color: #334257 !important;
   }
+}
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
+     border-radius: 4px;
 }
 
 .custom-form__item-wrapper .custom-form__input,
