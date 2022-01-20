@@ -54,6 +54,17 @@
   border: none;
   border-top: 4px solid transparent;
   transition: $nfs;
+
+  &:hover {
+    color: #334257;
+    border-color: #334257 !important;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #334257 !important;
+    color: #334257 !important;
+  }
 }
 
 .custom-form__item-wrapper .custom-form__input,

@@ -1,6 +1,5 @@
 .filial-card {
-  max-width: 352px;
-  width: 100%;
+  width: calc(25% - 24px);
   padding: 25px 30px 40px;
   background: $base-bg;
   border: 1px solid $border-2;
@@ -9,20 +8,19 @@
   transition: max-height 0.9s;
 
   @media (max-width: 1024px) {
-    max-width: 48%
+    width: calc(50% - 16px);
   }
 
   @media (max-width: 1100px) {
-    max-width: 47%;
     padding: 20px 25px 30px;
   }
 
   @media (max-width: 732px) {
     max-width: 600px;
     width: 100%;
-    padding: 20px 25px 30px;
     max-height: 70px;
     overflow: hidden;
+    padding: 0;
   }
 }
 .filial-card__name {
@@ -39,7 +37,8 @@
   }
 
   @media (max-width: 732px) {
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    padding: 20px 25px 30px;
   }
 }
 .filial-card__details-list {

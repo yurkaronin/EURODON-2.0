@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
+<link rel="stylesheet" href="./libs/choices.min.css" />
+<link rel="stylesheet" href="css/main.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="libs/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="libs/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="libs/favicons/favicon-16x16.png">
+<link rel="manifest" href="libs/favicons/site.webmanifest">
+<link rel="mask-icon" href="libs/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="libs/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#ff0000">
+<meta name="msapplication-config" content="libs/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="icon" type="image/svg+xml" href="libs/favicons/favicon.svg">
+<link rel="icon" type="image/png" href="libs/favicons/favicon.png">
+
+  <title>Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [реал‑тайм ПЦР])</title>
+  <meta name="description" content="Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [реал‑тайм ПЦР])">
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__wrapper wrapper">
+
+    <a href="/" class="header__logo">
+      <img src="img/logo/logo-main.svg" alt="">
+    </a>
+
+    <div class="header__top">
+      <div class="header__menu-group">
+        <div class="header__submenu-left">
+          <ul class="menu-list menu-list--mod">
+            <li class="hidden-375"><a href="#">Результаты анализов</a></li>
+            <li><a href="#">Версия для слабовидящих</a></li>
+          </ul>
+        </div>
+        <div class="header__submenu-right">
+          <ul class="menu-list">
+            <li><a href="#">WhatsApp</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li class="hidden-375"><a href="#" data-path="dialog-window-callback" class="btn">Заказать звонок</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <nav class="header__main-menu">
+        <div class="main-nav">
+  <ul class="main-nav__list">
+    <li class="main-nav__item">
+      <a class="main-nav__link" href="/services-all.html">Covid-19</a>
+      <ul class="main-nav__sublist">
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-1.html">Экспресс-тест STANDARD Q COVID-19 AG</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-2.html">Экспресс-тест на наличие антител к
+            коронавирусу COVID-19</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-3.html">ПЦР-исследование на COVID-19</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Нейтрализующие антитела к коронавирусу SARS‑CoV‑2, спайковый (S)
+            белок [услуга 1]</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [услуга 2])</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [услуга 3])</a>
+        </li>
+      </ul>
+    </li>
+    <li class="main-nav__item">
+      <a class="main-nav__link" href="/services-all.html">Услуги</a>
+      <ul class="main-nav__sublist">
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Программы Check-up</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы на дому</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">УЗИ на дому</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Манипуляции</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Онкопоиск</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Компьютерная томография (КТ)</a>
+        </li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Магнитно-резонансная томография
+            (МРТ)</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Рентгенография</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Флюорография</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Скрининги</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Ультразвуковая диагностика (УЗИ)</a>
+        </li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Функциональная диагностика</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Видеокапсульная эндоскопия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Телемедицина</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Плазмолифтинг</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Экспресс-лаборатория</a></li>
+      </ul>
+    </li>
+    <li class="main-nav__item">
+      <a href="/doctors-all.html" class="main-nav__link">Врачи</a>
+      <ul class="main-nav__sublist">
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Аллергология-иммунология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гастроэнтерология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гематология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гинекология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Дерматовенерология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Инфекционные болезни</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Кардиология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Колопроктология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Неврология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Онкология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Педиатрия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Рентгенология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Терапия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Травматология-ортопедия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Ультразвуковая диагностика</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Урология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Хирургия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Эндокринология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Отоларингологи</a></li>
+      </ul>
+    </li>
+    <li class="main-nav__item">
+      <a href="#" class="main-nav__link">О нас</a>
+      <ul class="main-nav__sublist">
+        <li class="sublist-nav__item"><a href="/about.html" class="sublist-nav__link">О клинике</a></li>
+        <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Отзывы</a></li>
+        <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Лицензии и сертификаты</a></li>
+        <li class="sublist-nav__item"><a href="/for-doctors.html" class="sublist-nav__link">Врачам</a></li>
+      </ul>
+    </li>
+    <li class="main-nav__item"><a href="#" class="main-nav__link">Пациентам</a></li>
+    <li class="main-nav__item"><a href="/reception.html" class="main-nav__link">Расписание</a></li>
+    <li class="main-nav__item"><a href="/price.html" class="main-nav__link">Цены</a></li>
+    <li class="main-nav__item current"><a href="/stocks-all.html" class="main-nav__link main-nav__link--active">Акции</a></li>
+    <li class="main-nav__item"><a href="/filials-all.html" class="main-nav__link">Филиалы</a></li>
+  </ul>
+</div>
+
+      </nav>
+      <div class="header__contacts">
+        <div class="header__tel">
+          <a href="tel:88633090506" class="tel-link">8 (863) 309-05-06</a>
+        </div>
+        <div class="header__callback">
+          <a href="#" class="button-transparent btn" data-path="dialog-window-appointment">Записаться на прием</a>
+        </div>
+      </div>
+      <div class="header__buttons">
+        <!-- кнопка меню  -->
+        <button class="button-menu" type="button">
+          <span class="button-menu__toggle"></span>
+        </button>
+        <!-- кнопка поиска  -->
+        <button class="button-search" type="button">
+          <span class="button-search__toggle"></span>
+        </button>
+      </div>
+    </div><!-- .header__bottom -->
+
+    <!-- блок с мобильным меню  -->
+    <div class="mobile-main-nav">
+      <div class="wrapper">
+        <div class="main-nav-mobile">
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a class="main-nav-mobile__link" href="/services-all.html">Covid-19</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <ul class="main-nav-mobile__sublist sublist-nav">
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-1.html">Экспресс-тест STANDARD Q COVID-19 AG</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-2.html">Экспресс-тест на наличие антител к
+            коронавирусу COVID-19</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-3.html">ПЦР-исследование на COVID-19</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Нейтрализующие антитела к коронавирусу SARS‑CoV‑2, спайковый (S)
+            белок [услуга 1]</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [услуга 2])</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [услуга 3])</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a class="main-nav-mobile__link" href="#">Услуги</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <ul class="main-nav-mobile__sublist sublist-nav">
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Программы Check-up</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы на дому</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">УЗИ на дому</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Манипуляции</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Онкопоиск</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Компьютерная томография (КТ)</a>
+        </li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Магнитно-резонансная томография
+            (МРТ)</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Рентгенография</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Флюорография</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Скрининги</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Ультразвуковая диагностика (УЗИ)</a>
+        </li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Функциональная диагностика</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Видеокапсульная эндоскопия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Телемедицина</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Плазмолифтинг</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Экспресс-лаборатория</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a href="/doctors-all.html" class="main-nav-mobile__link">Врачи</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <ul class="main-nav-mobile__sublist sublist-nav">
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Аллергология-иммунология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гастроэнтерология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гематология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гинекология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Дерматовенерология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Инфекционные болезни</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Кардиология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Колопроктология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Неврология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Онкология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Педиатрия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Рентгенология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Терапия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Травматология-ортопедия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Ультразвуковая диагностика</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Урология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Хирургия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Эндокринология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Отоларингология</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="main-nav-mobile__list main-nav-mobile__list--long">
+    <li class="main-nav-mobile__item">
+      <a href="#" class="main-nav-mobile__link">О нас</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <ul class="main-nav-mobile__sublist sublist-nav">
+        <li class="sublist-nav__item"><a href="/about.html" class="sublist-nav__link">О клинике</a></li>
+        <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Отзывы</a></li>
+        <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Лицензии и сертификаты</a></li>
+        <li class="sublist-nav__item"><a href="/for-doctors.html" class="sublist-nav__link">Врачам</a></li>
+      </ul>
+    </li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Пациентам</a></li>
+    <li class="main-nav-mobile__item"><a href="/reception.html" class="main-nav-mobile__link">Расписание</a></li>
+    <li class="main-nav-mobile__item"><a href="/price.html" class="main-nav-mobile__link">Цены</a></li>
+    <li class="main-nav-mobile__item"><a href="/stocks-all.html" class="main-nav-mobile__link main-nav-mobile__link--active">Акции</a>
+    </li>
+    <li class="main-nav-mobile__item"><a href="/filials-all.html" class="main-nav-mobile__link">Филиалы</a></li>
+  </ul>
+
+</div>
+
+      </div>
+    </div>
+
+  </div><!--  .wrapper -->
+
+  <div class="header__search-form search-form">
+    <div class="wrapper">
+      <form action="URL" method="">
+        <label class="search-form__title title" for="">Поиск по сайту</label>
+        <div class="search-form__wrapper">
+          <input type="search" placeholder="Гинеколог, педиатр, анализы, КТ, УЗИ..." id="">
+          <button class="search-form__button button" type="submit">
+            <svg class="search-form__icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="7" cy="7" r="6" stroke-width="2"></circle>
+              <path d="m15 15-3-3" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            Найти</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  </div> <!-- .wrapper -->
+</header>
+
+  <main>
+    <section class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="page-home.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="page-services.html">Covid-19</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [реал‑тайм ПЦР])</a>
+          </li>
+        </ul>
+        <h1 class="page-title title">Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [реал‑тайм ПЦР])</h1>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="page-content__image-wrapper">
+        <div class="wrapper">
+          <div class="main-information__photo scalable-picture">
+            <img src="img/content/4.jpg" alt="фото медцентра" width="992" height="560">
+          </div>
+        </div>
+      </div>
+      <div class="page-content__text">
+        <div class="wrapper">
+
+          <p>Коронавирусная инфекция COVID-19 (от англ. CoronaVirusDisease 2019) представляет собой острую респираторную
+            инфекцию, вызываемую коронавирусом SARS-CoV-2. Особую опасность коронавирусы представляют для людей с
+            ослабленной иммунной системой, в частности для новорождённых, детей и пожилых, людей с гипертонией, диабетом
+            и хроническими заболеваниями дыхательной системы.</p>
+          <p>Инфекция, вызываемая SARS-CoV-2, может протекать как в форме лёгкой острой респираторной инфекции, так и в
+            тяжёлой форме, осложнённой вирусной пневмонией, которая может привести к развитию дыхательной
+            недостаточноcти. Источником инфекции является больной человек, в том числе находящийся в инкубационном
+            периоде. Инкубационный период - от 2 до 14 дней.</p>
+
+          <h2>Пути передачи вируса:</h2>
+
+          <ul>
+            <li>Воздушно-капельный (при кашле, чихании, разговоре)</li>
+            <li>Контактный (через рукопожатия, предметы обихода)</li>
+            <li>Фекально-оральный (через грязные руки, предметы обихода)</li>
+          </ul>
+
+          <h2>Метод диагностики:</h2>
+          <p>Полимеразная цепная реакция (ПЦР). Принцип метода основан на обнаружении в материале специфичных фрагментов
+            генетического материала вируса (РНК).</p>
+          <p>Диагноз подтверждается при положительном результате лабораторного исследования на наличие РНК SARS-CoV-2.
+          </p>
+
+          <h2>Подготовка к исследованию:</h2>
+          <p>Минимум за 1 час до взятия мазков из ротоглотки (зева) не употреблять пищу, не пить, не чистить зубы, не
+            полоскать рот/горло, не жевать жевательную резинку, не курить.</p>
+          <p>За 3-4 часа до взятия мазков из носа/носоглотки не закапывать капли/спреи и не промывать нос.</p>
+
+          <h2>Срок выполнения исследования:</h2>
+          <p>2 суток. В случае возникновения необходимости выполнения дополнительного теста, срок выполнения
+            исследования может составить до 3 суток</p>
+
+
+          <a class="button-big btn" href="#" data-path="dialog-window-callback">Записаться на анализ</a>
+
+          <div class="content-navigation">
+            <a class="button-arrow" href="#">
+              <svg class="button__arrow-icon" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1L5 8L12 15" stroke-width="2" stroke-linecap="round" />
+              </svg>
+              Назад к списку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="decorate"><section class="main-price">
+  <div class="wrapper">
+    <h2 class="title">Цены</h2>
+
+    <ul class="main-price__list">
+      <li class="main-price__item">
+        <h3 class="main-price__name">Рентгенография голеностопного сустава</h3>
+        <span class="main-price__cost">1 400 руб.</span>
+        <a class="main-price__link" href="#">Записаться</a>
+      </li>
+
+      <li class="main-price__item">
+        <h3 class="main-price__name">Рентгенография голеностопного сустава</h3>
+        <span class="main-price__cost">1 400 руб.</span>
+        <a class="main-price__link" href="#">Записаться</a>
+      </li>
+
+      <li class="main-price__item">
+        <h3 class="main-price__name">Рентгенография голеностопного сустава</h3>
+        <span class="main-price__cost">1 400 руб.</span>
+        <a class="main-price__link" href="#">Записаться</a>
+      </li>
+
+      <li class="main-price__item">
+        <h3 class="main-price__name">Рентгенография голеностопного сустава</h3>
+        <span class="main-price__cost">1 400 руб.</span>
+        <a class="main-price__link" href="#">Записаться</a>
+      </li>
+    </ul>
+
+    <a href="#" class="button button--transparent button--big">Показать еще 10 услуг</a>
+
+  </div>
+</section>
+</div>
+    <div class="decorate"><section class="main-faq">
+  <div class="wrapper">
+    <h2 class="title">Часто задаваемые вопросы</h2>
+    <ul class="main-faq__list">
+      <li class="main-faq__item">
+        <h3 class="main-faq__issue">Гравитационный квант — актуальная национальная задача?</h3>
+        <div class="main-faq__answer">
+          <p>Клиника «ЕВРОДОН» была создана весной 2002 года с появлением на рынке медицинских услуг высокоточного
+            молекулярно-генетического лабораторного исследования – полимеразная цепная реакция (ПЦР). В России
+            тема ПЦР развивалась в ФБУН Центральный НИИ эпидемиологии Роспотребнадзора г. Москвы во главе с
+            академиком РАМН, доктором медицинских наук, профессором, лауреатом Государственной премии и премий
+            Правительства Российской Федерации в области науки и техники, именных премий АМН СССР и РАМН
+            Валентином Ивановичем Покровским.</p>
+          <p>Организованное между НИИ и клиникой "ЕВРОДОН" деловое сотрудничество, с использованием в клинической
+            лабораторной диагностики научных и практических достижений института, позволило обеспечить
+            повседневную доступность к современным диагностическим технологиям мирового уровня.</p>
+        </div>
+      </li>
+      <li class="main-faq__item">
+        <h3 class="main-faq__issue">Излучение, как того требуют законы термодинамики, экстремально?</h3>
+        <div class="main-faq__answer">
+          <p>Клиника «ЕВРОДОН» была создана весной 2002 года с появлением на рынке медицинских услуг высокоточного
+            молекулярно-генетического лабораторного исследования – полимеразная цепная реакция (ПЦР). В России
+            тема ПЦР развивалась в ФБУН Центральный НИИ эпидемиологии Роспотребнадзора г. Москвы во главе с
+            академиком РАМН, доктором медицинских наук, профессором, лауреатом Государственной премии и премий
+            Правительства Российской Федерации в области науки и техники, именных премий АМН СССР и РАМН
+            Валентином Ивановичем Покровским.</p>
+          <p>Организованное между НИИ и клиникой "ЕВРОДОН" деловое сотрудничество, с использованием в клинической
+            лабораторной диагностики научных и практических достижений института, позволило обеспечить
+            повседневную доступность к современным диагностическим технологиям мирового уровня.</p>
+        </div>
+      </li>
+      <li class="main-faq__item">
+        <h3 class="main-faq__issue">Гравитационный квант — актуальная национальная задача?</h3>
+        <div class="main-faq__answer">
+          <p>Клиника «ЕВРОДОН» была создана весной 2002 года с появлением на рынке медицинских услуг высокоточного
+            молекулярно-генетического лабораторного исследования – полимеразная цепная реакция (ПЦР). В России
+            тема ПЦР развивалась в ФБУН Центральный НИИ эпидемиологии Роспотребнадзора г. Москвы во главе с
+            академиком РАМН, доктором медицинских наук, профессором, лауреатом Государственной премии и премий
+            Правительства Российской Федерации в области науки и техники, именных премий АМН СССР и РАМН
+            Валентином Ивановичем Покровским.</p>
+          <p>Организованное между НИИ и клиникой "ЕВРОДОН" деловое сотрудничество, с использованием в клинической
+            лабораторной диагностики научных и практических достижений института, позволило обеспечить
+            повседневную доступность к современным диагностическим технологиям мирового уровня.</p>
+        </div>
+      </li>
+      <li class="main-faq__item">
+        <h3 class="main-faq__issue">Излучение, как того требуют законы термодинамики, экстремально?</h3>
+        <div class="main-faq__answer">
+          <p>Клиника «ЕВРОДОН» была создана весной 2002 года с появлением на рынке медицинских услуг высокоточного
+            молекулярно-генетического лабораторного исследования – полимеразная цепная реакция (ПЦР). В России
+            тема ПЦР развивалась в ФБУН Центральный НИИ эпидемиологии Роспотребнадзора г. Москвы во главе с
+            академиком РАМН, доктором медицинских наук, профессором, лауреатом Государственной премии и премий
+            Правительства Российской Федерации в области науки и техники, именных премий АМН СССР и РАМН
+            Валентином Ивановичем Покровским.</p>
+          <p>Организованное между НИИ и клиникой "ЕВРОДОН" деловое сотрудничество, с использованием в клинической
+            лабораторной диагностики научных и практических достижений института, позволило обеспечить
+            повседневную доступность к современным диагностическим технологиям мирового уровня.</p>
+        </div>
+      </li>
+      <li class="main-faq__item active">
+        <h3 class="main-faq__issue">Гравитационный квант — актуальная национальная задача?</h3>
+        <div class="main-faq__answer show">
+          <p>Клиника «ЕВРОДОН» была создана весной 2002 года с появлением на рынке медицинских услуг высокоточного
+            молекулярно-генетического лабораторного исследования – полимеразная цепная реакция (ПЦР). В России
+            тема ПЦР развивалась в ФБУН Центральный НИИ эпидемиологии Роспотребнадзора г. Москвы во главе с
+            академиком РАМН, доктором медицинских наук, профессором, лауреатом Государственной премии и премий
+            Правительства Российской Федерации в области науки и техники, именных премий АМН СССР и РАМН
+            Валентином Ивановичем Покровским.</p>
+          <p>Организованное между НИИ и клиникой "ЕВРОДОН" деловое сотрудничество, с использованием в клинической
+            лабораторной диагностики научных и практических достижений института, позволило обеспечить
+            повседневную доступность к современным диагностическим технологиям мирового уровня.</p>
+        </div>
+      </li>
+      <li class="main-faq__item">
+        <h3 class="main-faq__issue">Излучение, как того требуют законы термодинамики, экстремально?</h3>
+        <div class="main-faq__answer">
+          <p>Клиника «ЕВРОДОН» была создана весной 2002 года с появлением на рынке медицинских услуг высокоточного
+            молекулярно-генетического лабораторного исследования – полимеразная цепная реакция (ПЦР). В России
+            тема ПЦР развивалась в ФБУН Центральный НИИ эпидемиологии Роспотребнадзора г. Москвы во главе с
+            академиком РАМН, доктором медицинских наук, профессором, лауреатом Государственной премии и премий
+            Правительства Российской Федерации в области науки и техники, именных премий АМН СССР и РАМН
+            Валентином Ивановичем Покровским.</p>
+          <p>Организованное между НИИ и клиникой "ЕВРОДОН" деловое сотрудничество, с использованием в клинической
+            лабораторной диагностики научных и практических достижений института, позволило обеспечить
+            повседневную доступность к современным диагностическим технологиям мирового уровня.</p>
+        </div>
+      </li>
+      <li class="main-faq__item">
+        <h3 class="main-faq__issue">Гравитационный квант — актуальная национальная задача?</h3>
+        <div class="main-faq__answer">
+          <p>Клиника «ЕВРОДОН» была создана весной 2002 года с появлением на рынке медицинских услуг высокоточного
+            молекулярно-генетического лабораторного исследования – полимеразная цепная реакция (ПЦР). В России
+            тема ПЦР развивалась в ФБУН Центральный НИИ эпидемиологии Роспотребнадзора г. Москвы во главе с
+            академиком РАМН, доктором медицинских наук, профессором, лауреатом Государственной премии и премий
+            Правительства Российской Федерации в области науки и техники, именных премий АМН СССР и РАМН
+            Валентином Ивановичем Покровским.</p>
+          <p>Организованное между НИИ и клиникой "ЕВРОДОН" деловое сотрудничество, с использованием в клинической
+            лабораторной диагностики научных и практических достижений института, позволило обеспечить
+            повседневную доступность к современным диагностическим технологиям мирового уровня.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+</div>
+  </main>
+  <footer class="footer">
+
+  <div class="send-question">
+    <div class="wrapper">
+      <div class="send-question__left">
+        <h3 class="title">Если у вас остались вопросы, звоните</h3>
+        <a class="tel-link" href="tel:88633090506">+7 (863) 309-05-06</a>
+      </div>
+      <div class="buttons-wrapper">
+        <a class="button" href="">Записаться на прием</a>
+        <a class="button-transparent" href="">Заказать звонок</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer__main-menu">
+    <div class="wrapper">
+      <div class="main-nav-mobile">
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a class="main-nav-mobile__link" href="/services-all.html">Covid-19</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <ul class="main-nav-mobile__sublist sublist-nav">
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-1.html">Экспресс-тест STANDARD Q COVID-19 AG</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-2.html">Экспресс-тест на наличие антител к
+            коронавирусу COVID-19</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="/service-3.html">ПЦР-исследование на COVID-19</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Нейтрализующие антитела к коронавирусу SARS‑CoV‑2, спайковый (S)
+            белок [услуга 1]</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [услуга 2])</a>
+        </li>
+        <li class="sublist-nav__item">
+          <a class="sublist-nav__link" href="#">Коронавирус COVID‑19 (SARS‑CoV‑2, РНК [услуга 3])</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a class="main-nav-mobile__link" href="#">Услуги</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <ul class="main-nav-mobile__sublist sublist-nav">
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Программы Check-up</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Анализы на дому</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">УЗИ на дому</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Манипуляции</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Онкопоиск</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Компьютерная томография (КТ)</a>
+        </li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Магнитно-резонансная томография
+            (МРТ)</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Рентгенография</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Флюорография</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Скрининги</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Ультразвуковая диагностика (УЗИ)</a>
+        </li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Функциональная диагностика</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Видеокапсульная эндоскопия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Телемедицина</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Плазмолифтинг</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Экспресс-лаборатория</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="main-nav-mobile__list">
+    <li class="main-nav-mobile__item">
+      <a href="/doctors-all.html" class="main-nav-mobile__link">Врачи</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <ul class="main-nav-mobile__sublist sublist-nav">
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Аллергология-иммунология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гастроэнтерология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гематология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Гинекология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Дерматовенерология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Инфекционные болезни</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Кардиология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Колопроктология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Неврология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Онкология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Педиатрия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Рентгенология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Терапия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Травматология-ортопедия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Ультразвуковая диагностика</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Урология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Хирургия</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Эндокринология</a></li>
+        <li class="sublist-nav__item"><a class="sublist-nav__link" href="#">Отоларингология</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul class="main-nav-mobile__list main-nav-mobile__list--long">
+    <li class="main-nav-mobile__item">
+      <a href="#" class="main-nav-mobile__link">О нас</a>
+      <button class="toggle-btn">
+        <svg class="toggle-btn__icon" width="18" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 1 9 9 1 1" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <ul class="main-nav-mobile__sublist sublist-nav">
+        <li class="sublist-nav__item"><a href="/about.html" class="sublist-nav__link">О клинике</a></li>
+        <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Отзывы</a></li>
+        <li class="sublist-nav__item"><a href="#" class="sublist-nav__link">Лицензии и сертификаты</a></li>
+        <li class="sublist-nav__item"><a href="/for-doctors.html" class="sublist-nav__link">Врачам</a></li>
+      </ul>
+    </li>
+    <li class="main-nav-mobile__item"><a href="#" class="main-nav-mobile__link">Пациентам</a></li>
+    <li class="main-nav-mobile__item"><a href="/reception.html" class="main-nav-mobile__link">Расписание</a></li>
+    <li class="main-nav-mobile__item"><a href="/price.html" class="main-nav-mobile__link">Цены</a></li>
+    <li class="main-nav-mobile__item"><a href="/stocks-all.html" class="main-nav-mobile__link main-nav-mobile__link--active">Акции</a>
+    </li>
+    <li class="main-nav-mobile__item"><a href="/filials-all.html" class="main-nav-mobile__link">Филиалы</a></li>
+  </ul>
+
+</div>
+
+    </div>
+  </div>
+  <div class="footer__submenu">
+    <div class="wrapper">
+      <ul class="menu-list">
+        <li><a href="#">Официальные данные</a></li>
+        <li><a href="#">Обработка персональных данных</a></li>
+        <li><a href="#">Пользовательское соглашение</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__copiryght">
+    <div class="wrapper">
+      <p>© 2002-2021 сеть консультационно диагностических центров ЕвроДон. Все права защищены.</p>
+    </div>
+  </div>
+
+<!--  прилипающий блок с кнопками -->
+  <div class="order-buttons">
+    <a href="#" class="order-buttons__item order-buttons__item--fill btn" data-path="dialog-window-callback">Записаться на прием</a>
+    <a href="#" class="order-buttons__item btn" data-path="dialog-window-callback">Результаты анализов</a>
+  </div>
+  <!-- подключение модальных окон  -->
+  <div class="modals">
+  <div class="modal-overlay">
+
+    <!-- callback  -->
+    <section class="modal decorate-border" data-target="dialog-window-callback">
+
+      <h3 class="modal__title title">Заказать звонок</h3>
+      <p class="modal-subtitle">Заполните простую форму и мы свяжемся с Вами в ближайшее время</p>
+
+      <form class="modals__form custom-form" action="" method="post">
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label for="CUST-FORM-NAME" class="custom-form__label warn">Ваше имя:</label>
+          </span>
+
+          <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
+                 id="CUST-FORM-NAME" data-required required>
+        </p>
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+          <label for="CUST-FORM-TEL" class="custom-form__label warn">Телефон:</label>
+          </span>>
+          <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
+                 id="CUST-FORM-TEL" data-required required>
+        </p>
+
+        <div class="custom-form__wrapper">
+          <label class="custom-form__label custom-form__label--accept">
+            <input class="visually-hidden" type="checkbox" name="accept" checked>
+            <span class="custom-form__politic">Я согласен на <a href="#" target="_blank"> обработку персональных данных</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="custom-form__button button button--border js-validate" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close button button--border" type="button">
+        <span></span>
+      </button>
+
+    </section>
+
+    <!-- Make an appointment  -->
+    <section class="modal decorate-border" data-target="dialog-window-appointment">
+
+      <h3 class="modal__title title">Записаться на прием</h3>
+      <p class="modal-subtitle">Заполните простую форму и мы свяжемся с Вами в ближайшее время</p>
+
+      <form class="modals__form custom-form" action="" method="post">
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label for="CUST-FORM-NAME" class="custom-form__label warn">Ваше имя:</label>
+          </span>
+
+          <input class="custom-form__input" name="name" type="text" placeholder="Представьтесь, пожалуйста"
+                 id="CUST-FORM-NAME" data-required required>
+        </p>
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+          <label for="CUST-FORM-TEL" class="custom-form__label warn">Телефон:</label>
+          </span>>
+          <input class="custom-form__input" type="tel" name="tel" placeholder="+7 ( ___ ) ___ - __ - __"
+                 id="CUST-FORM-TEL" data-required required>
+        </p>
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label class="custom-select__label warn" for="form-select-adress-2">Выберите филиал:</label>
+          </span>
+
+          <select class="custom-select custom-select__list" name="address-selection" id="form-select-adress-2" required>
+            <option value="" selected>Выберите филиал</option>
+            <option value="Ростов-на-Дону, ул. Петренко, 16">Ростов-на-Дону, ул. Петренко, 16</option>
+            <option value="г.Ростов-на-Дону, ул. Металлургическая, 107">г.Ростов-на-Дону, ул. Металлургическая, 107
+            </option>
+            <option value="г.Ростов-на-Дону, ул.Зорге, 2">г.Ростов-на-Дону, ул.Зорге, 2</option>
+            <option value="Ростов-на-Дону, ул.Вавилова, 57">Ростов-на-Дону, ул.Вавилова, 57</option>
+            <option value="г.Ростов-на-Дону, ул.Социалистическая, 208">г.Ростов-на-Дону, ул.Социалистическая, 208</option>
+            <option value="г.Ростов-на-Дону,ул.М.Горького, 181">г.Ростов-на-Дону,ул.М.Горького, 181</option>
+            <option value="с. Чалтырь, ул. Восточная, 2в">с. Чалтырь, ул. Восточная, 2в</option>
+            <option value="с. Самарское, ул. Ленина, д 97">с. Самарское, ул. Ленина, д 97</option>
+            <option value="г. Таганрог, ул. Чехова, 159">г. Таганрог, ул. Чехова, 159</option>
+          </select>
+        </p>
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label class="custom-select__label warn" for="form-select-directions">Направление:</label>
+          </span>
+
+
+          <select class="custom-select__list" name="address-selection" id="form-select-directions" required>
+            <option value="" selected>Выберите направление</option>
+            <option value="Аллергология-иммунология">Аллергология-иммунология</option>
+            <option value="Гастроэнтерология">Гастроэнтерология</option>
+            <option value="Инфекционные болезни">Инфекционные болезни</option>
+            <option value="Кардиология">Кардиология</option>
+            <option value="Педиатрия">Педиатрия</option>
+          </select>
+        </p>
+
+        <p class="custom-form__wrapper">
+          <span class="custom-form__label-wrapper">
+            <label class="custom-select__label" for="form-select-doctors-name">Врач:</label>
+          </span>
+
+
+          <select class="custom-select__list" name="address-selection" id="form-select-doctors-name" required>
+            <option value="" selected>Выберите врача</option>
+            <option value="Фамилия Имя Отчество">Фамилия Имя Отчество</option>
+            <option value="Фамилия Имя Отчество">Фамилия Имя Отчество</option>
+            <option value="Фамилия Имя Отчество">Фамилия Имя Отчество</option>
+            <option value="Фамилия Имя Отчество">Фамилия Имя Отчество</option>
+            <option value="Фамилия Имя Отчество">Фамилия Имя Отчество</option>
+            <option value="Фамилия Имя Отчество">Фамилия Имя Отчество</option>
+          </select>
+        </p>
+
+        <div class="custom-form__wrapper">
+          <label class="custom-form__label custom-form__label--accept">
+            <input class="visually-hidden" type="checkbox" name="accept" checked>
+            <span class="custom-form__politic">Я согласен на <a href="#" target="_blank"> обработку персональных данных</a>
+            </span>
+          </label>
+        </div>
+
+        <button class="custom-form__button button button--border js-validate" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close button button--border" type="button">
+        <span></span>
+      </button>
+
+    </section>
+
+  </div> <!-- .modal-overlay -->
+</div>
+
+</footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+<script src="./libs/swiper-bundle.min.js"></script>
+<script src="./libs/choices.min.js"></script>
+<script src="libs/inputmask.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

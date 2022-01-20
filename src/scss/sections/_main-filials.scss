@@ -10,5 +10,10 @@
 
   @media (max-width: 1024px) {
     justify-content: space-between;
+    align-items: stretch;
   }
+}
+
+.main-filials .button-plus {
+  text-transform: initial;
 }

@@ -1,11 +1,13 @@
 .scalable-picture {
   overflow: hidden;
+  border-radius: 8px;
 
 
   img {
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;
+    border-radius: 8px;
 
     &:hover {
       -webkit-transform: scale(1.1);

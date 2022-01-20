@@ -372,3 +372,26 @@
   }
 
 }
+
+.modals .choices__list--single {
+  &:hover {
+    color: #334257;
+    border-color: #334257 !important;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #334257 !important;
+    color: #334257 !important;
+  }
+}
+
+.choices .is-focused .choices__list--single,
+.choices .is-open .choices__list--single,
+.modal .is-focused .choices__list--single,
+.modal .is-open .choices__list--single {
+  border: 2px solid #334257 !important;
+    color: #334257 !important;
+}
+
+

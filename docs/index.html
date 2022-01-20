@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<link rel="apple-touch-icon" sizes="180x180" href="libs/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="libs/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="libs/favicons/favicon-16x16.png">
+<link rel="manifest" href="libs/favicons/site.webmanifest">
+<link rel="mask-icon" href="libs/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="libs/favicons/favicon.ico">
+<meta name="msapplication-TileColor" content="#ff0000">
+<meta name="msapplication-config" content="libs/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="icon" type="image/svg+xml" href="libs/favicons/favicon.svg">
+<link rel="icon" type="image/png" href="libs/favicons/favicon.png">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Техническая страница</title>
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./css/main.css"/>
+  <style>
+    body {
+      background-color: #ECF6FA;
+      font-family: $ font-2;
+      margin: 0;
+      padding: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: $ base;
+
+    }
+
+    img {
+      max-width: 520px;
+      display: block;
+      margin-bottom: 45px;
+      height: auto;
+    }
+
+    a {
+      display: inline-block;
+      font-family: $ font-2;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 120%;
+      color: $ base;
+      border-bottom: 2px solid $ base;
+      position: relative;
+      margin-bottom: 5px;
+
+    }
+
+    ol {
+      list-style: none;
+      counter-reset: li;
+    }
+
+    li:before {
+      counter-increment: li;
+      content: counters(li, ".") ". ";
+    }
+
+    main {
+      padding-top: 10%;
+    }
+
+    .wrapper {
+      max-width: max-content;
+    }
+  </style>
+</head>
+
+<body>
+<main class="wrapper">
+  <img src="img/cover.jpg" alt="обложка">
+  <h1>Техническое меню для навигации</h1>
+  <ol class="support-nav__list">
+    <li><a href="home.html" target="_blank">Главная</a></li>
+    <li><a href="services-all.html" target="_blank">Услуги [общая страница со списком услуг]</a></li>
+    <ol>
+      <li><a href="service-1.html" target="_blank">Страница услуг 1</a></li>
+      <li><a href="service-2.html" target="_blank">Страница услуг 2</a></li>
+      <li><a href="service-3.html" target="_blank">Страница услуг 3</a></li>
+    </ol>
+    <li><a href="doctors-all.html" target="_blank">Врачи</a>
+      <ol>
+        <li><a href="doctor-personal.html" target="_blank">Страница врача</a></li>
+      </ol>
+    </li>
+    <!--      <li><a href="" target="_blank" target="_blank">Клиника</a></li>-->
+    <!--      <li><a href="" target="_blank" target="_blank">Пациентам</a></li>-->
+    <li><a href="about.html" target="_blank">О клинике</a></li>
+    <li><a href="reception.html" target="_blank">Расписание</a></li>
+    <li><a href="price.html" target="_blank">Цены</a></li>
+    <li><a href="stocks-all.html" target="_blank">Акции</a>
+      <ol>
+        <li><a href="stocks-personal.html" target="_blank">Отдельная страница Акции</a></li>
+      </ol>
+    </li>
+    <li><a href="for-doctors.html" target="_blank">Врачам</a></li>
+    <li><a href="filials-all.html" target="_blank">Филиалы</a>
+      <ol>
+        <li><a href="filial-personal.html" target="_blank">Клиника на Петренко</a></li>
+      </ol>
+    </li>
+  </ol>
+</main>
+</body>
+
+</html>

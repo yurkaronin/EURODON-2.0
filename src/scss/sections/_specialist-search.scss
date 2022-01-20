@@ -102,3 +102,61 @@
     width: initial;
   }
 }
+
+.specialist-search--all-doc {
+  .specialist-search__form {
+    justify-content: flex-end;
+
+    @media (max-width: 1024px) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: 425px) {
+      flex-direction: column;
+    }
+  }
+
+  .specialist-search__select-location,
+  .specialist-search__select-prof {
+    max-width: 440px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    @media (max-width: 1024px) {
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: calc(50% - 12px);
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    @media (max-width: 425px) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .choices {
+      max-width: 352px;
+      width: 100%;
+
+      @media (max-width: 1024px) {
+        max-width: 368px;
+      }
+
+      @media (max-width: 425px) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.custom-form__label {
+  color: #334257;
+}
