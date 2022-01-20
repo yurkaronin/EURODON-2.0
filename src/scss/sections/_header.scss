@@ -251,7 +251,7 @@
 .header__bottom {
   padding: 0 0 0 30px;
   display: grid;
-  gap: 5px;
+  gap: 0;
   grid-template-columns: auto 400px 40px;
   grid-column: 2/-1;
   border-left: 1px solid $border;
@@ -430,13 +430,14 @@
 
 //Новые правки
 .header .button-transparent {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   padding: 20px 17px;
   border-radius: 0;
   margin: 0;
   background-color: #0098d0;
   color: #fff;
+  border: none;
 
   &:hover {
     background: #303f82;
@@ -465,7 +466,6 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 405px auto;
-    gap: 0;
     justify-content: flex-end;
     margin-right: 26px;
     padding: 0;
@@ -483,7 +483,7 @@
   border-radius: 0;
   width: initial;
   height: initial;
-  padding: 29px 29px;
+  padding: 28px 27px;
   background-color: #ffffff;
 
   &:hover {
@@ -526,5 +526,11 @@
 
   @media (max-width: 735px) {
     grid-template-columns: auto auto;
+  }
+}
+
+.header .button-search.active:hover {
+  &:after {
+    background-color: #303f82;
   }
 }

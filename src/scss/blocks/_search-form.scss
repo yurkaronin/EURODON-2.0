@@ -110,11 +110,12 @@
 }
 
 .search-form--mod {
-  padding: 0;
-  padding-top: 32px !important;
+  padding: 80px 0 48px;
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
 
   .wrapper {
-    max-width: 992px;
+    max-width: 1088px;
 
   }
 }

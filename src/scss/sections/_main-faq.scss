@@ -17,11 +17,23 @@
 .main-faq__item,
 .main-faq__subitem {
   border-top: 1px solid $border-2;
-  padding: 30px 24px;
+  padding: 30px 24px 26px;
+
+  @media (max-width: 1024px) {
+    padding: 28px 5px 28px 24px;
+  }
+
 
   @media (max-width: 920px) {
     padding: 20px 0;
   }
+}
+
+.main-faq__subitem {
+  @media (max-width: 1024px) {
+    padding: 28px 19px 28px 31px;
+  }
+
 }
 
 .main-faq__issue {
@@ -55,6 +67,10 @@
   color: $brand-1;
   margin-bottom: 30px;
   transition: 0.3s;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 37px;
+  }
 
   &::after {
     content: url(../img/icons/icon-arrow-faq-active.svg);
@@ -127,6 +143,7 @@
 
   .main-faq__answer {
     height: auto;
+    margin: 0 auto;
   }
 
   .main-faq__issue {
@@ -139,13 +156,57 @@
     max-width: 1248px;
       width: 100%;
       margin: 0 auto;
+
+      @media (max-width: 1024px) {
+        max-width: 788px;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 640px;
+      }
+
   }
   .main-faq__subitem .main-faq__answer {
     max-width: 992px;
+
+    @media (max-width: 1024px) {
+      max-width: 590px;
+      margin: 0 auto;
+    }
+
   }
 }
 
+.main-faq--price {
+  padding-top: 0;
+}
 
+.main-faq--price .main-faq__item .main-faq__issue {
+  &::after {
+    content: url(../img/icons/icon-price-list.svg);
+    transform: rotate(180deg);
+  }
+}
 
+.main-faq--price .main-faq__item.active .main-faq__issue {
+  &::after {
+    content: url(../img/icons/icon-price-list.svg);
+    transform: rotate(0deg);
+  }
+}
 
+.main-faq--price .main-faq__item.active .main-faq__sublist .main-faq__issue {
+  &::after {
+    transform: rotate(180deg);
+    content: url(../img/icons/icon-price-list.svg);
+  }
+}
 
+.main-faq--price .main-faq__item.active .main-faq__subitem.active .main-faq__issue {
+
+  &::after {
+    transform: rotate(0deg);
+    content: url(../img/icons/icon-price-list.svg);
+  }
+
+}

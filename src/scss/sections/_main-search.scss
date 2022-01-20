@@ -58,4 +58,20 @@
 
 }
 
+.main-search.search-form--mod {
+  padding: 80px 0 49px;
+
+  .wrapper {
+    @media (max-width: 768px) {
+      flex-basis: 100%;
+      margin: 0 40px;
+      margin: 0 auto;
+      max-width: 688px;
+    }
+  }
+
+
+
+}
+
 
