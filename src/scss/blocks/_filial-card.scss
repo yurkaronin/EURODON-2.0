@@ -23,6 +23,7 @@
     padding: 0;
   }
 }
+
 .filial-card__name {
   font-family: $font-1;
   font-weight: 500;
@@ -41,6 +42,7 @@
     padding: 20px 25px 30px;
   }
 }
+
 .filial-card__details-list {
   list-style: none;
   margin: 0;
@@ -51,6 +53,7 @@
     margin-bottom: 25px;
   }
 }
+
 .filial-card__details-item {
   margin-bottom: 15px;
   position: relative;
@@ -62,12 +65,14 @@
     margin-bottom: 15px;
   }
 }
+
 .filial-card__details-item svg {
   position: absolute;
   left: 0;
   fill: $brand-4;
   display: none;
 }
+
 .filial-card__text {
   margin: 0;
   font-size: 16px;
@@ -75,6 +80,7 @@
   color: $brand-5;
   font-weight: 400;
 }
+
 .filial-card__telephone {
   font-weight: 700;
   font-size: 18px;
@@ -96,18 +102,53 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-
-    //&::after {
-    //  content: url(../img/icons/plus.svg);
-    //  width: 16px;
-    //  height: 16px;
-    //  display: block;
-    //}
   }
 }
 
+.filial-card--clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #788AA6;
+  }
+}
+
+.filial-card .button--open {
+  display: none;
+
+  @media (max-width:425px) {
+    display: flex;
+  }
+}
+
+.filial-card__header {
+  @media (max-width:425px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 17px 20px;
+  }
+
+  .filial-card__name {
+    @media (max-width:425px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+}
+
+// активная карточка
 .filial-card.active {
   max-height: max-content;
+  padding-bottom: 30px;
 
   .filial-card__open-button::after {
     content: url(../img/icons/minus.svg);
@@ -116,20 +157,12 @@
   .filial-card__name {
     padding-bottom: 0;
   }
-}
 
-.filial-card--clear {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h3 {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
+  .filial-card__details-list {
+    padding: 0 20px;
+  }
 
-    text-align: center;
-
-    color: #788AA6;
+  .button-plus {
+    margin: 0 20px;
   }
 }

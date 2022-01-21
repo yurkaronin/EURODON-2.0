@@ -200,3 +200,11 @@ for (let faqItem2 of faqItems2) {
   };
 }
 
+
+// Анонсы филлиалов
+let filialCards = document.querySelectorAll('.filial-card');
+for (let filialCard of filialCards) {
+  filialCard.onclick = function () {
+    filialCard.classList.toggle('active');
+  };
+}

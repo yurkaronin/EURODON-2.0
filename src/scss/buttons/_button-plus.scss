@@ -43,3 +43,28 @@
 
 
 }
+
+.button-plus--mod {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/icon-plus--mod.svg);
+    pointer-events: none;
+    left: 16px;
+    transition: 0.3s linear;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url(../img/icons/icon-plus--wh.svg);
+    }
+  }
+}

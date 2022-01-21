@@ -200,6 +200,14 @@ for (let faqItem2 of faqItems2) {
   };
 }
 
+
+// Анонсы филлиалов
+let filialCards = document.querySelectorAll('.filial-card');
+for (let filialCard of filialCards) {
+  filialCard.onclick = function () {
+    filialCard.classList.toggle('active');
+  };
+}
 ;// слайдер первый экран
 const topSwiper = document.querySelector('.top-slider__swiper');
 if (topSwiper) {
