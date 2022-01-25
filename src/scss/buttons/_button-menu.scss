@@ -1,7 +1,7 @@
 .button-menu {
   background-color: transparent;
   position: relative;
-  padding: 28px 44px;
+  // padding: 28px 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,6 +9,9 @@
   border-left: 1px solid $border;
   margin-left: auto;
   cursor: pointer;
+  width: 56px;
+  height: 56px;
+  border-right: 1px solid #ebedef;
 
   @media (max-width: 1024px) {
     padding: 29px 29px;
@@ -18,8 +21,8 @@
     padding: 28px 26px;
   }
 
-  @media (max-width: 375px) {
-    padding: 35px 44px;
+  @media (max-width: 695px) {
+    padding: 35px 42px !important;
   }
 
   span,

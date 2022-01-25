@@ -43,5 +43,9 @@ body {
   &.custom-lock {
     overflow: hidden;
     margin-right: 17px;
+
+    @media (max-width: 1570px) {
+      margin-right: initial;
+    }
   }
 }
