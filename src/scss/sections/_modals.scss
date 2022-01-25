@@ -299,7 +299,7 @@
   border-radius: 4px;
   font-size: 18px;
   color: #334257;
-  padding: 10px 49px  10px 24px;
+  padding: 10px 49px 10px 24px;
   font-weight: 400;
   text-transform: initial;
 }
@@ -390,7 +390,16 @@
 .modal .is-focused .choices__list--single,
 .modal .is-open .choices__list--single {
   border: 2px solid #334257 !important;
-    color: #334257 !important;
+  color: #334257 !important;
 }
 
+.custom-form__input:hover {
+  color: #334257;
+  border-color: #334257 !important;
+}
 
+.custom-form__input:active,
+.custom-form__input:focus {
+  border: 2px solid #334257 !important;
+  color: #334257 !important;
+}

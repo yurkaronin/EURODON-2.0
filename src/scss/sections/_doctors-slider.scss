@@ -1,6 +1,10 @@
 .doctors-slider {
   padding: 45px 0 0;
 
+  @media (max-width: 768px) {
+    padding: 52px 0 0;
+  }
+
   @media (max-width: 375px) {
     padding-top: 23px;
   }
@@ -49,6 +53,12 @@
       margin-bottom: 14px;
     }
   }
+
+  // .wrapper {
+  //   @media (max-width: 768px) {
+  //     padding: 0;
+  //   }
+  // }
 }
 
 .doctors-slider__wrapper {

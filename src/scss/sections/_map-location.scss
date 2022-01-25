@@ -1,5 +1,9 @@
 .map-location {
-  padding: 35px 0;
+  padding: 18px 0;
+
+  @media (max-width: 1440px) {
+    padding: 34px 0;
+  }
 
   @media (max-width: 375px) {
     padding: 19px 0;
@@ -58,6 +62,18 @@
   .custom-select__label {
     @media (max-width: 375px) {
       display: none;
+    }
+  }
+
+  // .wrapper {
+  //   @media (max-width: 768px) {
+  //     padding: 0;
+  //   }
+  // }
+
+  .part-head {
+    @media (max-width: 768px) {
+      gap: 7px;
     }
   }
 
@@ -147,7 +163,7 @@
   }
 
   @media (max-width: 768px) {
-    padding: 19px 30px 27px;
+    padding: 30px 30px 27px;
   }
 
   @media (max-width: 550px) {

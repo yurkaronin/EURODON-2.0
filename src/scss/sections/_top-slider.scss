@@ -1,9 +1,9 @@
 .top-slider {
-  padding: 35px 0;
+  padding: 31px 0;
 
   @media (max-width: 1440px) {
     padding-top: 31px;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
   }
 
   @media (max-width: 768px) {
@@ -36,11 +36,11 @@
 
   }
 
-  .wrapper {
-    @media (max-width: 768px) {
-      padding: 0;
-    }
-  }
+  // .wrapper {
+  //   @media (max-width: 768px) {
+  //     padding: 0;
+  //   }
+  // }
 
 }
 
@@ -53,8 +53,8 @@
   gap: 32px;
   align-items: flex-start;
 
-  @media (max-width: 1024px) {
-    align-items: initial;
+  @media (max-width: 1440px) {
+    align-items: stretch;
   }
 
   @media (max-width: 950px) {
@@ -144,7 +144,7 @@
   max-width: 480px;
 
   @media (max-width: 1440px) {
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   @media (max-width: 375px) {
@@ -224,6 +224,7 @@
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
   flex-wrap: wrap;
+  margin-bottom: -1px;
 
   max-width: 610px;
   position: absolute;
