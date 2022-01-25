@@ -67,6 +67,7 @@
       flex-direction: row;
       align-items: center;
     }
+
     .search-form__title {
       font-weight: 500;
       font-size: 32px;
@@ -168,33 +169,14 @@
   }
 }
 
-.custom-lock .header__logo {
-  border-bottom: 1px solid #ebedef;
-  display: flex;
-  align-items: center;
-  min-height: 100%;
-  position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid #ebedef;
-    z-index: 2;
-    top: 1px;
-    right: 100%;
-  }
-}
-
 .header__top {
-  padding: 10px 0 13px 30px;
+  padding: 11px 0 13px 34px;
   border-bottom: 1px solid $border;
   border-left: 1px solid $border;
   position: relative;
   transition: all $nfs;
   opacity: 1;
+  margin-right: -1px;
 
   @media (max-width: 1440px) {
     padding: 11px 0 12px 15px;
@@ -249,13 +231,14 @@
 }
 
 .header__bottom {
-  padding: 0 0 0 30px;
+  padding: 0;
   display: grid;
-  gap: 0;
-  grid-template-columns: auto 400px 40px;
-  grid-column: 2/-1;
+  grid-template-columns: auto auto auto;
+  // grid-column: 2/-1;
   border-left: 1px solid $border;
   align-items: center;
+  margin-right: -1px;
+  justify-content: space-between;
 
   @media (max-width: 1440px) {
     padding-left: 15px;
@@ -306,10 +289,14 @@
 
 .header__contacts {
   display: grid;
-  grid-template-columns: 185px 165px;
-  gap: 13px;
+  margin-left: 60px;
+  max-width: 423px;
+  width: 100%;
+  grid-template-columns: auto auto;
   align-items: center;
-  margin-left: auto;
+  justify-content: space-between;
+  gap: 16px;
+
 
   @media (max-width: 1440px) {
     max-width: 345px;
@@ -329,6 +316,7 @@
 .header__buttons {
   display: flex;
   align-items: center;
+  width: 56px;
 
   /* @media (max-width: 1440px) {
     max-width: 40px;
@@ -353,50 +341,28 @@
 }
 
 .header__main-menu {
+  margin-left: 32px;
+  max-width: 715px;
+  width: 100%;
 
   @media (max-width: 1440px) {
     max-width: 673px;
     width: 100%;
     margin-right: 20px;
   }
+
   @media (max-width: 1280px) {
     display: none;
   }
 }
 
-// прилипающее меню
-.header.sticky {
-  position: fixed;
+.header__logo--mod {
+  display: none;
+}
+
+.header__callback .button-transparent {
+  max-width: 100%;
   width: 100%;
-  border: none;
-  box-shadow: 0 0 10px -3px;
-
-  .wrapper {
-    //grid-template-columns: 127px auto;
-
-    @media (max-width: 1280px) {
-      //grid-template-columns: 200px auto;
-    }
-  }
-
-  //.header__logo {
-  //  @media (max-width: 1280px) {
-  //    grid-row: 1/10;
-  //    margin: auto;
-  //  }
-  //}
-
-  //.header__top {
-  //  height: 0;
-  //  overflow: hidden;
-  //  margin: 0;
-  //  padding: 0;
-  //  opacity: 0;
-  //}
-
-  //.header__bottom {
-  //  border: none;
-  //}
 }
 
 .header__search-form {
@@ -432,7 +398,7 @@
 .header .button-transparent {
   font-weight: 700;
   font-size: 16px;
-  padding: 20px 17px;
+  padding: 20px 22px;
   border-radius: 0;
   margin: 0;
   background-color: #0098d0;
@@ -449,12 +415,7 @@
   }
 }
 
-.header__contacts {
-  grid-template-columns: 185px 227px;
-}
-
 .header__bottom {
-  grid-template-columns: auto 440px 56px;
 
   @media (max-width: 1440px) {
     grid-template-columns: auto 409px 56px;
@@ -493,8 +454,8 @@
 }
 
 .header__contacts {
-  grid-template-columns: auto auto;
-  gap: 18px;
+  // grid-template-columns: auto auto;
+  // gap: 18px;
 
   @media (max-width: 1024px) {
     width: 100%;
@@ -506,14 +467,16 @@
 
 .header__tel {
   max-width: 185px;
+  width: 100%;
 }
 
 .header .header__callback {
   max-width: 227px;
+  width: 100%;
 }
 
 .header__wrapper {
-  grid-template-columns: 222px auto;
+  grid-template-columns: 224px auto;
 
 
   @media (max-width: 1440px) {
@@ -534,3 +497,92 @@
     background-color: #303f82;
   }
 }
+
+// .custom-lock .header__logo {
+//   border-bottom: 1px solid #ebedef;
+//   display: flex;
+//   align-items: center;
+//   min-height: 100%;
+//   position: relative;
+
+//   &::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     border-bottom: 1px solid #ebedef;
+//     z-index: 2;
+//     top: 1px;
+//     right: 100%;
+//   }
+// }
+
+
+// прилипающее меню
+.header.sticky {
+  position: fixed;
+  width: 100%;
+  border: none;
+  box-shadow: 0 0 10px -3px;
+
+
+  .header__main-menu {
+    max-width: 980px;
+    display: flex;
+    align-items: center;
+    gap: 37px;
+  }
+
+  .header__top,
+  .header__logo {
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    width: 0;
+    grid-row: initial;
+    border: none;
+  }
+
+
+
+  .header__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    border: none;
+  }
+
+  .header__logo--mod {
+    display: flex;
+    height: initial;
+    overflow: initial;
+    opacity: 1;
+    width: 127px;
+  }
+
+  .header__bottom {
+   border: none;
+  }
+
+  .header__contacts {
+    margin-left: 120px;
+  }
+
+  .header__wrapper::after,
+  .header__wrapper::before {
+    width: 0;
+    height: 0;
+    border: none;
+  }
+
+  .header__search-form.active {
+    border-top: 1px solid #ebedef;
+    box-shadow: none;
+  }
+}
+
+// конец

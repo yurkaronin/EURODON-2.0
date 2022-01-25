@@ -1,8 +1,8 @@
-.main-nav__list {
+.main-nav {
   @include custList;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 21px;
   font-family: $font-2;
   font-style: normal;
   font-weight: 600;
