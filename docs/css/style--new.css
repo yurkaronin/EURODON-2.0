@@ -1,0 +1,119 @@
+.search .breadcrumbs {
+  margin-bottom: 27px;
+}
+
+.search .page-title {
+  margin-bottom: 13px;
+}
+
+.result-info {
+  margin: 0;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #788AA6;
+}
+
+.search-result-list {
+  margin: 0;
+  padding: 0;
+}
+
+.search-result-list__item {
+  position: relative;
+  padding-left: 111px;
+  margin-left: 17px;
+  margin-bottom: 46px;
+}
+
+.search-result-list__item::marker {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1;
+  color: #334257;
+}
+
+.search-result-list__crumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 33px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.search-result-list__crumb-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-result-list__crumb-item::before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg width='17' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 4h16m0 0-4-2.5M16 4l-4 2.5' stroke='%23C3167C'/%3E%3C/svg%3E");
+  width: 17px;
+  height: 7px;
+  position: absolute;
+  right: -23px;
+}
+
+.search-result-list__crumb-item:last-child a {
+  color: #334257;
+}
+
+.search-result-list__crumb-item:last-child::before {
+  display: none;
+}
+
+.search-result-list__crumb-link {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7895A6;
+  text-decoration: none;
+}
+
+.search-result-list__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #334257;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.search-result-list__title a {
+  color: #C3167C;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.search-result-list__text {
+  margin: 0;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #334257;
+  margin-bottom: 21px;
+}
+
+.search-result-list__text a {
+  color: #C3167C;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: inherit;
+}

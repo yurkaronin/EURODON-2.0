@@ -15,26 +15,27 @@
 <link rel="icon" type="image/png" href="libs/favicons/favicon.png">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Техническая страница</title>
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/style--new.css" />
   <style>
     body {
       background-color: #ECF6FA;
-      font-family: $ font-2;
+      font-family: "Open Sans", sans-serif;
       margin: 0;
       padding: 0;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 120%;
-      color: $ base;
+      color: #334257;
 
     }
 
@@ -47,13 +48,13 @@
 
     a {
       display: inline-block;
-      font-family: $ font-2;
+      font-family: "Open Sans", sans-serif;
       text-decoration: none;
       font-weight: 700;
       font-size: 16px;
       line-height: 120%;
-      color: $ base;
-      border-bottom: 2px solid $ base;
+      color: #334257;
+      border-bottom: 2px solid #334257;
       position: relative;
       margin-bottom: 5px;
 
@@ -76,44 +77,49 @@
     .wrapper {
       max-width: max-content;
     }
+
   </style>
 </head>
 
 <body>
-<main class="wrapper">
-  <img src="img/cover.jpg" alt="обложка">
-  <h1>Техническое меню для навигации</h1>
-  <ol class="support-nav__list">
-    <li><a href="./home.html" target="_blank">Главная</a></li>
-    <li><a href="./services-all.html" target="_blank">Услуги [общая страница со списком услуг]</a></li>
-    <ol>
-      <li><a href="./service-1.html" target="_blank">Страница услуг 1</a></li>
-      <li><a href="./service-2.html" target="_blank">Страница услуг 2</a></li>
-      <li><a href="./service-3.html" target="_blank">Страница услуг 3</a></li>
+  <main class="wrapper">
+    <img src="img/cover.jpg" alt="обложка">
+    <ol class="support-nav__list">
+      <li><a href="./home.html" target="_blank">Главная</a></li>
+      <li><a href="./services-all.html" target="_blank">Услуги [общая страница со списком услуг]</a></li>
+      <ol>
+        <li><a href="./service-1.html" target="_blank">Страница услуг 1</a></li>
+        <li><a href="./service-2.html" target="_blank">Страница услуг 2</a></li>
+        <li><a href="./service-3.html" target="_blank">Страница услуг 3</a></li>
+      </ol>
+      <li><a href="./doctors-all.html" target="_blank">Врачи</a>
+        <ol>
+          <li><a href="./doctor-personal.html" target="_blank">Страница врача</a></li>
+        </ol>
+      </li>
+      <li><a href="./about.html" target="_blank">О клинике</a></li>
+      <li><a href="./reception.html" target="_blank">Расписание</a></li>
+      <li><a href="./price.html" target="_blank">Цены</a></li>
+      <li><a href="./stocks-all.html" target="_blank">Акции</a>
+        <ol>
+          <li><a href="./stocks-personal.html" target="_blank">Отдельная страница Акции</a></li>
+        </ol>
+      </li>
+      <li><a href="./for-doctors.html" target="_blank">Врачам</a></li>
+      <li><a href="./filials-all.html" target="_blank">Филиалы</a>
+        <ol>
+          <li><a href="./filial-personal.html" target="_blank">Клиника на Петренко</a></li>
+        </ol>
+      </li>
     </ol>
-    <li><a href="./doctors-all.html" target="_blank">Врачи</a>
-      <ol>
-        <li><a href="./doctor-personal.html" target="_blank">Страница врача</a></li>
-      </ol>
-    </li>
-    <!--      <li><a href="./" target="_blank" target="_blank">Клиника</a></li>-->
-    <!--      <li><a href="./" target="_blank" target="_blank">Пациентам</a></li>-->
-    <li><a href="./about.html" target="_blank">О клинике</a></li>
-    <li><a href="./reception.html" target="_blank">Расписание</a></li>
-    <li><a href="./price.html" target="_blank">Цены</a></li>
-    <li><a href="./stocks-all.html" target="_blank">Акции</a>
-      <ol>
-        <li><a href="./stocks-personal.html" target="_blank">Отдельная страница Акции</a></li>
-      </ol>
-    </li>
-    <li><a href="./for-doctors.html" target="_blank">Врачам</a></li>
-    <li><a href="./filials-all.html" target="_blank">Филиалы</a>
-      <ol>
-        <li><a href="./filial-personal.html" target="_blank">Клиника на Петренко</a></li>
-      </ol>
-    </li>
-  </ol>
-</main>
+    <h3>Новые страницы</h3>
+    <ul>
+      <li><a href="search-results.html" target="_blank">Результаты поиска по запросу “Доктор”</a></li>
+      <li><a href="licenses-and-certificates.html" target="_blank">Лицензии и сертификаты</a></li>
+      <li><a href="all-reviews.html" target="_blank">Отзывы</a></li>
+
+    </ul>
+  </main>
 </body>
 
 </html>
