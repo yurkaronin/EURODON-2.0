@@ -335,6 +335,12 @@
   padding: 0 0 55px;
 }
 
+@media (max-width: 650px) {
+  .licens-and-cert {
+    padding: 0;
+  }
+}
+
 .licens-and-cert__list {
   list-style: none;
   margin: 0;
@@ -350,6 +356,29 @@
           justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+  .licens-and-cert__list {
+    gap: 47px 32px;
+  }
+}
+
+@media (max-width: 995px) {
+  .licens-and-cert__list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (max-width: 650px) {
+  .licens-and-cert__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 29px;
+  }
+}
+
 .licens-and-cert__item {
   width: calc(25% - 32px);
   display: -webkit-box;
@@ -363,6 +392,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 995px) {
+  .licens-and-cert__item {
+    width: calc((100% / 3) - 32px);
+  }
+}
+
+@media (max-width: 650px) {
+  .licens-and-cert__item {
+    width: calc(50% - 32px);
+  }
+}
+
+@media (max-width: 450px) {
+  .licens-and-cert__item {
+    width: 100%;
+  }
 }
 
 .licens-and-cert__link {

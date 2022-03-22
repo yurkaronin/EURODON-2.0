@@ -311,6 +311,10 @@
 .licens-and-cert {
   padding: 0 0 55px;
 
+  @media (max-width: 650px) {
+    padding: 0;
+  }
+
   &__list {
     list-style: none;
     margin: 0;
@@ -319,6 +323,18 @@
     flex-wrap: wrap;
     gap: 55px 32px;
     justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      gap: 47px 32px;
+    }
+
+    @media (max-width: 995px) {
+      justify-content: flex-start;
+    }
+    @media (max-width: 650px) {
+      justify-content: space-between;
+      gap: 29px;
+    }
   }
 
   &__item {
@@ -328,6 +344,18 @@
     flex-direction: column;
     gap: 16px;
     align-items: center;
+
+    @media (max-width: 995px) {
+      width: calc((100% / 3) - 32px);
+    }
+
+    @media (max-width: 650px) {
+      width: calc(50% - 32px);
+    }
+
+    @media (max-width: 450px) {
+      width: 100%;
+    }
   }
 
   &__link {
