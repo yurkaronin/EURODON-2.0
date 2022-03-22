@@ -124,6 +124,7 @@
   display: flex;
   gap: 33px;
   flex-wrap: wrap;
+
   @media (max-width: 500px) {
     display: none;
   }
@@ -207,6 +208,7 @@
   @media (max-width: 1024px) {
     padding: 20px 18px;
   }
+
   @media (max-width: 500px) {
     padding: 11px 15px;
     max-width: 40px;
@@ -214,6 +216,7 @@
     align-items: center;
     justify-content: center;
   }
+
   &:hover {
     background-color: #eef4f7;
     color: #000000;
@@ -263,6 +266,7 @@
 
 .pagination__list {
   gap: 16px;
+
   @media (max-width: 500px) {
     gap: 3px;
   }
@@ -300,4 +304,49 @@
 
 .pagination__item:last-child {
   margin-left: 3px;
+}
+
+// лицензии и сертификаты
+
+.licens-and-cert {
+  padding: 0 0 55px;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px 32px;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: calc(25% - 32px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__link {
+    max-width: 224px;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-family: var(--ff-1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+
+    text-align: center;
+
+    color: #334257;
+  }
 }

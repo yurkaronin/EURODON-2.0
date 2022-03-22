@@ -330,3 +330,55 @@
 .pagination__item:last-child {
   margin-left: 3px;
 }
+
+.licens-and-cert {
+  padding: 0 0 55px;
+}
+
+.licens-and-cert__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 55px 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.licens-and-cert__item {
+  width: calc(25% - 32px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.licens-and-cert__link {
+  max-width: 224px;
+}
+
+.licens-and-cert__link img {
+  display: block;
+}
+
+.licens-and-cert__text {
+  margin: 0;
+  font-family: var(--ff-1);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: center;
+  color: #334257;
+}
