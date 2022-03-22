@@ -194,11 +194,8 @@
   }
 }
 
-.search-result-list__title span {
+.search-result-list__title b {
   color: #C3167C;
-  font-weight: 500;
-  font-size: inherit;
-  line-height: inherit;
 }
 
 .search-result-list__text {
@@ -211,11 +208,8 @@
   margin-bottom: 21px;
 }
 
-.search-result-list__text span {
+.search-result-list__text b {
   color: #C3167C;
-  font-weight: 700;
-  font-size: inherit;
-  line-height: inherit;
 }
 
 @media (max-width: 1024px) {
