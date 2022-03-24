@@ -632,7 +632,7 @@
 }
 
 .container {
-  max-width: 992px;
+  max-width: calc(992px + 48px + 48px);
   padding: 0 48px;
   margin: 0 auto;
 }
