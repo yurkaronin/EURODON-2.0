@@ -630,3 +630,10 @@
   margin: 0;
   color: #334257;
 }
+
+.container {
+  max-width: 992px;
+  padding: 0 48px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style--new.css.map */
