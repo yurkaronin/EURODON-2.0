@@ -1,7 +1,8 @@
 "use strict";
 // прилипающее меню в шапке
 window.onscroll = function showHeader() {
-  var header = document.querySelector('.header');
+  let header = document.querySelector('.header-new');
+  let headerHeight = header.clientHeight;
 
   if (window.pageYOffset > header.offsetHeight) {
     header.classList.add('sticky');
