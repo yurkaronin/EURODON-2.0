@@ -1,15 +1,26 @@
 "use strict";
-// прилипающее меню в шапке
-window.onscroll = function showHeader() {
-  let header = document.querySelector('.header-new');
-  let headerHeight = header.clientHeight;
+let header = document.querySelector('.header-new');
+let headerHeight = header.clientHeight;
+document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
 
-  if (window.pageYOffset > header.offsetHeight) {
+// прилипающее меню в шапке
+window.onscroll = function() {
+
+
+  if (window.pageYOffset > headerHeight) {
     header.classList.add('sticky');
+
   } else {
     header.classList.remove('sticky');
+
   }
+
+  document.querySelector(':root').style.setProperty('--header-height', `${headerHeight}px`);
+
+
 }
+
+
 
 // кнопка меню и кнопка поиска в шапке
 let menuButton = document.querySelector('.button-menu');
@@ -208,8 +219,7 @@ for (let filialCard of filialCards) {
   filialCard.onclick = function () {
     filialCard.classList.toggle('active');
   };
-}
-;// слайдер первый экран
+}; // слайдер первый экран
 const topSwiper = document.querySelector('.top-slider__swiper');
 if (topSwiper) {
   let swiper1 = new Swiper(".top-slider__swiper", {
